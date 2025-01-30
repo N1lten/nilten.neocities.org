@@ -1,0 +1,27 @@
+# clip studio paint files
+*.clip
+
+# "push" folder (i probably should just outright delete this folder tbh!)
+push/
+
+# Sega Master System BIOS Background (does not ignore the actual .gif file inside the images folder)
+bg/
+
+# Room Folder (Work in Progress! Do not include in site yet!)
+interactive_room/
+
+# Blender 404 Page Files
+404 Render/
+*.blend
+*.blend1
+
+# Blog templates
+blogs/templates/
+
+# .drawio files
+*.drawio
+
+# Test html Files (also safe to delete why do i keep hording useless stuff?!)
+slideTest.html
+# typo lmao
+TEEST.html

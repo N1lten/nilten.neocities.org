@@ -1,0 +1,492 @@
+html {
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    color: #ffffff;
+}
+
+html, body, a:hover{
+    /*Paper Mario Cursor*/
+    cursor: url("../images/cursor/c1.png"), default, pointer;
+    animation: cursor 500ms linear infinite;
+}
+
+/*Code stole- uhhh... i mea- uhh... borrowed from ohmiyoni's css code. All credits to them!*/
+#background01 {
+    background-image: url("../images/background_sms_bios.gif");
+    position: fixed;
+    width: 100%;
+    min-height: calc(100vh + 400px);
+    margin: auto;
+    left: 0;
+    top: 80%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+#background02 {
+    background-image: url("../images/stars_bg.gif");
+    position: fixed;
+    width: 150%;
+    min-height: calc(100vh + 400px);
+    left: -20%;
+    opacity: 40%;
+    top: 0;
+    z-index: -2;
+}
+
+@-webkit-keyframes layer1Scroll {
+    0% {transform: translateY(-192px);}
+    100% {transform: translateY(0px);}
+    }
+
+@keyframes layer1Scroll {
+    0% {transform: translateY(-192px);}
+    100% {transform: translateY(0px);}
+    }
+
+@-webkit-keyframes layer2Scroll {
+    0% {transform: translateY(-144px) scale(0.75); opacity: 0.5;}
+    100% {transform: translateY(0px) scale(0.75); opacity: 0.5;}
+    }
+@keyframes layer2Scroll {
+    0% {transform: translateY(-144px) scale(0.75); opacity: 0.5;}
+    100% {transform: translateY(0px) scale(0.75); opacity: 0.5;}
+   }
+
+#header {
+    background-color: #000000;
+}
+
+@keyframes cursor{
+    0% { 
+        cursor: url("../images/cursor/c1.png"), auto;
+    }
+    25% { 
+        cursor: url("../images/cursor/c2.png"), auto;
+    }
+    50% { 
+        cursor: url("../images/cursor/c3.png"), auto;
+    }
+    75% { 
+        cursor: url("../images/cursor/c4.png"), auto;
+    }
+    100% { 
+        cursor: url("../images/cursor/c5.png"), auto;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* below this line is CSS for the layout */
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 55%;
+    background-image: url('../images/main_background.png');
+    background-position: center;
+    background-size: 110%;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration-line: none;
+    /* if you want to remove the underline
+you can add a line below here that says:
+text-decoration:none; */
+}
+
+#header {
+    height: 100px;
+    display: block;
+    position: relative;
+}
+
+#siteTitle {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.langSelect {
+    margin-left: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scrollingHeader {
+    width: 100%;
+    padding: 6px;
+    background-color: #1f1f1f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navDiv {
+    height: 450px;
+    background-color: #0f0f0f;
+    overflow: visible;
+}
+
+#navBar {
+    height: 450px;
+    border-style: groove;
+    border-color: #202020;
+    list-style-type: square;
+    padding: 2%;
+    font-size: 20px;
+    white-space: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navBar li{
+    padding: 5%;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+/* redundent. please fix in ten billion years */
+#navBar a {
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+#navBar li a:hover {
+    font-size: 23px;
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+
+#navBar .nav_home::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_home.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#navBar .nav_miles::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_miles.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#navBar .nav_art::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_art.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#navBar .nav_portfolio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_portfolio.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#navBar .nav_blog::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_blog.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#navBar .nav_social_media::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_social_media.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#navBar .nav_room::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_room.png');
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
+#flex {
+    display: flex;
+    height: 800px;
+}
+
+/* this is the color of the main content area,
+between the sidebars! */
+main {
+    flex: 1;
+    padding: 20px;
+    width: 55%;
+    order: 2;
+    position: relative;
+}
+
+main p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#leftContainerTwo
+{
+    background-color: #0f0f0f;
+    height: 250px;
+    padding: 2%;
+    border-style: groove;
+    border-color: #202020;
+}
+
+#mainContainerOne
+{
+    height: 450px;
+}
+
+#mainContainerOne img
+{
+    margin: auto;
+}
+
+#mainContainerTwo
+{
+    background-color: #444444;
+    height: 300px;
+    border-radius: 3px;
+    border-style: groove;
+    border-color: #202020;
+    padding: 3%;
+    overflow: hidden;
+}
+
+#rightContainerOne
+{
+    background-color: #0f0f0f;
+    height: 450px;
+    padding: 2%;
+    border-style: groove;
+    border-color: #202020;
+}
+
+#rightContainerTwo
+{
+    background-color: #0f0f0f;
+    height: 250px;
+    padding: 2%;
+    border-style: groove;
+    border-color: #202020;
+}
+
+/* what's this "order" stuff about??
+allow me to explain!
+if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
+
+#leftSidebar {
+    order: 1;
+    margin-right: 10px;
+    width: 250px;
+    padding-right: 20px;
+    font-size: smaller;
+}
+
+#rightSidebar {
+    order: 3;
+    width: 20%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: smaller;
+}
+
+footer {
+    background-color: #0f0f0f;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#footerContainer {
+    width: 100%;
+    height: 30%;
+}
+
+#footerContainer h2 {
+    display: inline;
+    margin: 1%;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footerContainer p {
+    display: inline;
+    font-size: smaller;
+    margin: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footerButtons {
+    background-color: #13092D;
+    border-style: groove;
+    border-color: #202020;
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+#footerButtons marquee {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    /* this styles bold text */
+    color: #ffffff;
+}
+
+.infoBox {
+    background-color: #000000;
+    border: 3px solid #202020;
+    padding: 10px;
+}
+
+/* CSS for extras */
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #13092D;
+}
+
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media only screen and (max-width: 800px) {
+
+    html {
+        background-size: cover;
+    }
+
+    #flex {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+    main {
+        order: 1;
+        width: 100%;
+    }
+
+    #leftSidebar {
+        order: 2;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #rightSidebar {
+        order: 3;
+        margin-left: 0;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}

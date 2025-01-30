@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.159739mm"
+   height="24.980921mm"
+   viewBox="0 0 30.159739 24.980921"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.1877625"
+     inkscape:cx="281.53459"
+     inkscape:cy="277.83333"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-136.019,-142.40799)">
+    <path
+       id="rect2"
+       style="fill:#000000;stroke-width:11.961;stroke-linecap:square"
+       d="m 137.62134,142.40799 28.55741,9.09794 -28.55741,8.33977 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="ps6.svg"
+       inkscape:export-xdpi="107.79934"
+       inkscape:export-ydpi="107.79934" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.00664px;line-height:0;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:center;letter-spacing:0.614087px;text-anchor:middle;fill:#000000;stroke-width:27.761;stroke-linecap:square"
+       x="150.40532"
+       y="167.42409"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';letter-spacing:0.614087px;writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:27.761"
+         x="150.71236"
+         y="167.42409">START</tspan></text>
+  </g>
+</svg>
