@@ -446,7 +446,7 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#footerButtons {
+#footerButtons, #footerButtonsBlog {
     background-color: #13092D;
     border-style: groove;
     border-color: #202020;
@@ -464,7 +464,7 @@ footer {
     max-height: 100%;
 }
 
-#footerButtons marquee {
+#footerButtons, #footerButtonsBlog marquee {
     padding-top: 2%;
     padding-bottom: 2%;
 }
