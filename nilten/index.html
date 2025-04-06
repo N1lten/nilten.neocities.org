@@ -79,7 +79,7 @@
     </style>
     <body> 
         <div id="container">
-            <div id="background01"></div>
+            
             <div id="background02" style="-webkit-animation: layer1Scroll 10s linear infinite; animation: layer1Scroll 10s linear infinite; background-position: center; height: 400%;z-index:-2;"></div>
             <div id="background02" style="-webkit-animation: layer2Scroll 15s linear infinite; animation: layer2Scroll 15s linear infinite; background-position: center; height: 400%; top: -800px;z-index:-2;"></div>
             <div id="header">
@@ -91,7 +91,7 @@
                 <!--MY SILLY ASS SURE LOVES OUTDATED BULLSHIT!-->
             </div>
             <br>
-            <div id="flex">
+            <div id="flex" style="height: 800px;">
                 <aside id="leftSidebar">
                     <div id="navDiv">
                         <ul id="navBar">
@@ -105,23 +105,22 @@
                           </ul>    
                     </div>
                     <br>
-                    <div id="leftContainerTwo">
-                        <img style="max-width: 100%; max-height: 100%; position: relative;" src="images/milesSpeen.gif" draggable="false">
+                    <div id="leftContainerTwo" style="height: auto;">
+                        <div style="text-align: center;">
+                            <img style="max-width: 100%; max-height: 100%; position: relative;" src="images/milesSpeen.gif" draggable="false">
+                        </div>
                     </div>
                 </aside>
                 <main>
-                    <div id="mainContainerOne">
+                    <div id="mainContainerOne" style="text-align: center;">
                         <img style="max-width: 100%; max-height: 100%; position: relative;" src="images/eyesore.webp" draggable="false">
-                        
                     </div>
                     <br>
                     <div id="mainContainerTwo" style="text-align: center; height: 310px;">
-                        <div>
                             <p style="text-decoration: underline;"><strong>Hello there! Welcome to my site!</strong></p>
                             <p>I mainly plan on using this site to show of several of my upcoming projects i am currently working on or to show of some of my artworks i made. You can also find links to my social media profiles! Or maybe you will discover some other neat things on this site! Oh and btw just a heads up: This site is held together by chewing gum and duct tape! Any screen resolution above or under 1980x1080 breaks the site...</p>
                             <p style="text-decoration: underline;">With that said: Thank you and have fun <3</p>
-                        </div>
-                            <img src="images/miles_signature.gif" alt="Signature ^='w'=^" style="max-width: 50%; max-height: 35%; position: relative; margin: 0;" draggable="false">
+                            <img src="images/miles_signature.gif" alt="Signature ^='w'=^" style="object-fit: contain; overflow: hidden; max-width: 50%; max-height: 35%; position: relative; margin: 0;" draggable="false"> 
                     </div>
                 </main>
                 
@@ -136,14 +135,28 @@
                 </div>
             </div>
             <br>
-            <div id="rightContainerTwo">
+            <div id="rightContainerTwo" style="height: auto;">
                 <h2>[Affiliates !]</h2>
                 <br>
-                <img src="images/free_real_estate.gif" alt="It's free real estate >:3" draggable="false" style="object-fit: contain; width: 100%;">
+                <div style="text-align: center;">
+                    <img src="images/free_real_estate.gif" alt="It's free real estate >:3" draggable="false" style="object-fit: contain; max-width: 100%; overflow: hidden; text-align: center;">
+                </div>
             </div>
             </aside>
             </div>
-            <div id="mainContainerTwo" style="width: 60%; margin-left: 22.5%;">
+
+        <div id="flex">
+            <aside id="leftSidebar" style="order: 1;">
+                <div id="leftContainerTwo" style="height: auto;">
+                    <div style="text-align: center;">
+                        <img style="max-width: 100%; max-height: 100%; position: relative;" src="images/GO KITTY GO.gif" draggable="false">
+                        <h2 style=" background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red); background-clip: text; -webkit-background-clip: text; color: transparent; background-size: 400%; animation: catDanceText 5s ease infinite; margin-bottom: 0;">DANCING KITTY WOOOOO!</h2>
+                        <p style=" background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red); background-clip: text; -webkit-background-clip: text; color: transparent; background-size: 400%; animation: catDanceTextTwo 5s ease infinite; font-size: xx-large; margin-top: 0;">YEEEEEAAAHHHH!!!!!</p>
+                    </div>
+                </div>
+            </aside>
+            <main>
+            <div id="mainContainerTwo" style="margin: auto;">
                 <h1 style="text-align: center; text-decoration: underline;">Credits:</h1>
                 <div style="text-align: left;">
                     <p><span style="font-size: larger; text-decoration: underline;">Layout: </span><a href="https://goblin-heart.net" target="_blank" rel="noopener noreferrer">Made using Goblin Heart's layout builder.</p></a>
@@ -152,42 +165,33 @@
                     <p><span style="font-size: larger; text-decoration: underline;">Buttons: </span>If you see your Button on this page, please contact me at <span style="text-decoration: underline;">contact.nilten@gmail.com</span>, as i haven't been able to find any names associated with the buttons.</p>
                 </div>
             </div>
+            </main>
+            <aside id="rightSidebar">
+                <div id="leftContainerTwo" style="height: auto;">
+                    <div style="text-align: center;">
+                        <img style="max-width: 100%; max-height: 100%; position: relative;" src="images/mariolikes.png" draggable="false">
+                
+                    </div>
+                </div>
+            </aside>
+        </div>
             <footer id="footer" style="margin-top: 10px;">
                 <div id="footerContainer" style="align-self: center;">
                     <h2>[Nilten]</h2><p>2025</p><p> Contact: contact.nilten@gmail.com</p>
                 </div>
-                <div id="footerButtons">
-                    <marquee>
-                    <img src="images/icons/88x31/nilten.gif" alt="Nilten" draggable="false">
-                    <img src="images/icons/88x31/randnetdd.gif" alt="Viewable on RandnetDD." draggable="false">
-                    <img src="images/icons/88x31/61.gif" alt="Hi-Res Colors!" draggable="false">
-                    <img src="images/icons/88x31/148.gif" alt="Made with Microsoft Windows 98." draggable="false">
-                    <img src="images/icons/88x31/149.png" alt="Viewable on Dreamcast Web Browser 2.0" draggable="false">
-                    <img src="images/icons/88x31/66.gif" alt="AOL Instant Messanger" draggable="false">
-                    <img src="images/icons/88x31/sprunk.gif" alt="Drink Sprunk!" draggable="false">
-                    <img src="images/icons/88x31/transnow2.gif" alt="TRANS RIGHTS NOW!" draggable="false">
-                    <img src="images/icons/88x31/sun.gif" alt="Nilten.com runs on Sun Microsystems." draggable="false">
-                    <img src="images/icons/88x31/fuckAI.gif" alt="FUCK AI!" draggable="false">
-                    <img src="images/icons/88x31/button139.png" alt="Gameboy Advance" draggable="false">
-                    <img src="images/icons/88x31/gc.gif" alt="Nintendo Gamecube" draggable="false">
-                    <img src="images/icons/88x31/daytonaNOW.gif" alt="Daytona USA NOW!" draggable="false">
-                    <img src="images/icons/88x31/delete_twitter.gif" alt="Delete Twitter! Make a Neocities!" draggable="false">
-                    <img src="images/icons/88x31/hl.gif" alt="Half-Life" draggable="false">
-                    <img src="images/icons/88x31/bestvieweddesktop.gif" alt="Best viewed on desktop!" draggable="false">
-                    <img src="images/icons/88x31/braknow.gif" alt="Brak NOW!" draggable="false">
-                    <img src="images/icons/88x31/cerealcat.png" alt="Cereal!" draggable="false">
-                    <img src="images/icons/88x31/missingContent.gif" alt="Just buy Counter-Strike Source already!" draggable="false">
-                    <img src="images/icons/88x31/bu12.gif" alt="THIS WEBSITE IS QUITE GAY ACTUALLY" draggable="false">
-                    </marquee>
-                </div>
+                <div id="footerButtons"></div>
                 <div style="display: flex; flex-direction: column; max-height: fit-content;">
                     <a href="https://neocities.org"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a>
                     <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: auto;">
                 </div>
                 <script src="scripts/general/scrollHeader.js"></script>
+                <script src="scripts/general/scrollButtons.js"></script>
             </footer>
         </div>
         <div style="height: 300px; margin: auto;"></div>
+        <div style="width: 100vw;">
+            <img id="background01" src="images/background_sms_bios.gif">
+        </div>
     </body>
 
 </html>
