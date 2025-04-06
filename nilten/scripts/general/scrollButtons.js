@@ -59,5 +59,9 @@ function initButtonScroll() {
     {
         document.getElementById("footerButtons").innerHTML = buttonPaths;
     }
+    else
+    {
+        print("No button scrolling div found on this page.");
+    }
     
 }

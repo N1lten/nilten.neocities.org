@@ -20,7 +20,6 @@ html, body, a:hover{
     background-image: url("../images/background_sms_bios.gif");
     position: fixed;
     width: 100%;
-    min-height: calc(100vh + 400px);
     margin: auto;
     left: 0;
     top: 80%;
@@ -91,7 +90,7 @@ html, body, a:hover{
 the other elements, you will need to move that div outside
 of the container */
 #container {
-    max-width: 55%;
+    max-width: 1512px;
     background-image: url('../images/main_background.png');
     background-position: center;
     background-size: 110%;
@@ -270,7 +269,6 @@ text-decoration:none; */
 
 #flex {
     display: flex;
-    height: 800px;
 }
 
 /* this is the color of the main content area,
@@ -336,6 +334,34 @@ main p {
     border-color: #202020;
 }
 
+@keyframes catDanceText {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes catDanceTextTwo {
+    0% {
+        background-position: 100% 25%
+    }
+
+    50% {
+        background-position: 0% 50%
+    }
+
+    100% {
+        background-position: 100% 25%
+    }
+}
+
 /* what's this "order" stuff about??
 allow me to explain!
 if you're using both sidebars, the "order" value
@@ -345,7 +371,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 #leftSidebar {
     order: 1;
     margin-right: 10px;
-    width: 250px;
+    width: 20%;
     padding-right: 20px;
     font-size: smaller;
 }
@@ -450,6 +476,7 @@ and then subtrack it by 100. use this new number as the
 "max-width" value below
 */
 
+/*
 @media only screen and (max-width: 800px) {
 
     html {
@@ -466,10 +493,6 @@ and then subtrack it by 100. use this new number as the
         width: 100%;
     }
 
-    /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
     main {
         order: 1;
         width: 100%;
@@ -477,16 +500,18 @@ feel free to play around with the order!
 
     #leftSidebar {
         order: 2;
-        margin-right: 0;
+        margin: auto;
         width: 100%;
     }
 
     #rightSidebar {
         order: 3;
-        margin-left: 0;
+        margin: auto;
+        width: 100%;
     }
 
     #navbar ul {
         flex-wrap: wrap;
     }
 }
+*/
