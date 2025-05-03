@@ -25,6 +25,12 @@ function genHeaderText()
         "\"So take me baaack in tiiiiiiiiimmme! ♪ To another world! ♪ When you caaaan beeee miiiiiiiiiine! ♪ We don't have to worry! ♪ When you're byyyyy myyy siiiiiiiiide! ♪ Theres nothing i don't know! ♪ Theres nothing tooooo deeeciiiiiiiide! ♪ Apart from where we want to gooooooo! ♪\"",
         "I have no idea what to draw aaaaaaaaaaaaa :[",
         "I know! I gotta believe!",
+        "Fuck you, Baltimore!",
+        "Roll up~ ! ♪ Roll up for the Mystery Tour! ♪",
+        "All right, so here we are, in front of the elphants. The cool thing about these guys is that they have really, really, really long... uhm... trunks. And thats cool. And that's pretty much all there is to say.",
+        "Once, there was an ugly barnacle. He was so ugly, that everyone died. The end! =3",
+        "Why do they call it Oven, when you of in the cold food of out hot eat the food...",
+        "RAM RANCH REALLY ROCKS!",
     ];
 
     // this code sucks at randomness! it almost always displays the same 3 headers! trying figure out a fix. but looking at my math skills.... ehhhhh....
