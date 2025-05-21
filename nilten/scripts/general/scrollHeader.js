@@ -32,7 +32,9 @@ function genHeaderText()
         "Why do they call it Oven, when you of in the cold food of out hot eat the food...",
         "RAM RANCH REALLY ROCKS!",
         "What would Brian Boitano do, if he was here today? I'm sure he'd kick an ass or two! That's what Brian Boitano do!",
-        "\"♪ Da Coconut Nut is a giant nut, if you eat too much, you'll get very fat. (very fat ~) Now, da Coconut Nut is a big, big nut, but this delicious nut is not a nut ! It's a coco fruit. (it's the coco fruit ~) Of the coco tree. (of the coco tree ~) From the coco palm family ! ♪\"",
+        "\"♪ Da Coconut Nut is a giant nut, if you eat too much, you'll get very fat. (very fat ~) Now, da Coconut Nut is a big, big nut, but this delicious nut is not a nut ! It's a coco fruit. (it's a coco fruit ~) Of the coco tree. (of the coco tree ~) From the coco palm family ! ♪\"",
+        "\"♪ Super Mario RPG ♪ Sonic the Hedgehog, Donkey Kong 3 ♪ Adventures of Lolo 1 and 2 ♪ King's Knight, Dig Dug, Chew Man Fu ♪ Harvest Moooooon~ ♪ League Puzzle Pokemoooon~ ♪ ToeJam & Earl in Panic on Funkotroooon~ ♪ Castlevania, Fatal Fury, Ninja JaJaMaru-kun ♪ ActRaiser, Blazing Lazers, Bases Loaded, Mega Turrican ♪ Cybernator, Rolling Thunder, Dynastic Hero ♪ Bubble Bobble, Double Dribble, Double Dragon, F-Zero ♪ F-Zero X ~ ♪ and Donkey Kong Jr. Maaaath ~ ! ♪ Ninja Gaiden 1 ♪ Ninja Gaiden 2 ♪ Ninja Gaiden 3 ♪ Crusin' USA ♪\"",
+        "\"♪ Super Mario - oohh R-P-G! ♪ It is the only one just for me ♪ When i play the game, i get lost in a phase ♪ Then i find out I'm stuck in Geno's Maze ♪ There are many secrets in this game ♪ Many of which drive some peeps insane ♪ Why we try to cheat in a really good game? ♪ Just sounds like crap and it makes you look lame! ♪ Exiting the forest is super simple! ♪ All you do is follow these path tuuuurns~ ♪ For the reeessstt of yoouur gaming liiife~ ♪\"",
     ];
 
     // this code sucks at randomness! it almost always displays the same 3 headers! trying figure out a fix. but looking at my math skills.... ehhhhh....
