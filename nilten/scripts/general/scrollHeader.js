@@ -31,6 +31,8 @@ function genHeaderText()
         "Once, there was an ugly barnacle. He was so ugly, that everyone died. The end! =3",
         "Why do they call it Oven, when you of in the cold food of out hot eat the food...",
         "RAM RANCH REALLY ROCKS!",
+        "What would Brian Boitano do, if he was here today? I'm sure he'd kick an ass or two! That's what Brian Boitano do!",
+        "\"♪ Da Coconut Nut is a giant nut, if you eat too much, you'll get very fat. (very fat ~) Now, da Coconut Nut is a big, big nut, but this delicious nut is not a nut ! It's a coco fruit. (it's the coco fruit ~) Of the coco tree. (of the coco tree ~) From the coco palm family ! ♪\"",
     ];
 
     // this code sucks at randomness! it almost always displays the same 3 headers! trying figure out a fix. but looking at my math skills.... ehhhhh....
