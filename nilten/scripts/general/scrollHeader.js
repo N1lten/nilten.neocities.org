@@ -38,6 +38,7 @@ function genHeaderText()
         "\"♪ I wanna flyyy skyyy hiiiigh~ ♪ Let's goooo together~ ♪ We are going this waaayyy~ ♪ At maximum speed on a wiiing~ ♪ We're flying ♪    ♪ ♪ ♪    ♪ I wanna flyyy skyy hiiiigh~ ♪ Let's goooo together~ ♪ You can even see the horizooon~ ♪ We driiiift together~ ♪ Forever ♪ Oooover the bridge~ ♪ Cut through the traffic ♪ Flyyyying hiiigh~ Feeeeliing goood~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪\"",
         "\"♪ ROOOLLING STAAAAAAART! ♪ ROOOLLING STAAAAAAART! ♪\"",
         "\"It is gud day to be not dead !\"",
+        "\"KRUSTY KRAAAYEAAEEEYEAAAEYEAAAABB PIZZA IS THE PIZZA YEEAAEEAAA FOR YOU AND...      MEEEEEEEEEEEHEEEEEEEEEEHEEEEEHEEEEEE!!",
     ];
 
     // this code sucks at randomness! it almost always displays the same 3 headers! trying figure out a fix. but looking at my math skills.... ehhhhh....
