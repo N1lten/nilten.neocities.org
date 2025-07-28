@@ -20,7 +20,7 @@
         background-color: #000000;
       }
     </style>
-    <body> 
+    <body onload="site_maintenanceMode()">
         <div id="container">
             <div id="background01" style="background-image: url('../images/art/Header.webp');"></div>
                 <div id="header">
@@ -103,6 +103,7 @@
                     <img src="../images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: auto;">
                 </div>
                 <script src="../scripts/general/scrollHeader.js"></script>
+                <script src="../scripts/general/maintenanceKillSwitch.js"></script>
             </footer>
         </div>
         <div style="height: 300px; margin: auto;"></div>
