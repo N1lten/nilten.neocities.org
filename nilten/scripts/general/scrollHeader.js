@@ -37,8 +37,17 @@ function genHeaderText()
         "\"♪ Super Mario - oohh R-P-G! ♪ It is the only one just for me ♪ When i play the game, i get lost in a phase ♪ Then i find out I'm stuck in Geno's Maze ♪ There are many secrets in this game ♪ Many of which drive some peeps insane ♪ Why we try to cheat in a really good game? ♪ Just sounds like crap and it makes you look lame! ♪ Exiting the forest is super simple! ♪ All you do is follow these path tuuuurns~ ♪ For the reeessstt of yoouur gaming liiife~ ♪\"",
         "\"♪ I wanna flyyy skyyy hiiiigh~ ♪ Let's goooo together~ ♪ We are going this waaayyy~ ♪ At maximum speed on a wiiing~ ♪ We're flying ♪    ♪ ♪ ♪    ♪ I wanna flyyy skyy hiiiigh~ ♪ Let's goooo together~ ♪ You can even see the horizooon~ ♪ We driiiift together~ ♪ Forever ♪ Oooover the bridge~ ♪ Cut through the traffic ♪ Flyyyying hiiigh~ Feeeeliing goood~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪\"",
         "\"♪ ROOOLLING STAAAAAAART! ♪ ROOOLLING STAAAAAAART! ♪\"",
+        "\"♪ DAYTONAAAAAAA~ ♪ DAYTONAAAAAAA~ ♪ LET'S GO AWAY ♪ DAYTONAAAAAAA~ ♪\"",
         "\"It is gud day to be not dead !\"",
-        "\"KRUSTY KRAAAYEAAEEEYEAAAEYEAAAABB PIZZA IS THE PIZZA YEEAAEEAAA FOR YOU AND...      MEEEEEEEEEEEHEEEEEEEEEEHEEEEEHEEEEEE!!",
+        "KRUSTY KRAAAYEAAEEEYEAAAEYEAAAABB PIZZA IS THE PIZZA YEEAAEEAAA FOR YOU AND...      MEEEEEEEEEEEHEEEEEEEEEEHEEEEEHEEEEEE!!",
+        "i main ness btw.",
+        "i main taokaka btw.",
+        "i main heavy and medic btw.",
+        "\"♪ Fly me to the moon and let me play among the stars~ ♪ Let me see what spring is like on jupiter and mars~ ♪ In other words, ~    Hold my hand~ ♪ In other words, ~    Darling, kiss me~ ♪  Fill my heart with song and let me sing forevermore~ ♪ You are all i long for~    All i worship and adore~ ♪ In other words, ~    Please be true~ ♪ In other words, ~    I love you~ ♥    ♪\"",
+        "\"♪ I~ ♪ I will be king~ ♪ and you~ ♪ You will be Queen~ ♪ Though nothing~ ♪ will drive them away~ ♪ We can beat them, ~ ♪ just for one day~ ♪ Oh we can be Heroes, ~ ♪ just for one day~ ♪\"",
+        "Fetch me a fire extinguisher. A good one. With the foam.",
+        "\"♪ Give it all you've got~ ♪ Can't stop now, keep moving~ ♪ Give it all you've got~ ♪    ♪ ♪ ♪    ♪ Give it all you've got~ ♪ Dance, dance, dance, get on it~ ♪ Take it to the top~ ♪ \"",
+        "Get crazy with the Cheese Whiz !",
     ];
 
     // this code sucks at randomness! it almost always displays the same 3 headers! trying figure out a fix. but looking at my math skills.... ehhhhh....

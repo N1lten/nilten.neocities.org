@@ -10,10 +10,17 @@ bg/
 # Room Folder (Work in Progress! Do not include in site yet!)
 interactive_room/
 
+# Folder for testing various thingies
+test_chamber/
+
 # Blender 404 Page Files
 404 Render/
 *.blend
 *.blend1
+
+# PowerShell scripts for neocities cli
+*.ps1
+scripts/siteMaintenance
 
 # Blog templates
 blogs/templates/
