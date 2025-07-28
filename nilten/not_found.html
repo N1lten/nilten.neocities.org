@@ -9,7 +9,7 @@
         <link href="/style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
     </head>
-<body>
+<body onload="site_maintenanceMode()">
     <div id="Upper">
         <h1>404.</h1>
     </div>
@@ -32,6 +32,10 @@
         background-size: cover;
         background-position: center;
         background-color: black;
+    }
+
+    footer {
+        display: none;
     }
 
     h1 {
@@ -61,5 +65,7 @@
     }
 
 </style>
-
+<footer>
+    <script src="scripts/general/maintenanceKillSwitch.js"></script>
+</footer>
 </html>
