@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content='Nils "Miles" Aaron'>
+        <meta name="robots" content="noindex, nofollow">
+        <meta property="og:title" content="Nilten">
+        <meta property="og:image" content="images/generic/header_open_graph_protocol.webp">
+        <meta property="og:description" content="The neocities page of Miles Nilten!">
+        <meta property="og:site_name" content="nilten.neocites.org">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nilten</title>
+        <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+        <script src="scripts/general/maintenanceKillSwitch.js"></script>
+    </head>
+    <style>
+    html {
+        background-color: #ffffff;
+      }
+    </style>
+    <body onload="site_maintenanceMode()">  
+        <span style="color: #ffffff;"><p>Welcome my son</p>
+        <p>Welcome to the void</p></span>
+        <div id="milesVoid" style="width: 80vw; height: 40vh; display: block; margin: auto; background-size: contain; background-position: center; background-image: url('images/generic/miles_void_01.webp'); background-repeat: no-repeat;"></div>
+    </body>
+
+    <script>
+        var miles = document.getElementById("milesVoid");
+        var waitTime = Math.floor(Math.random() * (6000 - 3000 + 1) ) + 3000;  
+        var milesURLs = [
+            "images/generic/miles_void_01.webp",
+            "images/generic/miles_void_02.webp"
+        ]
+
+        function milesBlink()
+        {
+            //console.log("Old: " + waitTime);
+            setTimeout(() => {miles.style.backgroundImage = "url('" + milesURLs[0] + "')"},350);
+            miles.style.backgroundImage = "url('" + milesURLs[1] + "')";
+            waitTime = Math.floor(Math.random() * (6000 - 3000 + 1) ) + 3000;  
+           // console.log("New: " + waitTime)
+        }
+
+      
+        setInterval(milesBlink, waitTime);
+        //setInterval(() => {console.log("Waited: " + waitTime)},waitTime);
+        
+        // doesn't seem to work correctly
+        // oh well. fuck timing in js !
+    </script>
+</html>

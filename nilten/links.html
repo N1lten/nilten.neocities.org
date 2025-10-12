@@ -3,13 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content='Nils "Miles" Aaron'>
-        <meta name="googlebot" content="noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow">
         <meta property="og:title" content="Nilten">
-        <meta property="og:image" content="images/about/Header.png">
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:description" content="The neocities page of Miles Nilten!" />
-        <meta property="og:site_name" content="Nilten" />
+        <meta property="og:image" content="images/generic/header_open_graph_protocol.webp">
+        <meta property="og:description" content="The neocities page of Miles Nilten!">
+        <meta property="og:site_name" content="nilten.neocites.org">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nilten</title>
         <link href="CSS/Default.css" rel="stylesheet" type="text/css">
@@ -19,120 +17,134 @@
       html {
         background-color: #000000;
       }
+
+      .linkPageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-    <body onload="site_maintenanceMode()"> 
-        <div id="container">
-            <div id="background01" style="background-image: url('images/links/Header.webp');"></div>
-                <div id="header">
-                <h1 id="siteTitle"><a href="index.html">[Nilten]</a></h1>
+    <body onload="site_maintenanceMode()">
+        <div id="background03" style="background-image: url('images/links/Header.webp'); opacity: 0.35;"></div>
+        <div class="container">
+            <div id="header" style="text-align: center;">
+                <a href="index.html"><img src="images/generic/nilten_header_logo.webp" style="max-height: 100%;"></a>
             </div>
+        </div>
+        <br>
+        <div class="container">
             <div class="scrollingHeader">
                 <!--INSERT SOURCE ENGINE OBSOLETE GUY HERE-->
                 <marquee scrollamount="10"><p id="marqueeText" style="margin: 0; padding: 0;">Missingno.</p></marquee>
                 <!--MY SILLY ASS SURE LOVES OUTDATED BULLSHIT!-->
             </div>
-            <br>
+        </div>
+        <br>
+        <div class="container" style="padding: 8px;">
             <div id="flex">
                 <aside id="leftSidebar">
                     <div id="navDiv">
                         <ul id="navBar">
-                            <li class="nav_home"><a href="index.html">Home</a></li>
-                            <li class="nav_miles"><a href="about.html">About Nilten</a></li>
-                            <li class="nav_art"><a href="art.html">Art</a></li>
-                            <li class="nav_portfolio"><a href="portfolio.html">Portfolio/Current Projects</a></li>
-                            <li class="nav_blog"><a href="blogs.html">Blogs</a></li>
-                            <li class="nav_social_media"><a href="links.html">Social Media Links</a></li>
-                            <li class="nav_room" title="This page is still under Construction!"><a href="room.html">My Room</a></li>
+                            <li class="nav_home"><a href="home.html"><div id="nav-home-tag"></div></a></li>
+                            <li class="nav_miles"><a href="about.html"><div id="nav-about-tag"></div></a></li>
+                            <li class="nav_art"><a href="art.html"><div id="nav-art-tag"></div></a></li>
+                            <li class="nav_portfolio"><a href="portfolio.html"><div id="nav-portfolio-tag"></div></a></li>
+                            <li class="nav_blog"><a href="blogs.html"><div id="nav-blog-tag"></div></a></li>
+                            <li class="nav_social_media"><a href="links.html"><div id="nav-link-tag"></div></a></li>
+                            <li class="nav_room" title="This page is still under Construction!"><a href="room.html"><div id="nav-room-tag"></div></a></li>
                           </ul>    
                     </div>
                 </aside>
                 <main>
-                    <div id="mainContainerTwo" style="text-align: center; height: 450px; width: 90%; background-image: url('images/links/Header.webp'); background-size: cover;">
+                    <div class="pageHeaderImage" style="background-image: url('images/links/Header.webp');">
                         <div>
-                            <p style="font-size: 45px; margin-bottom: 55%; text-decoration: underline;">Social Media Links</p>
+                            <p style="font-size: 45px; font-weight: 600; margin-top: 325px; margin-bottom: 50%; text-decoration: underline;">Links</p>
                         </div>
                     </div>
                 </main>
             </div>
+        </div>
+        
+        <br>
 
+        <div class="container" style="padding: 15px;">
             <!-- Youtube -->
-            <div id="mainContainerTwo" class="divTypeOne">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 450px;">
-                        <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img src="images/links/Youtube.webp" style="height: 80%;"></a>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 450px; text-align: left;">
+            <div id="mainContainerTwo" style="width: 80%; margin: 15px auto; border-width: 15px;">
+                <div class="linkPageContainer">
+                    <div style="width: 65%; ">
+                        <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer" style="width: 100%; height: 100%;"><img class="divSelect noBorder hoverScale" src="images/links/Youtube.webp" style="width: 100%; height: auto;"></a>
+                    </div>
+                    <div style="width: 35%; text-align: left; ">
                         <p style="text-decoration: underline; font-size: xx-large; margin: 0; padding: 0;">Youtube</p>
-                        <p style="text-decoration: underline;">"Where theres smoke, they pinch back!"</p>
+                        <p style="text-decoration: underline;">"Where there's smoke, they pinch back!"</p>
                         <p style="text-decoration: underline; color: darkorange;">Note: Currently inactive!</p>
                         <br>
                         <p>My silly little youtube channel!</p>
                         <p>As said, my channel isn't very active at the moment. The only video on my channel is my Doshin 2 translation video but other than that there is nothing but tumbleweed! However, i do have some plans for some videos i want to make in the future so stay tuned! ... i guess?</p>
                         <p>Maybe i'l start posting soon ! Who knows !?</p>
-                    </aside>
+                    </div>
                 </div>
             </div>
 
             <!-- Bluesky -->
-            <div id="mainContainerTwo" class="divTypeOne">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 450px;">
-                        <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/links/Bluesky.webp" style="height: 80%;"></a>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 450px; text-align: left;">
+            <div id="mainContainerTwo" style="width: 80%; margin: 15px auto; border-width: 15px;">
+                <div class="linkPageContainer">
+                    <div style="width: 35%; text-align: right;">
                         <p style="text-decoration: underline; font-size: xx-large; margin: 0; padding: 0;">Bluesky</p>
                         <p style="text-decoration: underline;">"Blue, blue skies~ ♪ Blue, blue skies I see~ ♪"</p>
                         <br>
-                        <p>Let's face it. Twitter has always been a toxic dumpster fire. And due to recent events <i>*cough* elon musk *cough* trump *cough cough* literal fucking nazis taking over the site *cough*</i> things have just gotten way out of control and i've decided to leave this platform for good!</p>
-                        <p>I mean, who needs a dead bird on the floor when you can just head over to your good ol' friend mr. blue sky!</p>
+                        <p>Let's face it. Twitter has always been a toxic dumpster fire. And due to recent events <i>*cough* elon musk *cough* trump *cough cough* literal fucking nazis taking over the site *cough*</i> things have just gotten way out of control and i've decided to leave this platform for good and switch over to bluesky !</p>
                         <p>I haven't been all too active on bluesky yet, but this will surely change soon. So if you want to, feel free to follow me on there!</p>
                         <br>
                         <p>And don't worry about twitter. Humanity will be in a better state when that eyesore is gone!</p>
-                    </aside>
+                    </div>
+                    <div style="width: 65%; ">
+                        <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img class="divSelect noBorder hoverScale" src="images/links/Bluesky.webp" style="width: 100%;"></a>
+                    </div>
                 </div>
             </div>
 
             <!-- Newgrounds -->
-            <div id="mainContainerTwo" class="divTypeOne">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 450px;">
-                        <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img src="images/links/Newgrounds.webp" style="height: 80%;"></a>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 450px; text-align: left;">
+            <div id="mainContainerTwo" style="width: 80%; margin: 15px auto; border-width: 15px;">
+                <div class="linkPageContainer">
+                    <div style="width: 65%; ">
+                        <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img class="divSelect noBorder hoverScale" src="images/links/Newgrounds.webp" style="width: 100%;"></a>
+                    </div>
+                    <div style="width: 35%; text-align: left; ">
                         <p style="text-decoration: underline; font-size: xx-large; margin: 0; padding: 0;">Newgrounds</p>
-                        <p style="text-decoration: underline;">Everything by everyone! Even by me! <span style="font-size: x-small;">yeaaa....</span></p>
+                        <p style="text-decoration: underline;">Everything by everyone! Even by me...!  <span style="font-size: x-small;">yeaaa....</span></p>
                         <br>
-                        <p>I'm uploading some of my art on my newgrounds page now and then!</p>
-                        <p>If one day, the internet should go down the shitter when, for example, companies get more greedy or some shit like that, we can be sure that we still have newgrounds as a safe space!</p>
-                    </aside>
+                        <p>I'm uploading my artworks on my newgrounds page every now and then!</p>
+                        <p>If one day, the internet should go down the shitter when, for example, companies get more greedy or some shit like that, we can consider ourselves lucky that we still have newgrounds as a safe space !</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Backloggd -->
-            <div id="mainContainerTwo" class="divTypeOne">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 450px;">
-                        <a href="https://www.backloggd.com/u/Nilten/" target="_blank" rel="noopener noreferrer"><img src="images/links/Backloggd.webp" style="height: 80%;"></a>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 450px; text-align: left;">
+            <div id="mainContainerTwo" style="width: 80%; margin: 15px auto; border-width: 15px;">
+                <div class="linkPageContainer">
+                    <div style="width: 35%; text-align: right; ">
                         <p style="text-decoration: underline; font-size: xx-large; margin: 0; padding: 0;">Backloggd</p>
                         <p style="text-decoration: underline;">Look at all the games i am playing!</p>
                         <br>
-                        <p>Backloggd is THE site to go to if you want to stalk my collection of games i am currently playing or i have played so far!</p>
-                        <p>Feel free to judge and roast me for my taste in games and go "Miles? Why the actual FUCKING FUCK is Mario Sunshine your all time favourite viodyogaim?!"!</p>
-                        <p>I may forget to update my backloggd page from time to time or i may have forgotten to log a game i have already played so my backloggd may not be 100% accurate!</p>
-                        <p>And also note that all the reviews i wrote are written in german soo uuuuhhhh... SAUERKRAUT! OKTOBERFEST! LEDERHOSEN!</p>
-                    </aside>
+                        <p>Backloggd is THE site to go to if you want to stalk my collection of games, which games i am currently playing or i have played so far!</p>
+                        <p>Feel free to judge and roast my taste in games and go "Miles? Why the actual FUCKIDY FUCK is Mario Sunshine your all time favourite viodyogaim?!"!</p>
+                        <p>I may forget to update my backloggd page from time to time or i may have forgotten to log a game i have already played so my backloggd may not be 100% accurate !</p>
+                        <p>And also please note that all the reviews i wrote are written in german soo like... SAUERKRAUT! OKTOBERFEST! LEDERHOSEN!</p>
+                    </div>
+                    <div style="width: 65%; ">
+                        <a href="https://www.backloggd.com/u/Nilten/" target="_blank" rel="noopener noreferrer"><img class="divSelect noBorder hoverScale" src="images/links/Backloggd.webp" style="width: 100%;"></a>
+                    </div>
                 </div>
             </div>
 
             <!-- Github -->
-            <div id="mainContainerTwo" class="divTypeOne">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 450px;">
-                        <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img src="images/links/Github.webp" style="height: 80%;"></a>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 450px; text-align: left;">
+            <div id="mainContainerTwo" style="width: 80%; margin: 15px auto; border-width: 15px;">
+                <div class="linkPageContainer">
+                    <div style="width: 65%; ">
+                        <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img class="divSelect noBorder hoverScale" src="images/links/Github.webp" style="width: 100%;"></a>
+                    </div>
+                    <div style="width: 35%; text-align: left; ">
                         <p style="text-decoration: underline; font-size: xx-large; margin: 0; padding: 0;">Github</p>
                         <p style="text-decoration: underline;">Programming !</p>
                         <br>
@@ -141,17 +153,14 @@
                             <br>
                             <span style="font-size: x-small;">eventhough most of my repositories are stil set as private hehe whoopsies...</span>
                         </p>
-                    </aside>
+                    </div>
                 </div>
             </div>
 
             <!-- Steam -->
-            <div id="mainContainerTwo" class="divTypeOne">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 450px;">
-                        <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img src="images/links/Steam.webp" style="height: 80%;"></a>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 450px; text-align: left;">
+            <div id="mainContainerTwo" style="width: 80%; margin: 15px auto; border-width: 15px;">
+                <div class="linkPageContainer">
+                    <div style="width: 35%; text-align: right; ">
                         <p style="text-decoration: underline; font-size: xx-large; margin: 0; padding: 0;">Steam</p>
                         <p style="text-decoration: underline;">Brought to you by the people from Half-Life, Portal and Team Fortress:</p>
                         <br>
@@ -160,24 +169,39 @@
                         <p>I play PC games... using... Steam...<small> (i mean what did you expect, silly)</small></p>
                         <p>I am currently working on some Workshop stuff for GMod but at the moment my profile really isn't all too interesting, actually...</p>
                         <small>i've just realised that all of my social media stuff is boring af LMAO</small>
-                    </aside>
+                    </div>
+                    <div style="width: 65%; ">
+                        <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img class="divSelect noBorder hoverScale" src="images/links/Steam.webp" style="width: 100%;"></a>
+                    </div>
                 </div>
             </div>
-            <footer id="footer" style="margin-top: 10px;">
-                <div id="footerContainer" style="align-self: center;">
-                    <h2>[Nilten]</h2><p>2025</p><p> Contact: contact.nilten@gmail.com</p>
+        </div>
+
+        <div class="container">
+            <footer id="footer">
+                <div id="footerContainer">
+                    <img src="images/generic/nilten_header_logo.webp" style="width: 128px; height: auto;"><h5>2025</h5><p><i>Contact:</i> <span style="text-decoration: underline;">contact.nilten@gmail.com</span></p>
                 </div>
                 <div id="footerButtons"></div>
-                <div style="display: flex; flex-direction: column; max-height: fit-content;">
-                    <a href="https://neocities.org"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a>
-                    <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: auto;">
+                <div class="social_media_footer">
+                    <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube"></a>
+                    <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky"></a>
+                    <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds"></a>
+                    <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub"></a>
+                    <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam"></a>
+                </div>
+                <div style="display: flex; flex-direction: column; max-height: fit-content; margin: 8px;">
+                    <div style="width: fit-content; margin: auto;">
+                        <div class="link_border" style="width: fit-content; height: fit-content;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
+                    </div>
+                    <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: 5px auto;">
                 </div>
                 <script src="scripts/general/scrollHeader.js"></script>
                 <script src="scripts/general/scrollButtons.js"></script>
                 <script src="scripts/general/maintenanceKillSwitch.js"></script>
             </footer>
         </div>
-        <div style="height: 300px; margin: auto;"></div>
+        <div style="height: 10vh; margin: auto;"></div>
     </body>
 
 </html>

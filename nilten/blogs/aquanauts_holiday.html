@@ -3,13 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content='Nils "Miles" Aaron'>
-        <meta name="googlebot" content="noindex, nofollow">
-        <meta property="og:title" content="Aquanaut's Holiday: A holiday without goal">
+        <meta name="robots" content="noindex, nofollow">
+        <meta property="og:title" content="Aquanaut's Holiday: A Holiday without Goal">
         <meta property="og:image" content="../images/blog/blogs/aquanauts_holiday/aquanaut07.webp">
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:description" content="The neocities page of Miles Nilten!" />
-        <meta property="og:site_name" content="Nilten" />
+        <meta property="og:description" content="The neocities page of Miles Nilten!">
+        <meta property="og:site_name" content="nilten.neocites.org">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nilten</title>
         <link href="../CSS/Default.css" rel="stylesheet" type="text/css">
@@ -21,39 +19,49 @@
         background-color: #000000;
       }
     </style>
-    <body onload="site_maintenanceMode()"> 
-        <div id="container">
-            <div id="background01" style="background-image: url('../images/blog/blogs/aquanauts_holiday/aquanaut07.webp');"></div>
-                <div id="header">
-                <h1 id="siteTitle"><a href="../index.html">[Nilten]</a></h1>
+    <body onload="site_maintenanceMode()">
+        <div id="background03" style="background-image: url('../images/blog/blogs/aquanauts_holiday/aquanaut07.webp'); opacity: 0.35;"></div>
+        <div class="container">
+            <div id="header" style="text-align: center;">
+                <a href="index.html"><img src="../images/generic/nilten_header_logo.webp" style="max-height: 100%;"></a>
             </div>
+        </div>
+            <br>
+        <div class="container">
             <div class="scrollingHeader">
                 <!--INSERT SOURCE ENGINE OBSOLETE GUY HERE-->
                 <marquee scrollamount="10"><p id="marqueeText" style="margin: 0; padding: 0;">Missingno.</p></marquee>
                 <!--MY SILLY ASS SURE LOVES OUTDATED BULLSHIT!-->
             </div>
-            <br>
+        </div>
+        <br>
+        <div class="container" style="padding: 8px;">
             <div id="flex">
                 <aside id="leftSidebar">
                     <div id="navDiv">
                         <ul id="navBar">
-                            <li class="nav_home"><a href="../index.html">Home</a></li>
-                            <li class="nav_miles"><a href="../about.html">About Nilten</a></li>
-                            <li class="nav_art"><a href="../art.html">Art</a></li>
-                            <li class="nav_portfolio"><a href="../portfolio.html">Portfolio/Current Projects</a></li>
-                            <li class="nav_blog"><a href="../blogs.html">Blogs</a></li>
-                            <li class="nav_social_media"><a href="../links.html">Social Media Links</a></li>
-                            <li class="nav_room" title="This page is still under Construction!"><a href="../room.html">My Room</a></li>
+                            <li class="nav_home"><a href="../home.html"><div id="nav-home-tag"></div></a></li>
+                            <li class="nav_miles"><a href="../about.html"><div id="nav-about-tag"></div></a></li>
+                            <li class="nav_art"><a href="../art.html"><div id="nav-art-tag"></div></a></li>
+                            <li class="nav_portfolio"><a href="../portfolio.html"><div id="nav-portfolio-tag"></div></a></li>
+                            <li class="nav_blog"><a href="../blogs.html"><div id="nav-blog-tag"></div></a></li>
+                            <li class="nav_social_media"><div id="nav-link-tag"></div><a href="../links.html"></a></li>
+                            <li class="nav_room" title="This page is still under Construction!"><a href="../room.html"><div id="nav-room-tag"></div></a></li>
                           </ul>    
                     </div>
                 </aside>
                 <main>
-                    <div id="mainContainerTwo" style="text-align: center; height: 500px; width: 90%; background-image: url('../images/blog/blogs/aquanauts_holiday/aquanaut07.webp'); background-size: cover;">
+                    <div class="pageHeaderImage" style="background-image: url('../images/blog/blogs/aquanauts_holiday/aquanaut07.webp');">
                         <div>
                             <p style="font-size: 45px; margin-top: 325px; margin-bottom: 50%; text-decoration: underline;">Aquanaut's Holiday: A holiday without goal</p>
+                        </div>
+                    </div>
                 </main>
             </div>
-            <div id="mainContainerTwo" style="width: 85%; margin: auto; text-align: left;">
+        </div>
+        <br>
+        <div class="container" style="padding: 15px;">
+           <div id="mainContainerTwo" style="width: 90%; margin: auto; text-align: left;">
                 <i><p style="text-decoration: underline;">"This is a game with no set goals, no rules and no end. This is a game of exploration and discovery. Before you lies a whole undersea world, a world of beauty and tranquillity. Take your time, wander around and enjoy the fabulous sights."</p></i>
                 <br>
                 <p style="font-size: x-large; text-decoration: underline;">Part 1: "Aqua... who?"</p>
@@ -124,44 +132,66 @@
 
                 <p>As stated earlier, while exploring the vast seabed of Aquanaut's Holiday, you may not only just come across a colourful swarm of fish or a formation of corals. You may even come across some weird landmarks. Here are a few that i was able to find:</p>
                 <!--Screenshot slideshow-->
-                <div class="slideshow-container" style="width: 750px; height: auto;">
-    
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 5</div>
-                        <img src="../images/blog/blogs/aquanauts_holiday/aquanaut11.webp" style="width:100%">
-                        <div class="text">Funfact! The pyramids of giza were actually built underwater! YOU'VE ALL BEEN FOOLED MWAHAHA!</div>
+                <div class="slideshow-container">
+                    <div id="slideshow-fullscreen">
+                        <div id="slideshow-fs-image-frame"><img id="slideshow-fs-image"></div>
+                        <div id="slideshow-fs-close" onclick="hideFullscreen()"><img src="../images/icons/gallery_fullscreen_02.webp"
+                                draggable="false"></div>
+                        <a class="prev" onclick="plusSlidesFull(-1), init_fullscreen_img()"><img src="../images/generic/nav_arrow_01.gif"
+                                style="max-width: 50px; max-height: 50px;" draggable="false"></a>
+                        <a class="next" onclick="plusSlidesFull(1), init_fullscreen_img()"><img src="../images/generic/nav_arrow_01.gif"
+                                style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a>
                     </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 5</div>
-                        <img src="../images/blog/blogs/aquanauts_holiday/aquanaut04.webp" style="width:100%">
-                        <div class="text">Creepy ass stone face ! What the fuck is this thing?! Why is it here?!</div>
+                
+                    <div id="slieshow-mainFrame" style="width: 720px; height: auto; margin: auto;">
+                        <div class="mySlides" style="display: block;">
+                            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+                            <img class="slideshow-image"
+                                src="../images/blog/blogs/aquanauts_holiday/aquanaut11.webp" style="width:100%">
+                            <div class="gallery-text">Funfact! The pyramids of giza were actually built underwater! YOU'VE ALL BEEN FOOLED MWAHAHA!</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+                            <img class="slideshow-image"
+                                src="../images/blog/blogs/aquanauts_holiday/aquanaut04.webp" style="width:100%">
+                            <div class="gallery-text">Creepy ass stone face ! What the fuck is this thing?! Why is it here?!</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+                            <img class="slideshow-image"
+                                src="../images/blog/blogs/aquanauts_holiday/aquanaut05.webp" style="width:100%">
+                            <div class="gallery-text">WOOOWIES ! It's Bikini Bottom !</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+                            <img class="slideshow-image"
+                                src="../images/blog/blogs/aquanauts_holiday/aquanaut06.webp" style="width:100%">
+                            <div class="gallery-text">This floating rock thingy</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+                            <img class="slideshow-image"
+                                src="../images/blog/blogs/aquanauts_holiday/aquanaut07.webp" style="width:100%">
+                            <div class="gallery-text">haha look guys i met the patrike spingbob =3</div>
+                        </div>
+                
+                        <div class="gallery-numbertext"></div>
+                        <a class="prev" onclick="plusSlides(-1, 0)"><img src="../images/generic/nav_arrow_01.gif"
+                                style="max-width: 50px; max-height: 50px;" draggable="false"></a>
+                        <a class="next" onclick="plusSlides(1, 0)"><img src="../images/generic/nav_arrow_01.gif"
+                                style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a>
                     </div>
-    
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 5</div>
-                        <img src="../images/blog/blogs/aquanauts_holiday/aquanaut05.webp" style="width:100%">
-                        <div class="text">WOOOWIES ! It's Bikini Bottom !</div>
-                    </div>
-    
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="../images/blog/blogs/aquanauts_holiday/aquanaut06.webp" style="width:100%">
-                        <div class="text">This floating rock thingy</div>
-                    </div>
-    
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="../images/blog/blogs/aquanauts_holiday/aquanaut07.webp" style="width:100%">
-                        <div class="text">haha look guys i met the patrike spingbob =3</div>
-                    </div>
-    
-                    <a class="prev" onclick="plusSlides(-1)"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px;" draggable="false"></a>
-                    <a class="next" onclick="plusSlides(1)"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a>
                 </div>
-
                 <br>
-
                 <p style="font-size: x-large; text-decoration: underline;">Part 3: That part with the conclusion</p>
                 <p>I love weird and obscure games!</p> 
                 <p>Weird and obscure games freaking rock and games like Aquanaut's Holiday are right up my alley!</p>
@@ -173,16 +203,28 @@
 
                 <img src="../images/blog/blogs/aquanauts_holiday/QPIC04.TIM.png" style="width: 500px; height: auto;" alt="Time to return to real life. One of the few quotes that can be seen, when exiting the game.">
                 <br>
-                <img src="../images/miles_signature.gif" style="float: right; width: 200px; height: auto;" alt="Signature ^='w'=^">
+                <img src="../images/miles_signature.webp" style="float: right; width: 200px; height: auto;" alt="Signature ^=||=^">
             </div>
-            <footer id="footer" style="margin-top: 10px;">
-                <div id="footerContainer" style="align-self: center;">
-                    <h2>[Nilten]</h2><p>2025</p><p> Contact: contact.nilten@gmail.com</p>
+        </div>
+        <br>
+        <div class="container">
+            <footer id="footer">
+                <div id="footerContainer">
+                    <img src="../images/generic/nilten_header_logo.webp" style="width: 128px; height: auto;"><h5>2025</h5><p><i>Contact:</i> <span style="text-decoration: underline;">contact.nilten@gmail.com</span></p>
                 </div>
-                <div id="footerButtonsBlog"></div>
-                <div style="display: flex; flex-direction: column; max-height: fit-content;">
-                    <a href="https://neocities.org"><img src="../images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a>
-                    <img src="../images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: auto;">
+                <div id="footerButtons"></div>
+                <div class="social_media_footer">
+                    <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="../images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube"></a>
+                    <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="../images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky"></a>
+                    <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="../images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds"></a>
+                    <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="../images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub"></a>
+                    <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="../images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam"></a>
+                </div>
+                <div style="display: flex; flex-direction: column; max-height: fit-content; margin: 8px;">
+                    <div style="width: fit-content; margin: auto;">
+                        <div class="link_border" style="width: fit-content; height: fit-content;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="../images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
+                    </div>
+                    <img src="../images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: 5px auto;">
                 </div>
                 <script src="../scripts/general/scrollHeader.js"></script>
                 <script src="../scripts/general/scrollButtons.js"></script>
@@ -190,7 +232,6 @@
                 <script src="../scripts/general/maintenanceKillSwitch.js"></script>
             </footer>
         </div>
-        <div style="height: 300px; margin: auto;"></div>
     </body>
 
 </html>

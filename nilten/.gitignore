@@ -1,6 +1,9 @@
 # clip studio paint files
 *.clip
 
+# Gimp Files
+*.xcf
+
 # "push" folder (i probably should just outright delete this folder tbh!)
 push/
 
@@ -12,6 +15,9 @@ interactive_room/
 
 # Folder for testing various thingies
 test_chamber/
+
+# placeholder images
+images/test
 
 # Blender 404 Page Files
 404 Render/

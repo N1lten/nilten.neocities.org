@@ -3,13 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content='Nils "Miles" Aaron'>
-        <meta name="googlebot" content="noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow">
         <meta property="og:title" content="Nilten">
-        <meta property="og:image" content="images/about/Header.png">
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:description" content="The neocities page of Miles Nilten!" />
-        <meta property="og:site_name" content="Nilten" />
+        <meta property="og:image" content="images/generic/header_open_graph_protocol.webp">
+        <meta property="og:description" content="The neocities page of Miles Nilten!">
+        <meta property="og:site_name" content="nilten.neocites.org">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nilten</title>
         <link href="CSS/Default.css" rel="stylesheet" type="text/css">
@@ -20,159 +18,673 @@
       html {
         background-color: #000000;
       }
+
+      #favVideogameList {
+        padding: 0;
+      }
+
+      #favVideogameList li {
+        margin: 6px;
+      }
+
+      .favGameListItem {
+        display: flex;
+        margin: 20px auto;
+      }
+
+      .favGameListItem img {
+        width: auto;
+        height: 150px;
+        border: 8px solid transparent;
+        border-image: url(images/generic/div_border_01.webp) 33 round;
+
+        animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+        -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+      }
+
+      .favGameListItem p {
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+      }
+
+      .favMusicListItem {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+      }
+
+      .favMusicListItem p {
+        width: 35%;
+        font-weight: 600;
+        text-align: center;
+      }
+      
+      .favMusicCover {
+        width: 210px;
+        height: fit-content;
+        display: inline-block;
+      }
+
+      .favMusicCover img {
+        width: 47%;
+        height: auto;
+        border: 8px solid transparent;
+        border-image: url(images/generic/div_border_01.webp) 33 round;
+
+        animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+        -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+      }
     </style>
     <body onload="site_maintenanceMode()"> 
-        <div id="container">
-            <div id="background01" style="background-image: url('images/about/Header.webp');"></div>
-                <div id="header">
-                <h1 id="siteTitle"><a href="index.html">[Nilten]</a></h1>
+        <div class="aboutHeaderRandomizer" style="width: 100vw; height: 100vh; position: fixed; z-index: -1; background-size: cover; background-repeat: no-repeat; opacity: 25%;"></div>
+        <div class="container">
+            <div id="header" style="text-align: center;">
+                <a href="index.html"><img src="images/generic/nilten_header_logo.webp" style="max-height: 100%;"></a>
             </div>
+        </div>
+        <br>
+        <div class="container">
             <div class="scrollingHeader">
                 <!--INSERT SOURCE ENGINE OBSOLETE GUY HERE-->
                 <marquee scrollamount="10"><p id="marqueeText" style="margin: 0; padding: 0;">Missingno.</p></marquee>
                 <!--MY SILLY ASS SURE LOVES OUTDATED BULLSHIT!-->
             </div>
+        </div>
             <br>
+        <div class="container" style="padding: 8px;">
             <div id="flex">
                 <aside id="leftSidebar">
                     <div id="navDiv">
                         <ul id="navBar">
-                            <li class="nav_home"><a href="index.html">Home</a></li>
-                            <li class="nav_miles"><a href="about.html">About Nilten</a></li>
-                            <li class="nav_art"><a href="art.html">Art</a></li>
-                            <li class="nav_portfolio"><a href="portfolio.html">Portfolio/Current Projects</a></li>
-                            <li class="nav_blog"><a href="blogs.html">Blogs</a></li>
-                            <li class="nav_social_media"><a href="links.html">Social Media Links</a></li>
-                            <li class="nav_room" title="This page is still under Construction!"><a href="room.html">My Room</a></li>
+                            <li class="nav_home"><a href="home.html"><div id="nav-home-tag"></div></a></li>
+                            <li class="nav_miles"><a href="about.html"><div id="nav-about-tag"></div></a></li>
+                            <li class="nav_art"><a href="art.html"><div id="nav-art-tag"></div></a></li>
+                            <li class="nav_portfolio"><a href="portfolio.html"><div id="nav-portfolio-tag"></div></a></li>
+                            <li class="nav_blog"><a href="blogs.html"><div id="nav-blog-tag"></div></a></li>
+                            <li class="nav_social_media"><a href="links.html"><div id="nav-link-tag"></div></a></li>
+                            <li class="nav_room" title="This page is still under Construction!"><a href="room.html"><div id="nav-room-tag"></div></a></li>
                           </ul>    
                     </div>
                 </aside>
                 <main>
-                    <div id="mainContainerTwo" style="text-align: center; height: 450px; width: 90%; background-image: url('images/about/Header.webp'); background-size: cover; background-position-y: center;">
+                    <div class="pageHeaderImage aboutHeaderRandomizer" style="background-position-y: center; image-rendering: smooth;">
                         <div>
-                            <p style="font-size: 45px; margin-bottom: 50%; text-decoration: underline;">About Miles/Nilten</p>
+                            <p style="font-size: 45px; font-weight: 600; text-decoration: underline;">About Miles Nilten</p>
                         </div>
                     </div>
                 </main>
             </div>
-            <div id="mainContainerTwo" class="divTypeOne" style="margin-bottom: 20px;">
-                <h1 style="text-decoration: underline;">"Who the bumhole is this Miles Nilten?!"</h1>
-                <div id="flex" style="width: 100%;">
-                    <aside id="leftSidebar" style="width: 20%; display: flex; flex-direction: column; margin-left: 100px;">
-                        <img src="images/about/miles_arrow_05.webp" style="width: 200px; height: 150px;" draggable="false">
-                        <img src="images/about/miles_arrow_04.webp" style="width: 200px; height: 150px;" draggable="false">
-                        <img src="images/about/miles_arrow_06.webp" style="width: 200px; height: 150px;" draggable="false">
-                    </aside>
-                    <main style="width: 60%;">
-                        <img src="images/milesSpeen.gif" draggable="false">
-                    </main>
-                    <aside id="rightSidebar" style="width: 20%; display: flex; flex-direction: column; margin-right: 100px;">
-                        <img src="images/about/miles_arrow_03.webp" style="width: 200px; height: 150px;" draggable="false">
-                        <img src="images/about/miles_arrow_02.webp" style="width: 200px; height: 150px;" draggable="false">
-                        <img src="images/about/miles_arrow_01.webp" style="width: 200px; height: 150px;" draggable="false">
-                    </aside>
-                </div>
-                <p style="margin: 0; padding: 0;">"Nils "Miles" Aaron is a goofy little goober from northern germany, who is a big fan of everything that has to do with computer, videogames, art and CATS. yeah! cats!</p>
-                <p style="margin: 0; padding: 0;">This little dude spends most of his day inside his room playing videogames or doing some silly stuff on his computer because he is not a big fan of interacting with other human beings in real life. he HATES interacting with other people in real life. he REALLY sucks at it."</p>
+        </div>
+        <br>
+        <div class="container" style="padding: 15px;">
+            <div id="mainContainerTwo" style="margin-bottom: 20px; width: 99%; height: 750px; margin: auto; border-width: 15px; background-image: url('images/about/about_bg_01.webp'); background-size: auto 100%;">
+                <p style="text-decoration: underline; text-align: center; font-size: 32px; font-weight: 600;">"Who the bumhole is this Miles Nilten?!"</p>
                 <br>
-                <p>Yup... That's basically how i would describe myself! Big fan of Videogames, cats, art and all that stuff. Terrible at interacting with other People.</p>
-                <p>That's... me !</p>
-                <p style="font-size: xx-small;">i have absolutely no idea how to introduce myself somebody help me PLEASE</p>
-            </div>
-            <div id="mainContainerTwo" class="divTypeOne" style="margin-bottom: 20px; margin-top: 20px; padding: 0;">
-                <img src="images/about/random_funfact.webp" alt="FUN FACT!" style="width: 250px; height: auto; margin: 0; padding: 0;">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 65%; height: 350px;">
-                        <img src="images/about/WantedForSilly.png" style="height: 350px;">
-                    </aside>
-                    <aside id="rightSidebar" style="width: 35%; height: 350px; text-align: left;">
-                        <img src="images/about/miles_arrow_07.webp" style="width: 250px; height: 200px; margin-top: 50px;" draggable="false">
-                    </aside>
+                <div style="display: flex;">
+                <div style="width: fit-content; transform: rotate(-3deg);">
+                    <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 200px; transform: translate(90px, -60px);" draggable="false">
+                    <img src="images/about/about_miles_wall.webp" class="borderTypeOne" style="width: 500px; height: auto; box-shadow: 15px 20px 20px black;" alt="Crazy~ Toys in the attic, i am crazy~ Truly gone fishing~ They must have taken my marbles away~ (Crazy~ Toys in the attic, he is crazy~)">
+                </div>
+                <div style="width: fit-content;">
+                    <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 200px; transform: translate(280px, -83px) scale(-1, 1);" draggable="false">
+                    <img src="images/about/about_miles_the_nilten_wanted.webp" style="width: 460px; height: auto; position: absolute; filter: brightness(0%); transform: rotate(4deg); opacity: 0.65; margin-left: 30px; margin-top: 5px; scale: 0.95;">
+                    <img src="images/about/about_miles_the_nilten_wanted.webp" style="width: 460px; height: auto; transform: rotate(4deg); margin-left: 55px;">
+                </div>
                 </div>
             </div>
-            <div id="mainContainerTwo" class="divTypeOne" style="margin-bottom: 20px; margin-top: 20px;">
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 35%; height: 650px;">
-                        <img src="images/about/miles_arrow_08.webp" style="height: 40%; margin-top: 50%; margin-left: 50px;">
-                    </aside>
-                    <aside id="rightSidebar" style="width: 65%; height: 650px;">
-                        <img src="images/about/favgames_chart.png" style="width: 750px; height: auto;">
-                    </aside>
+            <div id="mainContainerTwo" style="margin-bottom: 20px; margin-top: 20px; padding: 0; width: 90%; margin: auto; border-width: 15px;">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="width: 60%;">
+                    <img src="images/about/about_miles_desc_model.webp" style="width: 85%; height: auto;">
                 </div>
-                <p>As of an early age, i have been a big fan of Videogames and just like with most of people my love for videogames started with nintendo.</p>
-                <p>My first memories of playing video games are from playing games like Mario Kart 64, Mario Party 2 or Super Smash Bros on the N64 together with my cousins and from spending a lot of time with the Wii, DS and Gamecube. I was a proud nintendo kid growing up! Although i also have a lot of memories playing Playstation games like Little Big Planet or Katamari. And when i was allowed to use the familly Vista PC, i've spend most of the time playing flash games like Super Mario 63. Looking back, video games were quite a big part of my childhood and they still are to this day!</p>
-                <p>Growing up on video games, mario has always been my favourite game series. This silly little red plumber from Brooklyn New York made baby miles' brain go "Oh wow videogames quite rock, actually."</p>
-                <p style="margin: 0; padding: 0;">And since that fateful day, baby miles was never the same again...</p>
-                <p style="margin: 0; padding: 0;">And with that i mean that i truly fell in love with videogames that day nothing bad happenned to me im not ill or something like that i'm fine lmao.</p>
-            </div>
-            <div id="mainContainerTwo" class="divTypeOne" style="margin-bottom: 20px; margin-top: 20px; padding: 0;">
-                <img src="images/about/random_funfact.webp" alt="FUN FACT!" style="width: 250px; height: auto; margin: 0; padding: 0;">
-                <small>... again</small>
-                <div id="flex">
-                    <aside id="leftSidebar" style="width: 80%; height: 450px; text-align: center;">
-                        <img src="images/about/miles_thinking.webp" style="width: 550px; height: auto;">
-                        <div style="position: relative; bottom: 325px; right: 100px; text-align: center;">
-                            <img src="images/about/cats/taokakaPet.gif" style="translate: -85px 75px; width: 112px; height: auto; margin: 0; padding: 0; position: absolute; z-index: 3;">
-                            <img src="images/about/cats/maxwell.gif" style="translate: -45px 15px; width: 150px; height: auto; margin: 0; padding: 0; position: absolute; z-index: 2;">
-                            <img src="images/about/cats/seriouser.gif" style="translate: -110px 25px; width: 105px; height: auto; margin: 0; padding: 0; position: absolute; z-index: 1;">
-                            <img src="images/about/cats/cuh.png" style="translate: -10px 80px; width: 105px; height: auto; margin: 0; padding: 0; position: absolute; z-index: 2;">
-                            <img src="images/about/cats/wire.png" style="translate: -40px -20px; width: 105px; height: auto; margin: 0; padding: 0; position: absolute; z-index: 1;">
-                            <img src="images/about/cats/boykisser.gif" style="translate: -40px 125px; width: 105px; height: auto; margin: 0; padding: 0; position: absolute; z-index: 0;">
+                <div style="width: 39%; transform: translateX(-50px);" >
+                    <div style="max-width: 375px;">
+                        <p style="font-size: xx-large; font-weight: 600; text-align: center; margin-bottom: 0;">Miles Nilten</p>
+                        <img src="images/generic/text_decoration_01.webp" style="width: 100%; margin-bottom: 15px;" draggable="false">
+                    </div>
+                    <div style="background-image: url('images/generic/div_bg_01.webp');" class="borderTypeOne">
+                    <ul style="font-size: x-large; font-family: Ubuntu-Medium;">
+                        <li><p>Name: Nils "Miles" Aaron</p></li>
+                        <li><p>Might be lacking sum brains</p></li>
+                        <li><p>Likes video games quite a lot</p></li>
+                        <li><p>Also likes music too !</p></li>
+                        <li><p>A very acoustic fella</p></li>
+                        <li><p>Has quite an unhealthy obsession with cats, for some fucking reason</p></li>
+                        <br>
+                        <li><p><span style="font-weight: 600; background-image: repeating-linear-gradient(180deg, #cf026c, #964d91, #0036a3); background-clip: text; -webkit-background-clip: text; color: transparent;">WOKE BISEXUAL CREATURE AAAAAAHHHHHHHHH !!1!</span></p></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <div style="width: 100%;">
+                    <div style="width: 950px; height: 585px; background-color: #000000; opacity: 0.55; position: absolute; transform: translate(55px, 18px);"></div>
+                    <div style="width: 950px; height: 600px; margin: auto; margin-bottom: 15px; padding: 10px; display: flex; align-items: center; justify-content: center; position: relative; background-image: url('images/about/about_miles_postcard.webp'); background-size: cover; background-repeat: no-repeat;">
+                        <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 200px; transform: translate(-40px, -300px) rotate(30deg);" draggable="false">
+                        <div style="width: 75%; min-height: inherit;">
+                            <img src="images/about/about_speach_bubble_miles.webp" style="width: 735px;" draggable="false">
+                            <div style="position: absolute; left: 115px; top: 165px; width: 470px; font-size: 15px;">
+                                <p>Heya ! I'm Nils "Miles" Aaron, but i also go by the name of Nilten online ! I'm just a little dude from
+                                    germany, who happened to have stumbled across the internet at a relatively young age and who always wanted to be a part of it ever since. Fast forward a few
+                                    years later and now i'm here! hi ! hello !</p>
+                                <p>I mostly do a bunch of art stuff and also some programing work every now and then in my free time, but i also love playing video games and listening to music !
+                                    Life without these things would probably be absolute torture for me ! </p>
+                                <p style="margin-bottom: 7px;">I'm a huge fan of collecting physical media as well ! Mostly retro games, but i've started collecting more vinyl records too lately !</p>
+                                <p style="margin: 0;">And i also love cats as well ! <span style="font-size: 8px;">...if you couldn't tell already lmao</span></p>
+                            </div>
                         </div>
-                    </aside>
-                    <aside id="rightSidebar" style="width: 20%; height: auto; position: absolute; left: 55%;">
-                        <img src="images/about/miles_arrow_09.webp" style="width: 450px; height: auto; margin-top: 50px;" draggable="false">
-                    </aside>
+                        <div style="width: 25%;">
+                            <img src="images/about/about_miles_smol.webp" style="width: 220px; height: auto;">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="mainContainerTwo" class="divTypeOne" style="margin-bottom: 20px; margin-top: 20px;">
-                <p>Cats.</p>
-                <p>I FREAKING LOVE CATS. THESE FLUFFY LITTLE FELINES ARE SUCH PRECIOUS LITTLE CREATURES THE WAY THESE SILLY LITTLE GOOBERS LOOK AT YOU WITH THEIR BIG SWEET ROUND LITTLE EYES AND THEIR MEOWS THEM LIKE GOING <small><i>meow.</i></small> AND THEIR PURRING WHEN THEY ARE HAPPY LITTLE CHAPPYS AAAAAAAAA. NO MATTER HOW BAD MY DAY WAS JUST LOOKING AT A CAT TICKLES MY BRAIN IN A VERY FUNNY WAY AND I HAVE NO IDEA WHY. TO THE PERSON WHO INVENTED CATS: THANK YOU. THANK YOU FROM THE BOTTOM OF MY HEART we should totaly hang out someday i'll buy you a coffee !</p>
-                <br>
-                <p>...okay i probably got a bit to carried away for a moment.... As you can probably see, i LOVE cats! I have been growing up with cats since i was a kid and i am VERY thankfull for that! (thanks mum and dad :]) So uhhh if someone who reads this has a child who hates playing with other kids on the playground or at home (just like me back then!), GET. THEM. A. CAT. And even if you don't have any kids, you can't go wrong with adopting cats! Cats can be great companions, you know! <small>... huh? what's a "dog"?</small></p>
-                <p>My love for cats has even gone so far, that i have put a little cat face on my signature! (however i am too scared of using this signature on formal shit because i don't want to come over as a weirdo lmao)</p>
-                <p>Btw uhhh here's my very sleepy but still very cute cat named Penny :]</p>
+
+            <div id="mainContainerTwo" style="margin: 15px auto; border-width: 15px; width: 90%;">
+                <img src="images/about/about_header_videogames.webp" style="display: block; margin: auto; width: 420px; height: auto; transform: translateY(-20px);">
+                <div>
+                   <div style="float: left; width: 55%;">
+                        <p>As of an early age, i have been quite a big fan of video games and just like with most of people my love for video games started with nintendo.</p>
+                        <p>My first memories of playing video games are from playing the Nintendo 64, playing games like Mario Kart 64, Mario Party 2 or Super Smash Bros together with my cousins and also from spending a lot of time with consoles like the Wii, DS and GameCube. <br><br> I was a proud nintendo kid growing up! But i also have some memories of playing Playstation games like Little Big Planet or Katamari. And when i would be allowed to use the familly Vista PC, i've spend most of the time playing flash games like Super Mario 63. <br> Looking back, video games were quite a big part of my childhood and they still are to this day!</p>
+                        <p>Growing up on video games, mario has always been my favourite game series. This silly little red plumber from Brooklyn New York made baby miles' brain go "Oh wow videogames quite rule, actually."</p>
+                        <p>And ever since that fateful day, baby miles was never the same again...</p>
+                        <p style="font-size: xx-small;">And with that i mean that i truly fell in love with videogames that day. nothing bad happenned to me i'm not ill or something like that i'm fine lmao.</p>
+                   </div>
+                    <div style="float: right; width: 45%;">
+                        <div style="overflow-y: scroll; background-image: url('images/generic/div_bg_01.webp'); padding: 10px; height: 350px; width: 375px; margin: auto;" class="borderTypeOne">
+                            <p style="text-align: center; font-size: x-large; text-decoration: underline;">My favourite games:</p>
+                            <br>
+                            <ul id="favVideogameList">
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/mariosunshine.webp">
+                                    <p>Super Mario Sunshine</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/welovekatamari.webp">
+                                    <p>We Love Katamari</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/papermariottyd.webp">
+                                    <p>Paper Mario: The Thousand Year Door</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/earthbound.webp">
+                                    <p>Eearthbound</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/zeldabotw.webp">
+                                    <p>The Legend of Zelda: Breath of the Wild</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/hl2.webp">
+                                    <p>Half-Life 2</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/superpapermario.webp">
+                                    <p>Super Paper Mario</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/terraria.webp">
+                                    <p>Terraria</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/mariokartdoubledash.webp">
+                                    <p>Mario Kart Double Dash!!</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/tf2.webp">
+                                    <p>Team Fortress 2</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/bomberman64.webp">
+                                    <p>Bomberman 64</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/marioparty2.webp">
+                                    <p>Mario Party 2</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/celeste.webp">
+                                    <p>Celeste</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/lbp.webp">
+                                    <p>Little Big Planet</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/gmod.webp">
+                                    <p>Garry's Mod</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/pikmin.webp">
+                                    <p>Pikmin</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/pikmin2.webp">
+                                    <p>Pikmin 2</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/mkworldwebp.webp">
+                                    <p>Mario Kart World</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/stanleyparable.webp">
+                                    <p>The Stanley Parable</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/undertale.webp">
+                                    <p>Undertale</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/zeldamm.webp">
+                                    <p>The Legend of Zelda: Majora's Mask</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/doshin.webp">
+                                    <p>Doshin the Giant</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/portal2.webp">
+                                    <p>Portal 2</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/yoshisisland.webp">
+                                    <p>Super Mario World 2: Yoshi's Island</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/luigismansion.webp">
+                                    <p>Luigi's Mansion</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/ssbu.webp">
+                                    <p>Super Smash Bros Ultimate</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/blazbluecf.webp">
+                                    <p>BlazBlue Centralfiction</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/blazbluecs.webp">
+                                    <p>BlazBlue Continuum Shift Extend</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/mariowonder.webp">
+                                    <p>Super Mario Bros Wonder</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/psychonauts.webp">
+                                    <p>Psychonauts</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/katamaridamacy.webp">
+                                    <p>Katamari Damacy</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/twilightprincess.webp">
+                                    <p>The Legend of Zelda: Twilight Princess</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/blackmesa.webp">
+                                    <p>Black Mesa</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/ff6.webp">
+                                    <p>Final Fantasy VI</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/marioandluigipit.webp">
+                                    <p>Mario and Luigi: Partners in Time</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/cities.webp">
+                                    <p>Cities Skylines</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/marioodyssey.webp">
+                                    <p>Super Mario Odyssey</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/cuphead.webp">
+                                    <p>Cuphead</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/nsmbds.webp">
+                                    <p>New Super Mario Bros DS</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/supermariorpg.webp">
+                                    <p>Super Mario RPG</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/warioworld.webp">
+                                    <p>Wario World</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/warioland4.webp">
+                                    <p>Wario Land 4</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/marioland2.webp">
+                                    <p>Super Mario Land 2: 6 Golden Coins</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/supermarioworld.webp">
+                                    <p>Super Mario World</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/mariobros3.webp">
+                                    <p>Super Mario Bros 3</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/mario3dworld.webp">
+                                    <p>Super Mario 3D World</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/supermario3dland.webp">
+                                    <p>Super Mario 3D Land</p>
+                                </div>
+                                <div class="favGameListItem">
+                                    <img src="images/about/favgames/lsd.webp">
+                                    <p>LSD: Dream Emulator</p>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mainContainerTwo" style="margin: 15px auto; border-width: 15px; width: 90%;">
+                <img src="images/about/about_music_header.webp" style="display: block; margin: auto; width: 385px; height: auto; transform: translateY(-20px);">
+                <div>
+                    <div style="float: left; width: 45%;">
+                        <div style="overflow-y: scroll; background-image: url('images/generic/div_bg_01.webp'); padding: 10px; width: 375px; height: 350px; margin: auto;" class="borderTypeOne">
+                            <p style="text-align: center; font-size: x-large; text-decoration: underline;">My favourite Bands and Albums:</p>
+                            <br>
+                            <ul style="padding: 0;">
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/thewall.webp" title="The Wall">
+                                        <img src="images/about/favmusic/darksideofthemoon.webp" title="Dark Side of the Moon">
+                                        <img src="images/about/favmusic/wishyouwerehere.webp" title="Wish You Were Here">
+                                        <img src="images/about/favmusic/animals.webp" title="Animals">
+                                    </div>
+                                    <p>Pink Floyd</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/sgtpeppers.webp" title="Sgt. Peppers Lonely Hearts Club Band">
+                                        <img src="images/about/favmusic/revolver.webp" title="Revolver">
+                                    </div>
+                                    <p>The Beatles</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/ziggy.webp" title="Rise and Fall of Ziggy Stardust">
+                                        <img src="images/about/favmusic/smasc.webp" title="Scary Monsters and Super Creeps">
+                                        <img src="images/about/favmusic/spaceoddity.webp" title="Space Oddity">
+                                    </div>
+                                    <p>David Bowie</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/kida.webp" title="Kid A">
+                                        <img src="images/about/favmusic/okcomputer.webp" title="OK Computer">
+                                        <img src="images/about/favmusic/thebends.webp" title="The Bends">
+                                    </div>
+                                    <p>Radiohead</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/pos.webp" title="Pick of Destiny">
+                                        <img src="images/about/favmusic/td.webp" title="Tenacious D">
+                                    </div>
+                                    <p>Tenacious D</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/hb.webp" title="Happy Bivouac">
+                                        <img src="images/about/favmusic/rideonshootingstar.webp" title="Ride on Shooting Star (FLCL <3)">
+                                        <img src="images/about/favmusic/littlebusters.webp" title="Little Busters">
+                                    </div>
+                                    <p>The Pillows</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/backinblack.webp" title="Back in Black">
+                                        <img src="images/about/favmusic/highwaytohell.webp" title="Highway to Hell">
+                                        <img src="images/about/favmusic/powerage.webp" title="Powerage">
+                                    </div>
+                                    <p>AC/DC</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/btw.webp" title="By the Way">
+                                        <img src="images/about/favmusic/californication.webp" title="Californication">
+                                    </div>
+                                    <p>Red Hot Chili Peppers</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/spiritphone.webp" title="Spirit Phone">
+                                        <img src="images/about/favmusic/viewmonster.webp" title="View Monster">
+                                        <img src="images/about/favmusic/dinosaurchestra.webp" title="Dinosaurchestra">
+                                    </div>
+                                    <p>Lemon Demon (Neil Cicierega)</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/discovery.webp" title="Discovery">
+                                        <img src="images/about/favmusic/ram.webp" title="Random Access Memories">
+                                    </div>
+                                    <p>Daft Punk</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/runtermitdenspendierhosen.webp" title="Runter mit den Spendierhosen, Unsichtbarer!">
+                                        <img src="images/about/favmusic/jazzistanders.webp" title="Jazz ist anders">
+                                        <img src="images/about/favmusic/13.webp" title="13">
+                                        <img src="images/about/favmusic/dasistnichtdieganzewahrheit.webp" title="Das ist nicht die ganze Wahrheit">
+                                    </div>
+                                    <p>Ärzte</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/mandatoryfun.webp" title="Mandatory Fun">
+                                        <img src="images/about/favmusic/poodlehat.webp" title="Poodle Hat">
+                                        <img src="images/about/favmusic/evenworse.webp" title="Even Worse">
+                                    </div>
+                                    <p>"Weird AL" Yankovic</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/demondays.webp" title="Demon Days">
+                                        <img src="images/about/favmusic/gorillaz.webp" title="Gorillaz">
+                                        <img src="images/about/favmusic/plasticbeach.webp" title="Plastic Beach">
+                                    </div>
+                                    <p>Gorillaz</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/newsoftheworld.webp" title="News of the World">
+                                        <img src="images/about/favmusic/hotspace.webp" title="Hot Space">
+                                    </div>
+                                    <p>Queen</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/souvalki.webp" title="Souvalki">
+                                        <img src="images/about/favmusic/justforaday.webp" title="Just for a Day">
+                                    </div>
+                                    <p>Slowdive</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/musicforanimalcafes.webp" title="Music for Animal Cafes">
+                                    </div>
+                                    <p>Nobonoko</p>
+                                </div>
+                                <div class="favMusicListItem">
+                                    <div class="favMusicCover">
+                                        <img src="images/about/favmusic/mmmm.webp" title="Marvin's Marvelous Mechanical Museum">
+                                        <img src="images/about/favmusic/goodandevil.webp" title="Good and Evil">
+                                    </div>
+                                    <p>Tally Hall</p>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="float: right; width: 55%;">
+                        <p>Music absolutely rules !</p>
+                        <p>I listen to music on a daily basis and i'm pretty sure, that i'd go absolutely nuts if i weren't listening to any kind of music for a longer period of time.</p>
+                        <p>There's a 95% chance, that if someone would spot me outside, it's very likely i'd be wearing a pair of headphones. I seriously never leave my house without !
+                        Everytime i go for a walk, leave the house to get groceries or even when it's just me siting at home trying to get some work done, my mind is like a jukebox that's always on max volume !
+                        </p>
+                        <p>Like most people nowerdays, i listen to music using streaming services on my phone, due to it's convinience. Although i also own a good few albums on vinyl and cd ! Physical media just rules and it always will ! Especially for concept albums like The Wall, where you'll just have a better experience by not having any kind of load times or ad breaks !</p>
+                        <p>Here's a list of some of my favourite bands and albums, i love listening to. Now, these are just SOME of my favourite ! If i'd be listing every band and album i love, this list would be endless !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainContainerTwo" style="margin: 15px auto; border-width: 15px; width: 90%;">
+                <img src="images/about/about_art_header.webp" style="display: block; margin: auto; width: 300px; height: auto;">
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <img src="images/portfolio/artworks.webp" alt="Art thingys!" style="width: 512px; height: 432px; object-fit: cover; display: block; margin: auto;" class="borderTypeOne">
+                    <div style="width: 50%;">
+                        <p>I love drawing things in my free time ! It's a great way for me to relax and let my creativity flow. As long as my brain DOES actually let out these funky creativity chemicals and i'm not stuck in some form of art block, that is !</p>
+                        <p>I mostly draw stuff digitaly using my wacom drawing tablet (not sponsored) hooked up to my pc with clip studio paint (still not sponsored), but i also like draw the traditional way using real pen and paper from time to time !</p>
+                        <p>I have put up some of my artworks here on my site ! You can check them out by visiting the art tab ! I also upload my artworks to Newgrounds ! If you'd like to, you can visit my page over there as well !</p>
+                        <p style="text-decoration: underline; font-weight: 600;">And remember kids: AI "Art" is NOT real art !</p>
+                        <div class="link_border" style="width: fit-content; margin: auto;"><a href="https://nilten.newgrounds.com/" target="_blank" rel="noopener noreferrer"><img class="divSelect noBorder hoverScale" src="images/portfolio/newgrounds_Link.webp" alt="Check it out on Newgrounds!" style="width: 256px; height: auto; display: block; margin: auto;"></a></div>
+                        <a href="art.html"><div class="divSelect" style="width: 256px; height: 84px; margin: auto; padding: auto; background-image: url('images/generic/div_bg_01.webp');"><span><img src="images/icons/nav_list/nav_art.png" style="width: 64px; height: auto; float: left;"><p style="font-size: 45px; margin-top: 2%; margin-bottom: 5%; text-align: center;">Art</p></span></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+            
+            <div id="mainContainerTwo" style="margin: 15px auto; border-width: 15px; width: 90%;">
+                <img src="images/about/about_header_cats.webp" style="display: block; margin: auto; width: 420px; height: auto;">
+                <p></p>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <p style="width: 65%;">Cat's are without a doubt the cutest and most wonderful animals on this unforgiving planet ! Their innocent, bright little eyes and their soothing purrs always brighten up my day !
+                            <span style="margin: 15px;"><br><br></span>
+                            Whoever invented cat's did a fantastic thing, you guys ! To the inventor of these silly little feline creatures: could we like... meet up one day? I'd love to invite you to a cup of coffee !
+                            <span style="margin: 15px;"><br><br></span>
+                            Personaly, cats mean the world to me ! I've been growing up with cats for my entire life and i am very glad i did ! They just seem to be the perfect animal for neurodivergent people, i guess !<br> So, if you have a kid, who has trouble getting in contact with other children, get a cat ! This pet will become one of your kid's biggest hyperfixations for their rest of their life !<br> Heck, even if you don't have kids, get a cat and you will become one of the happiest people on planet earth !
+                            <span style="margin: 15px;"><br><br></span>
+                            My love for cats has even gone so far, that i have put a sketch of a little kitty on my signature! (however i am too scared of using this signature on formal shit, because i don't want to come over as a weirdo lmao) <br> Even when i'm drawing, most of the time it has something to do with cats !
+                            <span style="margin: 15px;"><br><br></span>
+                            <span style="font-size: 9px;">writing this kinda makes me realize i'm absolutely nuts lmao</span></p>
+                        <img src="images/art/sketches/kittySketches01.jpg" style="width: 320px; height: 320px; object-fit: cover; object-position: 0px -70px;" class="borderTypeOne">
+                    </div>
+                    <p style="margin: 0;">Btw this is my cat penny =3</p>
+                    <p style="margin: 0; margin-bottom: 15px;">Say hi to penny !</p>
                 <div class="slideshow-container">
 
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="images/about/cats/penny/penny1.png" style="width:100%">
-                        <div class="text">LOOK AT THIS SWEET LITTLE PRINCESS AAAAAAAAAAA</div>
+                <div id="slideshow-fullscreen">
+                    <div id="slideshow-fs-image-frame"><img id="slideshow-fs-image"></div>
+                    <div id="slideshow-fs-close" onclick="hideFullscreen()"><img src="images/icons/gallery_fullscreen_02.webp"
+                            draggable="false"></div>
+                    <a class="prev" onclick="plusSlidesFull(-1), init_fullscreen_img()"><img src="images/generic/nav_arrow_01.gif"
+                            style="max-width: 50px; max-height: 50px;" draggable="false"></a>
+                    <a class="next" onclick="plusSlidesFull(1), init_fullscreen_img()"><img src="images/generic/nav_arrow_01.gif"
+                            style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a>
+                </div>
+
+                    <div id="slieshow-mainFrame" style="width: 720px; height: auto; margin: auto;">
+                        <div class="mySlides" style="display: block;">
+                            <div class="fullscreen-button"><img src="images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="showFullscreen(0), init_fullscreen_img(0)"></div>
+                            <img class="slideshow-image"
+                                src="images/about/cats/penny/penny1.webp"
+                                style="width:100%">
+                            <div class="gallery-text">WOAAAOHWWWAWAJFKLVDSJKLDFSNUOJOI !!!! PENNNYYYYY !</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="showFullscreen(0), init_fullscreen_img(0)"></div>
+                            <img class="slideshow-image"
+                                src="images/about/cats/penny/penny2.webp"
+                                style="width:100%">
+                            <div class="gallery-text">Such a majestic little creature ! Chillin' in the yard !</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="showFullscreen(0), init_fullscreen_img(0)"></div>
+                            <img class="slideshow-image"
+                                src="images/about/cats/penny/penny3.webp"
+                                style="width:100%">
+                            <div class="gallery-text">EPPY LITTLE KITTY OOOOOOHHHH I LOVE HER SO MUCH</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="showFullscreen(0), init_fullscreen_img(0)"></div>
+                            <img class="slideshow-image"
+                                src="images/about/cats/penny/penny4.webp"
+                                style="width:100%">
+                            <div class="gallery-text">grumpy little fuck >=3</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="showFullscreen(0), init_fullscreen_img(0)"></div>
+                            <img class="slideshow-image"
+                                src="images/about/cats/penny/penny5.webp"
+                                style="width:100%">
+                            <div class="gallery-text">Weird lighting conditions here but GOLLY LOOK AT THAT LOAF :333333</div>
+                        </div>
+                
+                        <div class="mySlides">
+                            <div class="fullscreen-button"><img src="images/icons/gallery_fullscreen_01.webp" draggable="false"
+                                    onclick="showFullscreen(0), init_fullscreen_img(0)"></div>
+                            <img class="slideshow-image"
+                                src="images/about/cats/penny/penny6.webp"
+                                style="width:100%">
+                            <div class="gallery-text">WOWZERS LOOK AT THIS PRECIOUS LITTLE FELINE (feat. smudged camera lense lmao you nearly can't see shit)</div>
+                        </div>
+                
+                        <div class="gallery-numbertext"></div>
+                        <a class="prev" onclick="plusSlides(-1, 0)"><img src="images/generic/nav_arrow_01.gif"
+                                style="max-width: 50px; max-height: 50px;" draggable="false"></a>
+                        <a class="next" onclick="plusSlides(1, 0)"><img src="images/generic/nav_arrow_01.gif"
+                                style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a>
                     </div>
-    
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="images/about/cats/penny/penny2.png" style="width:100%">
-                        <div class="text">OML LOOK AT THIS PRECIOUS LITTLE FELINE (feat. smudged camera lense lmao you almost can't see shit)</div>
-                    </div>
-    
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="images/about/cats/penny/penny3.png" style="width:100%">
-                        <div class="text">Weird lighting conditions here but GOLLY LOOK AT THAT LOAF :333333</div>
-                    </div>
-    
-                    <a class="prev" onclick="plusSlides(-1)"><img src="images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px;" draggable="false"></a>
-                    <a class="next" onclick="plusSlides(1)"><img src="images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a>
                 </div>
             </div>
-            <footer id="footer" style="margin-top: 10px;">
-                <div id="footerContainer" style="align-self: center;">
-                    <h2>[Nilten]</h2><p>2025</p><p> Contact: contact.nilten@gmail.com</p>
+        </div>
+        <br>
+        <div class="container">
+            <footer id="footer">
+                <div id="footerContainer">
+                    <img src="images/generic/nilten_header_logo.webp" style="width: 128px; height: auto;"><h5>2025</h5><p><i>Contact:</i> <span style="text-decoration: underline;">contact.nilten@gmail.com</span></p>
                 </div>
                 <div id="footerButtons"></div>
-                <div style="display: flex; flex-direction: column; max-height: fit-content;">
-                    <a href="https://neocities.org"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a>
-                    <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: auto;">
+                <div class="social_media_footer">
+                    <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube"></a>
+                    <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky"></a>
+                    <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds"></a>
+                    <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub"></a>
+                    <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam"></a>
+                </div>
+                <div style="display: flex; flex-direction: column; max-height: fit-content; margin: 8px;">
+                    <div style="width: fit-content; margin: auto;">
+                        <div class="link_border" style="width: fit-content; height: fit-content;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
+                    </div>
+                    <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: 5px auto;">
                 </div>
                 <script src="scripts/general/scrollHeader.js"></script>
                 <script src="scripts/general/scrollButtons.js"></script>
-                <script src="scripts/about/catRandomizer.js"></script>
                 <script src="scripts/portfolio/gallery.js"></script>
+                <script src="scripts/about/aboutHeaderRandomizer.js"></script>
                 <script src="scripts/general/maintenanceKillSwitch.js"></script>
             </footer>
         </div>
-        <div style="height: 300px; margin: auto;"></div>
+        <div style="height: 10vh; margin: auto;"></div>
     </body>
 
 </html>
