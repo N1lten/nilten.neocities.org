@@ -1,10 +1,15 @@
-html {
-    background-color: black;
-    background-repeat: no-repeat;
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("../fonts/Ubuntu-Bold.ttf");
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Ubuntu-Medium';
     margin: 0;
     color: #ffffff;
 }
@@ -12,38 +17,87 @@ body {
 html, body, a:hover{
     /*Paper Mario Cursor*/
     cursor: url("../images/cursor/c1.png"), default, pointer;
-    animation: cursor 500ms linear infinite;
+    animation: cursorAnim 500ms linear infinite;
+    -webkit-animation: cursorAnim 500ms linear infinite;
 }
 
 #background01 {
+    background-image: url("../images/background_sms_bios.gif");
+    width: 100%;
+    margin: auto;
+    z-index: -1;
     background-repeat: no-repeat;
+}
+
+#background02 {
+    background-image: url("../images/stars_bg.webp");
+    background-size: 128px;
+    position: fixed;
+    width: 150%;
+    z-index: -2;
+}
+
+#background02Shadow {
+    background-image: url("../images/stars_bg_shadow.webp");
+    background-size: 128px;
+    position: fixed;
+    width: 150%;
+    z-index: -4;
+}
+
+#background03 {
+    background-image: url("../images/home/home_bg_sky.webp");
     background-size: cover;
-    left: 0;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -6;
+}
+
+#background04 {
+    background-image: url("../images/home/home_bg_trees_layerOne.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    opacity: 25%;
+    top: 60vh;
 }
 
-.divTypeOne {
-    text-align: center;
+#site-bg-kitty-01 {
+    background-image: url("../images/generic/site_bg_01.webp");
+    animation: kitty_smrpg_background 3.5s linear infinite;
+    -webkit-animation: kitty_smrpg_background 3.5s linear infinite;
 }
 
-.divTypeTwo {
-    background-color: #202020;
-    border-radius: 3px;
-    border-style: groove;
-    border-color: #ffffff;
-    padding: 3%;
-    overflow: hidden;
+@keyframes layer1Scroll {
+    0% {transform: translateX(-256px) translateY(-192px); opacity: 0.95;}
+    100% {transform: translateX(0px) translateY(0px); opacity: 0.95;}
+    }
+
+@keyframes layer1ShadowScroll {
+    0% {transform: translateX(-252px) translateY(-190px);}
+    100% {transform: translateX(4px) translateY(2px);}
+    }
+
+@keyframes layer2Scroll {
+    0% {transform: translateX(-192px) translateY(-144px) scale(0.75); opacity: 0.3;}
+    100% {transform: translateX(0px) translateY(0px) scale(0.75); opacity: 0.3;}
+   }
+
+@keyframes layer2ShadowScroll {
+    0% {transform: translateX(-188px) translateY(-142px) scale(0.75);}
+    100% {transform: translateX(4px) translateY(2px) scale(0.75);}
 }
 
-#header {
-    background-color: #000000;
-}
+/*#backgroundShadowDebug {
+    background-color: darkgreen;
+    background-image: none;
+}*/
 
-@keyframes cursor{
+@keyframes cursorAnim{
     0% { 
         cursor: url("../images/cursor/c1.png"), auto;
     }
@@ -61,6 +115,32 @@ html, body, a:hover{
     }
 }
 
+@keyframes kitty_smrpg_background {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: -256px 256px;}
+}
+
+@keyframes div_border_anim_01 {
+    0% {
+            border-image: url("../images/generic/div_border_01.webp") 33 round;
+    }
+
+    100% {
+            border-image: url("../images/generic/div_border_02.webp") 33 round;
+    }
+}
+
+@keyframes div_border_anim_02 {
+    0% {
+            border-image: url("../images/generic/div_border_03.webp") 33 round;
+    }
+
+    100% {
+            border-image: url("../images/generic/div_border_04.webp") 33 round;
+    }    
+}
+
 * {
     box-sizing: border-box;
 }
@@ -71,82 +151,112 @@ html, body, a:hover{
 /* if you want something (like the header) to be Wider than
 the other elements, you will need to move that div outside
 of the container */
-#container {
-    max-width: 1512px;
-    background-image: url('../images/main_background.png');
-    background-position: center;
-    background-size: 110%;
-    /* this is the width of your layout! */
-    /* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
+.container {
+    max-width: 1256px;
+    border: 18px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    background-clip: padding-box;
+    overflow: hidden;
+    background-image: url("../images/generic/site_bg_01.webp");
     margin: 0 auto;
-    /* this centers the entire page */
+
+    /*Super Mario RPG style background and border animation*/
+    animation: kitty_smrpg_background 3.5s linear infinite, div_border_anim_01 2.5s steps(2, jump-none) infinite;
+    -webkit-animation: kitty_smrpg_background 3.5s linear infinite, div_border_anim_01 2.5s steps(2, jump-none) infinite;
 }
 
-/* the area below is for all links on your page
-EXCEPT for the navigation */
-#container a {
+.div-bgImg-one
+{
+    background-image: url("../images/generic/div_bg_01.webp");
+}
+
+.div-bgImg-two
+{
+    background-image: url("../images/generic/div_bg_02.webp");
+}
+
+.non-anim {
+ animation: none;
+ -webkit-animation: none;
+}
+
+.container a {
     font-weight: bold;
     color: #ffffff;
     text-decoration-line: none;
-    /* if you want to remove the underline
-you can add a line below here that says:
-text-decoration:none; */
+}
+
+.linkTypeOne:hover {
+    transform: scale(1.1);
+}
+
+.linkTypeOne:active {
+    transform: scale(0.9);
+}
+
+.linkTypeOne a :hover {
+    cursor: pointer;
 }
 
 #header {
+    background-image: url("../images/generic/div_bg_01.webp");
     height: 100px;
     display: block;
     position: relative;
 }
 
 #siteTitle {
-    width: 100%;
-    height: 60%;
+    margin: auto;
+    display: grid;
+    align-items: center;
     text-align: center;
-    display: inline-block;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .langSelect {
     margin-left: 3%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .scrollingHeader {
     width: 100%;
     padding: 6px;
-    background-color: #1f1f1f;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #navDiv {
     height: 450px;
-    background-color: #0f0f0f;
+    min-width: fit-content;
+    background-image: url("../images/generic/div_bg_01.webp");
+    background-clip: padding-box;
     overflow: visible;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
 #navBar {
     height: 450px;
-    border-style: groove;
-    border-color: #202020;
     list-style-type: square;
     padding: 2%;
     font-size: 20px;
     white-space: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+#navBar div {
+    width: 135px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #navBar li{
-    padding: 5%;
     position: relative;
     padding-left: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     list-style-type: none;
 }
 
-/* redundent. please fix in ten billion years */
 #navBar a {
     color: #ffffff;
     text-decoration-line: none;
@@ -165,10 +275,10 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_home.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 #navBar .nav_miles::before {
@@ -178,10 +288,10 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_miles.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 #navBar .nav_art::before {
@@ -191,10 +301,10 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_art.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 #navBar .nav_portfolio::before {
@@ -204,10 +314,10 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_portfolio.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 #navBar .nav_blog::before {
@@ -217,10 +327,10 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_blog.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 #navBar .nav_social_media::before {
@@ -230,10 +340,10 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_social_media.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 #navBar .nav_room::before {
@@ -243,38 +353,136 @@ text-decoration:none; */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_room.png');
-    width: 50px; /* Breite des Bildes */
-    height: 50px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+#nav-home-tag {
+    background-image: url("../images/icons/nav_list/nav_home_tag_01.webp");
+}
+
+#nav-home-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_home_tag_02.webp");
+}
+
+#nav-about-tag {
+    background-image: url("../images/icons/nav_list/nav_about_tag_01.webp");
+}
+
+#nav-about-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_about_tag_02.webp");
+}
+
+#nav-art-tag {
+    background-image: url("../images/icons/nav_list/nav_art_tag_01.webp");
+}
+
+#nav-art-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_art_tag_02.webp");
+}
+
+#nav-portfolio-tag {
+    background-image: url("../images/icons/nav_list/nav_portfolio_tag_01.webp");
+}
+
+#nav-portfolio-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_portfolio_tag_02.webp");
+}
+
+#nav-blog-tag {
+    background-image: url("../images/icons/nav_list/nav_blogs_tag_01.webp");
+}
+
+#nav-blog-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_blogs_tag_02.webp");
+}
+
+#nav-link-tag {
+    background-image: url("../images/icons/nav_list/nav_links_tag_01.webp");
+}
+
+#nav-link-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_links_tag_02.webp");
+}
+
+#nav-room-tag {
+    background-image: url("../images/icons/nav_list/nav_room_tag_01.webp");
+}
+
+#nav-room-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_room_tag_02.webp");
+}
+
+#nav-button-back-01 {
+    background-image: url("../images/icons/nav_page_back_01.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 256px;
+    height: 128px;
+}
+
+#nav-button-back-01:hover {
+    background-image: url("../images/icons/nav_page_back_02.webp");
+}
+
+#nav-button-back-01:active {
+    background-image: url("../images/icons/nav_page_back_01.webp");
 }
 
 #flex {
     display: flex;
 }
 
+#affiliateLink {
+    list-style-type: square;
+    padding: 2%;
+    font-size: 20px;
+    white-space: normal;
+    margin: 0;
+}
+
+#affiliateLink li{
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 13px;
+    list-style-type: none;
+}
+
+#affiliateLink .affiliate_fjb::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(-7px);
+    background-image: url('../images/icons/affiliates/nav_affiliate_fjb.webp');
+    width: 72px; /* Breite des Bildes */
+    height: 72px; /* Höhe des Bildes */
+    background-size: cover; /* Passt das Bild an die Größe an */
+    background-position: center; /* Zentriert das Bild */
+}
+
 /* this is the color of the main content area,
 between the sidebars! */
 main {
     flex: 1;
-    padding: 20px;
+    /*padding: 20px;*/
     width: 55%;
     order: 2;
     position: relative;
 }
 
-main p {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 #leftContainerTwo
 {
-    background-color: #0f0f0f;
+    background-image: url("../images/generic/div_bg_01.webp");
     height: 250px;
     padding: 2%;
-    border-style: groove;
-    border-color: #202020;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
 #mainContainerOne
@@ -289,95 +497,315 @@ main p {
 
 #mainContainerTwo
 {
-    background-color: #444444;
-    border-radius: 3px;
-    border-style: groove;
-    border-color: #202020;
-    padding: 3%;
+    background-image: url("../images/generic/div_bg_02.webp");
+    height: fit-content;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    background-clip: padding-box;
+    padding: 20px;
     overflow: hidden;
-}
 
-.artFrame img
-{
-    width: 60%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-
-.divSelect {
-    border-radius: 8px;
-    border: 5px solid transparent;
-}
-
-.divSelect:hover {
-    border: #ffffff;
-    border-style: dashed;
-    border-width: 5px;
-}
-
-.divSelect:active {
-    border-style: solid;
-}
-
-.divSelect p {
-    margin-top: 75%;
-    font-size: x-large;
-}
-
-.blogSelect {
-    background-color: #222222;
-    width: 70%;
-    height: 75px;
-    display: inline-flex;
-    margin: auto;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 5px solid transparent;
-}
-
-.blogSelect:hover {
-    border: 5px dashed white;
-}
-
-.blogSelect:active {
-    border-style: solid;
-}
-
-
-.linkButton {
-    background-color: #222222;
-    border-radius: 8px;
-    border: 5px solid transparent;
-}
-
-.linkButton:hover {
-    border: 5px dashed white;
-}
-
-.linkButton:active {
-    border-style: solid;
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
 #rightContainerOne
 {
-    background-color: #0f0f0f;
+    background-image: url("../images/generic/div_bg_01.webp");
     height: 450px;
     padding: 2%;
-    border-style: groove;
-    border-color: #202020;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
 #rightContainerTwo
 {
-    background-color: #0f0f0f;
+    background-image: url("../images/generic/div_bg_01.webp");
     height: 250px;
     padding: 2%;
-    border-style: groove;
-    border-color: #202020;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.borderTypeOne
+{
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    background-clip: padding-box;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.borderTypeTwo
+{
+    border: 15px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    background-clip: padding-box;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+
+.borderTypeThree
+{
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_03) 33 round;
+    background-clip: padding-box;
+
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+
+
+.borderTypeFour
+{
+    border: 15px solid transparent;
+    border-image: url(../images/generic/div_border_03.webp) 33 round;
+    background-clip: padding-box;
+
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.borderSizeOne
+{
+    border-width: 15px;
+}
+
+.pageHeaderImage
+{
+    text-align: center;
+    height: 450px;
+    width: 90%;
+    background-size: cover;
+    margin: auto;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    background-clip: padding-box;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.headerTextOne {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+}
+
+.divSelect {
+    border-image: url(../images/generic/div_border_03.webp);
+    border: 13px solid transparent;
+    background-clip: padding-box;
+
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.divSelect:hover {
+    border-image: url(../images/generic/div_border_01.webp);
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.divSelect:active {
+    border-image: url(../images/generic/div_border_03.webp);
+    transform: scale(0.9);
+
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.divSelect.noBorder {
+    border: 0;
+}
+
+.divSelect.hoverScale:hover {
+    transform: scale(0.98);
+}
+
+.divSelect.hoverScale:active {
+    transform: scale(0.9);
+}
+
+.divSelect.art-selection {
+    background-size: 325px;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+}
+
+.divSelect.art-selection p {
+    margin-top: 75%;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.divSelect.blog-selection {
+    background-image: url("../images/generic/div_bg_01.webp");
+    width: 600px;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 15px;
+    border: 10px solid transparent;
+}
+
+.divSelect.blog-selection:active {
+    transform: scale(0.90);
+}
+
+.divSelect.blog-selection img {
+    width: 64px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.divSelect.blog-selection p {
+    margin: auto;
+    margin-left: 20px;
+    text-align: right;
+    font-size: x-large;
+}
+
+.divSelect.blog-selection #blog-header {
+    margin: auto;
+}
+
+.divSelect.blog-selection #blog-header-date {
+    font-size: small;
+}
+
+.divSelect.blog-selection #blog-header-date span {
+    font-size: x-small;
+}
+
+.link_border {
+    border:  5px solid transparent;
+}
+
+.link_border:hover {
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    transform: scale(0.98);
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.link_border:active {
+    border-image: url(../images/generic/div_border_03.webp) 33 round;
+    transform: scale(0.9);
+
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.welcomeFrame {
+    width: 750px;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background-image: url("../images/generic/div_bg_01.webp");
+    background-clip: padding-box;
+    border: 7px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.social_media_footer {
+    background-image: url("../images/generic/div_bg_02.webp");
+    border:  5px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
+    width: 550px;
+    height: 85px;
+    margin: auto;
+    display: block;
+    text-align: center;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+#smf_youtube:hover,
+#smf_bluesky:hover,
+#smf_newgrounds:hover,
+#smf_github:hover,
+#smf_steam:hover {
+    border: 3px solid transparent;
+    border-image: url("../images/generic/div_border_01.webp");
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+}
+
+#smf_youtube:active,
+#smf_bluesky:active,
+#smf_newgrounds:active,
+#smf_github:active,
+#smf_steam:active {
+    padding: 3px;
+}
+
+@keyframes catDanceText {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes catDanceTextTwo {
+    0% {
+        background-position: 100% 25%
+    }
+
+    50% {
+        background-position: 0% 50%
+    }
+
+    100% {
+        background-position: 100% 25%
+    }
+}
+
+#pennyNap {
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    background-image: url("../images/generic/pennyNap_01.webp");
+    background-size: cover;
+}
+
+#pennyNap:hover
+{
+    background-image: url("../images/generic/pennyNap_02.webp");
+}
+
+#pennyNap:active
+{
+    background-image: url("../images/generic/pennyNap_03.webp");
 }
 
 /* what's this "order" stuff about??
@@ -388,8 +816,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 
 #leftSidebar {
     order: 1;
-    margin-right: 10px;
-    width: 250px;
+    width: 20%;
     padding-right: 20px;
     font-size: smaller;
 }
@@ -398,13 +825,12 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     order: 3;
     width: 20%;
     padding-left: 20px;
-    padding-top: 20px;
     padding-bottom: 20px;
     font-size: smaller;
 }
 
 footer {
-    background-color: #0f0f0f;
+    background-image: url("../images/generic/div_bg_01.webp");
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -412,28 +838,27 @@ footer {
 
 #footerContainer {
     width: 100%;
-    height: 30%;
-}
-
-#footerContainer h2 {
-    display: inline;
-    margin: 1%;
-    padding: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
 }
 
 #footerContainer p {
-    display: inline;
-    font-size: smaller;
-    margin: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 64px;
 }
 
-#footerButtons, #footerButtonsBlog {
-    background-color: #13092D;
-    border-style: groove;
-    border-color: #202020;
-    border-radius: 3px;
+#footerContainer h5 {
+    align-self: flex-end;
+    margin: 0;
+}
+
+#footerButtons {
+    background-image: url("../images/generic/div_bg_03.webp");
+    border:  5px solid transparent;
+    border-image: url(../images/generic/div_border_01.webp) 33 round;
     display: flex;
     overflow: hidden;
     white-space: nowrap;
@@ -445,6 +870,9 @@ footer {
     margin-bottom: 10px;
     max-width: 50%;
     max-height: 100%;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
 #footerButtons marquee {
@@ -452,18 +880,16 @@ footer {
     padding-bottom: 2%;
 }
 
-#footerButtonsBlog marquee {
-    padding-top: 2%;
-    padding-bottom: 2%;
+#footerButtons img {
+    margin: 0 3px;
 }
-
 
 h1,
 h2,
 h3 {
     color: #ffffff;
 }
-
+ 
 h1 {
     font-size: 25px;
 }
@@ -475,8 +901,11 @@ strong {
 
 .infoBox {
     background-color: #000000;
-    border: 3px solid #202020;
+    border: 4px solid transparent;
     padding: 10px;
+
+    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
 /* CSS for extras */

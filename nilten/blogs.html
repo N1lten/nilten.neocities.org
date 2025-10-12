@@ -3,13 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content='Nils "Miles" Aaron'>
-        <meta name="googlebot" content="noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow">
         <meta property="og:title" content="Nilten">
-        <meta property="og:image" content="images/about/Header.png">
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:description" content="The neocities page of Miles Nilten!" />
-        <meta property="og:site_name" content="Nilten" />
+        <meta property="og:image" content="images/generic/header_open_graph_protocol.webp">
+        <meta property="og:description" content="The neocities page of Miles Nilten!">
+        <meta property="og:site_name" content="nilten.neocites.org">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nilten</title>
         <link href="CSS/Default.css" rel="stylesheet" type="text/css">
@@ -21,71 +19,111 @@
       }
     </style>
     <body onload="site_maintenanceMode()"> 
-        <div id="container">
-            <div id="background01" style="background-image: url('images/blog/Header.webp');"></div>
-                <div id="header">
-                <h1 id="siteTitle"><a href="index.html">[Nilten]</a></h1>
+        <div id="background03" style="background-image: url('images/blog/Header.webp'); opacity: 0.35;"></div> 
+        <div class="container">
+            <div id="header" style="text-align: center;">
+                <a href="index.html"><img src="images/generic/nilten_header_logo.webp" style="max-height: 100%;"></a>
             </div>
+        </div>
+            <br>
+        <div class="container">
             <div class="scrollingHeader">
                 <!--INSERT SOURCE ENGINE OBSOLETE GUY HERE-->
                 <marquee scrollamount="10"><p id="marqueeText" style="margin: 0; padding: 0;">Missingno.</p></marquee>
                 <!--MY SILLY ASS SURE LOVES OUTDATED BULLSHIT!-->
             </div>
+        </div>
             <br>
+            <div class="container" style="padding: 8px;">
             <div id="flex">
                 <aside id="leftSidebar">
                     <div id="navDiv">
                         <ul id="navBar">
-                            <li class="nav_home"><a href="index.html">Home</a></li>
-                            <li class="nav_miles"><a href="about.html">About Nilten</a></li>
-                            <li class="nav_art"><a href="art.html">Art</a></li>
-                            <li class="nav_portfolio"><a href="portfolio.html">Portfolio/Current Projects</a></li>
-                            <li class="nav_blog"><a href="blogs.html">Blogs</a></li>
-                            <li class="nav_social_media"><a href="links.html">Social Media Links</a></li>
-                            <li class="nav_room" title="This page is still under Construction!"><a href="room.html">My Room</a></li>
+                            <li class="nav_home"><a href="home.html"><div id="nav-home-tag"></div></a></li>
+                            <li class="nav_miles"><a href="about.html"><div id="nav-about-tag"></div></a></li>
+                            <li class="nav_art"><a href="art.html"><div id="nav-art-tag"></div></a></li>
+                            <li class="nav_portfolio"><a href="portfolio.html"><div id="nav-portfolio-tag"></div></a></li>
+                            <li class="nav_blog"><a href="blogs.html"><div id="nav-blog-tag"></div></a></li>
+                            <li class="nav_social_media"><a href="links.html"><div id="nav-link-tag"></div></a></li>
+                            <li class="nav_room" title="This page is still under Construction!"><a href="room.html"><div id="nav-room-tag"></div></a></li>
                           </ul>    
                     </div>
                 </aside>
                 <main>
-                    <div id="mainContainerTwo" style="text-align: center; height: 450px; width: 90%; background-image: url('images/blog/Header.webp'); background-size: cover; background-size: 135%; background-position: bottom;"> <!--not really happy with the header picture tbh. may redo that later!-->
+                    <div class="pageHeaderImage" style="background-image: url('images/blog/Header.webp'); background-position-y: center;">
                         <div>
-                            <p style="font-size: 45px; margin-top: 225px; margin-bottom: 50%; text-decoration: underline;">Blogs</p>
+                            <p style="font-size: 45px; font-weight: 600; margin-top: 325px; margin-bottom: 50%; text-decoration: underline;">Blogs</p>
                         </div>
                     </div>
                 </main>
             </div>
-            <div id="mainContainerTwo" class="divTypeOne" style="width: 75%; margin: auto;">
-                <p style="text-align: left; font-size: x-large; text-decoration: underline; margin-top: 0;"><strong>Featured:</strong></p>
-                <a href="blogs/aquanauts_holiday.html"><div class="blogSelect">
-                    <img src="images/blog/blog_type_games.png" alt="Generic">
-                    <div style="margin: auto; position: relative; top: 30%; width: 100%; height: 100%;">
-                        <p style="font-size: x-large; text-align: left; margin: 0; margin-left: 40px;">Aquanaut's Holiday: A holiday without goal</p>
-                        <p style="font-size: small; text-align: right; margin: 0; margin-right: 10px;">30.01.2025 <span style="font-size: x-small;">(dd/mm/yy)</span></p>
-                    </div>
-                </div></a>
-                <a href="blogs/03.01.2025.html"><div class="blogSelect">
-                    <img src="images/blog/blog_type_generic.png" alt="Generic">
-                    <div style="margin: auto; position: relative; top: 30%; width: 100%; height: 100%;">
-                        <p style="font-size: x-large; text-align: left; margin: 0; margin-left: 40px;">The site is finally live!</p>
-                        <p style="font-size: small; text-align: right; margin: 0; margin-right: 10px;">03.01.2025 <span style="font-size: x-small;">(dd/mm/yy)</span></p>
-                    </div>
-                </div></a>
             </div>
-            <footer id="footer" style="margin-top: 10px;">
-                <div id="footerContainer" style="align-self: center;">
-                    <h2>[Nilten]</h2><p>2025</p><p> Contact: contact.nilten@gmail.com</p>
+            <br>
+            <div class="container" style="padding: 15px;">
+            <div id="mainContainerTwo" style="width: 90%; margin: auto;">
+                <p style="text-align: left; font-size: x-large; text-decoration: underline; margin-top: 0;"><strong>Featured:</strong></p>
+                <div style="width: fit-content; height: fit-content; margin: auto; display: grid;">
+                <a href="blogs/im_back_folks.html">
+                    <div class="divSelect blog-selection">
+                    <div style="display: inline-flex;">
+                        <img src="images/blog/blog_type_generic.png" alt="Generic">
+                        <div id="blog-header">
+                            <p id="blog-header-title">I'm back, folks !</p>
+                            <p id="blog-header-date">12.10.2025 <span>(dd/mm/yyyy)</span></p>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a href="blogs/aquanauts_holiday.html">
+                    <div class="divSelect blog-selection">
+                    <div style="display: inline-flex;">
+                        <img src="images/blog/blog_type_games.png" alt="Games">
+                        <div id="blog-header">
+                            <p id="blog-header-title">Aquanaut's Holiday: A holiday without goal</p>
+                            <p id="blog-header-date">30.01.2025 <span>(dd/mm/yyyy)</span></p>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a href="blogs/03.01.2025.html">
+                    <div class="divSelect blog-selection">
+                        <div style="display: inline-flex;">
+                        <img src="images/blog/blog_type_generic.png" alt="Generic">
+                        <div id="blog-header">
+                            <p id="blog-header-title">The site is finally live!</p>
+                            <p id="blog-header-date">03.01.2025 <span>(dd/mm/yyyy)</span></p>
+                        </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <footer id="footer">
+                <div id="footerContainer">
+                    <img src="images/generic/nilten_header_logo.webp" style="width: 128px; height: auto;"><h5>2025</h5><p><i>Contact:</i> <span style="text-decoration: underline;">contact.nilten@gmail.com</span></p>
                 </div>
                 <div id="footerButtons"></div>
-                <div style="display: flex; flex-direction: column; max-height: fit-content;">
-                    <a href="https://neocities.org"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a>
-                    <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: auto;">
+                <div class="social_media_footer">
+                    <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube"></a>
+                    <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky"></a>
+                    <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds"></a>
+                    <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub"></a>
+                    <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam"></a>
+                </div>
+                <div style="display: flex; flex-direction: column; max-height: fit-content; margin: 8px;">
+                    <div style="width: fit-content; margin: auto;">
+                        <div class="link_border" style="width: fit-content; height: fit-content;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
+                    </div>
+                    <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: 5px auto;">
                 </div>
                 <script src="scripts/general/scrollHeader.js"></script>
                 <script src="scripts/general/scrollButtons.js"></script>
                 <script src="scripts/general/maintenanceKillSwitch.js"></script>
             </footer>
         </div>
-        <div style="height: 300px; margin: auto;"></div>
+        <div style="height: 10vh; margin: auto;"></div>
     </body>
-
 </html>
