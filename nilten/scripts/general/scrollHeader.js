@@ -72,6 +72,7 @@ const headerText = [
     "\" I'm feeling a little light headed. Maybe you should drive. \"",
     "\" ♪ There was something in the air that night~ ♪ The stars were bright, Fernando~ ♪ They were shining there for you and me~ ♪ For liberty, Fernando~ ♪ Though we never thought that we could lose, theres no regret~ ♪ If i had to do the same again~ ♪ I would, my friend, Fernando~ ♪ If i had to do the same again~ ♪ I would, my friend, Fernando~ ♪ \"",
     "\" ♪ We'll meet again~ ♪ Don't know where~ ♪ Don't know when~ ♪ But i know we'll meet again some sunny day~ ♪ Keep smiling through~ ♪ Just like you~ ♪ always do~ ♪ 'Til the blue skies drive the dark clouds far away~ ♪ \"",
+    "\" ♪ Like the wind~ ♪ You came here running~ ♪ Take the consequence of living~ ♪ There's no space~ ♪ There's no tomorrow~ ♪ All we need is some communication~ ♪ Check it in, check it out, but the sun will never shine~ ♪ Paranoid anyway, in the subways of your mind~ ♪ \"",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
