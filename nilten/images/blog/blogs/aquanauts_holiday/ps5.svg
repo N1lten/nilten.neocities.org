@@ -8,6 +8,7 @@
    version="1.1"
    id="svg1"
    sodipodi:docname="ps5.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +22,16 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:document-units="mm" />
+     inkscape:document-units="mm"
+     inkscape:zoom="1.9547888"
+     inkscape:cx="-41.436702"
+     inkscape:cy="97.452985"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
   <g
@@ -31,22 +41,22 @@
      transform="translate(-54.037658,-114.86145)">
     <path
        id="rect1"
-       style="fill:#000000;fill-opacity:1;stroke-width:19.5725;stroke-linecap:square"
+       style="fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        d="m 72.02533,114.86145 h 18.195873 v 18.19587 l -9.097937,6.34387 -9.097936,-6.34387 z"
        sodipodi:nodetypes="cccccc" />
     <path
        id="path1"
-       style="fill:#000000;fill-opacity:1;stroke-width:19.5725;stroke-linecap:square"
+       style="fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        d="m 72.02533,170.69389 h 18.195873 v -18.19587 l -9.097937,-6.34387 -9.097936,6.34387 z"
        sodipodi:nodetypes="cccccc" />
     <path
        id="path2"
-       style="fill:#000000;fill-opacity:1;stroke-width:19.5725;stroke-linecap:square"
+       style="fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        d="m 54.037658,133.68901 v 18.19588 h 18.19587 l 6.34387,-9.09794 -6.34387,-9.09794 z"
        sodipodi:nodetypes="cccccc" />
     <path
        id="path3"
-       style="fill:#000000;fill-opacity:1;stroke-width:19.5725;stroke-linecap:square"
+       style="fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        d="m 108.68841,133.68901 v 18.19588 H 90.492539 l -6.34387,-9.09794 6.34387,-9.09794 z"
        sodipodi:nodetypes="cccccc" />
   </g>
