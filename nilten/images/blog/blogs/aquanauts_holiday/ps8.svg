@@ -7,6 +7,8 @@
    viewBox="0 0 72.467415 48.857281"
    version="1.1"
    id="svg1"
+   sodipodi:docname="ps8.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="4.1877625"
-     inkscape:cx="281.53459"
-     inkscape:cy="277.83333"
+     inkscape:zoom="1.0469406"
+     inkscape:cx="262.6701"
+     inkscape:cy="86.442342"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
@@ -63,7 +65,7 @@
      id="layer1"
      transform="translate(-75.990122,-46.807631)">
     <rect
-       style="fill:#000000;stroke-width:10.0073;stroke-linecap:square"
+       style="fill:#000000;stroke-width:1.6;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        id="rect6"
        width="33.868141"
        height="20.931664"
@@ -77,12 +79,12 @@
        xml:space="preserve"
        transform="matrix(0.55499011,0,0,0.55499011,6.2277798,-104.776)"
        id="text7"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect7);fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect7);display:inline;fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
          x="204.92873"
          y="304.8522"
-         id="tspan1">R1</tspan></text>
+         id="tspan5">R1</tspan></text>
     <rect
-       style="fill:#000000;stroke-width:10.0073;stroke-linecap:square"
+       style="fill:#000000;stroke-width:1.6;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        id="rect8"
        width="33.868141"
        height="20.931664"
@@ -93,12 +95,12 @@
        xml:space="preserve"
        transform="matrix(0.55499011,0,0,0.55499011,6.2277798,-76.850393)"
        id="text8"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
          x="204.92873"
          y="304.8522"
-         id="tspan2">R2</tspan></text>
+         id="tspan6">R2</tspan></text>
     <rect
-       style="fill:#000000;stroke-width:10.0073;stroke-linecap:square"
+       style="fill:#000000;stroke-width:1.6;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        id="rect10"
        width="33.868141"
        height="20.931664"
@@ -109,12 +111,12 @@
        xml:space="preserve"
        transform="matrix(0.55499011,0,0,0.55499011,-32.371498,-104.776)"
        id="text10"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12);fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12);display:inline;fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
          x="206.53289"
          y="304.8522"
-         id="tspan3">L1</tspan></text>
+         id="tspan7">L1</tspan></text>
     <rect
-       style="fill:#000000;stroke-width:10.0073;stroke-linecap:square"
+       style="fill:#000000;stroke-width:1.6;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
        id="rect11"
        width="33.868141"
        height="20.931664"
@@ -125,9 +127,9 @@
        xml:space="preserve"
        transform="matrix(0.55499011,0,0,0.55499011,-32.371498,-76.850393)"
        id="text11"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13);fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13);display:inline;fill:#6d6d6f;fill-opacity:1;stroke-width:45.2069;stroke-linecap:square"><tspan
          x="206.53289"
          y="304.8522"
-         id="tspan4">L2</tspan></text>
+         id="tspan8">L2</tspan></text>
   </g>
 </svg>

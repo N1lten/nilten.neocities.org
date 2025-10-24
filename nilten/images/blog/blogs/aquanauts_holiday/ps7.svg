@@ -7,6 +7,8 @@
    viewBox="0 0 34.065945 24.980921"
    version="1.1"
    id="svg1"
+   sodipodi:docname="ps7.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="4.1877625"
-     inkscape:cx="281.53459"
-     inkscape:cy="277.83333"
+     inkscape:zoom="5.9223905"
+     inkscape:cx="31.237386"
+     inkscape:cy="63.403451"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
@@ -38,7 +40,7 @@
      id="layer1"
      transform="translate(-40.588891,-142.40799)">
     <rect
-       style="fill:#000000;stroke-width:11.961;stroke-linecap:square"
+       style="fill:#000000;stroke-width:0.7;stroke-linecap:square;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none"
        id="rect1"
        width="28.557413"
        height="17.437714"
@@ -50,13 +52,13 @@
        inkscape:export-ydpi="95.438423" />
     <text
        xml:space="preserve"
-       style="font-size:9.00664px;line-height:0;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:center;letter-spacing:0.614087px;text-anchor:middle;fill:#000000;stroke-width:27.761;stroke-linecap:square"
+       style="font-size:9.00664px;line-height:0;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:center;letter-spacing:0.614087px;text-anchor:middle;fill:#ffffff;stroke-width:0.15;stroke-linecap:square;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1;fill-opacity:1"
        x="57.481133"
        y="167.42409"
        id="text5"><tspan
          sodipodi:role="line"
          id="tspan5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';letter-spacing:0.614087px;writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:27.761"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';letter-spacing:0.614087px;writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke-width:0.15;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1;fill-opacity:1"
          x="57.788177"
          y="167.42409">SELECT</tspan></text>
   </g>
