@@ -42,6 +42,7 @@ html, body, a:hover{
     background-size: 128px;
     position: fixed;
     width: 150%;
+    opacity: 60%;
     z-index: -4;
 }
 
@@ -52,18 +53,34 @@ html, body, a:hover{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: -6;
+    z-index: -10;
+    /*animation: background03Animation 80s ease infinite;*/
 }
+
+/*@keyframes background03Animation {
+    0% {transform: translate(-110px, -120px);}
+    25% {transform: translate(-231px, -131px);}
+    50% {transform: translate(-115px, -170px);}
+    75% {transform: translate(-210px, -150px);}
+    100% {transform: translate(-110px, -120px);}
+}*/
 
 #background04 {
     background-image: url("../images/home/home_bg_trees_layerOne.webp");
-    background-size: contain;
+    background-size: 100vw;
     background-repeat: no-repeat;
+    background-position: bottom;
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    top: 60vh;
+    
+}
+
+#background_moon {
+    position: fixed;
+    right: 0;
+    z-index: -7;
 }
 
 #site-bg-kitty-01 {
@@ -73,8 +90,8 @@ html, body, a:hover{
 }
 
 @keyframes layer1Scroll {
-    0% {transform: translateX(-256px) translateY(-192px); opacity: 0.95;}
-    100% {transform: translateX(0px) translateY(0px); opacity: 0.95;}
+    0% {transform: translateX(-256px) translateY(-192px);}
+    100% {transform: translateX(0px) translateY(0px);}
     }
 
 @keyframes layer1ShadowScroll {
@@ -83,13 +100,13 @@ html, body, a:hover{
     }
 
 @keyframes layer2Scroll {
-    0% {transform: translateX(-192px) translateY(-144px) scale(0.75); opacity: 0.3;}
-    100% {transform: translateX(0px) translateY(0px) scale(0.75); opacity: 0.3;}
+    0% {transform: translateX(-170px) translateY(-128px);}
+    100% {transform: translateX(0px) translateY(0px);}
    }
 
 @keyframes layer2ShadowScroll {
-    0% {transform: translateX(-188px) translateY(-142px) scale(0.75);}
-    100% {transform: translateX(4px) translateY(2px) scale(0.75);}
+    0% {transform: translateX(-167px) translateY(-125px);}
+    100% {transform: translateX(3px) translateY(3px);}
 }
 
 /*#backgroundShadowDebug {
