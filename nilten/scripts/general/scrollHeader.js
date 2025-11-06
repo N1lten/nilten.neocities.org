@@ -11,7 +11,6 @@ const headerText = [
     "Inspect element me. I DARE you!", // HIIIIIIIIIII :333333 !!!!1!1 Feel free to look at my code but just a heads up: MY CODE SUCKS.
     "Gooby Gibber Flibber Womb, Smeckle Tickle Zippy Zap, Gowanga Bowanga Fawiggle Womb.",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec pulvinar tortor. Sed cursus, magna et suscipit porta, neque massa hendrerit felis, hendrerit varius tellus lorem in lorem. Donec feugiat, erat eget malesuada euismod, purus odio varius tellus, ut pretium justo arcu eget ante. Integer fringilla gravida urna ut porta. Proin fringilla interdum ex, in varius nibh sollicitudin ac. Pellentesque consectetur nunc id vulputate congue. Donec erat enim, pellentesque sed ex non, auctor vulputate mauris. Fusce ac ante nec lacus tempor vehicula vel ultrices mi. Vivamus lacus neque, convallis a hendrerit molestie, luctus eget tortor. Nullam eu vestibulum lorem. Suspendisse euismod ligula ex.",
-    "I need a bigger desk mine is pretty small but alas, no mula DANG IT",
     "Why did Nobuo Uematsu go so hard on Dancing Mad i mean HOLY COW",
     "Sharon, please come back with the kids",
     "MEOW! MEOW! MEOW! MEOW! MEOW! MIAU! MEOW! MEOW! MEOW! MEOW! NYA! MEOW! MEOW! MEOW? MEOW! MEOW! meow. MEOW!",
