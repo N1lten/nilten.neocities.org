@@ -73,8 +73,8 @@ const headerText = [
     "\" ♪ We'll meet again~ ♪ Don't know where~ ♪ Don't know when~ ♪ But i know we'll meet again some sunny day~ ♪ Keep smiling through~ ♪ Just like you~ ♪ always do~ ♪ 'Til the blue skies drive the dark clouds far away~ ♪ \"",
     "\" ♪ Like the wind~ ♪ You came here running~ ♪ Take the consequence of living~ ♪ There's no space~ ♪ There's no tomorrow~ ♪ All we need is some communication~ ♪ Check it in, check it out, but the sun will never shine~ ♪ Paranoid anyway, in the subways of your mind~ ♪ \"",
     "\" ♪ This is the end~ ♪ Beautiful friend~ ♪ This is the end~ ♪ My only friend, the end~ ♪ Of our elaborate plans, the end~ ♪ Of everything that stands, the end~ ♪ No safety or surprise, the end~ ♪ I'll never look into your eyes again~ ♪ \"",
-    "\" I've got a hole in me pocket ! \""
-    "\" It's all in the mind, y'know \""
+    "\" I've got a hole in me pocket ! \"",
+    "\" It's all in the mind, y'know \"",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
