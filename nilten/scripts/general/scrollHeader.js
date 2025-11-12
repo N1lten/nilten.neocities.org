@@ -75,6 +75,7 @@ const headerText = [
     "\" ♪ This is the end~ ♪ Beautiful friend~ ♪ This is the end~ ♪ My only friend, the end~ ♪ Of our elaborate plans, the end~ ♪ Of everything that stands, the end~ ♪ No safety or surprise, the end~ ♪ I'll never look into your eyes again~ ♪ \"",
     "\" I've got a hole in me pocket ! \"",
     "\" It's all in the mind, y'know \"",
+    "\" Two of us riding nowhere~ ♪ Spending someones hard-earned pay~ ♪ You and me Sunday driving~ ♪ Not arriving~ ♪ On our way back home~ ♪ We're on our way home~ ♪ We're on our way home~ ♪ We're going home~ ♪ You and i have memories~ ♪ Longer than the road that stretches out ahead~ ♪ \"",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
