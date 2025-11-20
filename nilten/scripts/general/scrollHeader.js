@@ -75,6 +75,7 @@ const headerText = [
     "\" ♪ This is the end~ ♪ Beautiful friend~ ♪ This is the end~ ♪ My only friend, the end~ ♪ Of our elaborate plans, the end~ ♪ Of everything that stands, the end~ ♪ No safety or surprise, the end~ ♪ I'll never look into your eyes again~ ♪ \"",
     "\" I've got a hole in me pocket ! \"",
     "\" It's all in the mind, y'know \"",
+    "DON'T LOOK UP TRACK 18 OF THE WE LOVE KATAMARI SOUNDTRACK WORST MISTAKE OF MY LIFE",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
