@@ -12,7 +12,7 @@
         <title>Nilten</title>
         <link href="../CSS/Default.css" rel="stylesheet" type="text/css">
         <link href="../CSS/Gallery.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+        <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">
     </head>
     <style>
       html {
@@ -37,6 +37,12 @@
 
     <div id="slideshow-mainFrame">
         <div class="mySlides" style="display: block;">
+            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+            <img class="slideshow-image" src="../images/art/artwork/Traffic Kitty.webp" style="width:100%">
+            <div class="gallery-text">Traffic Kitty !</div>
+        </div>
+
+        <div class="mySlides">
             <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
             <img class="slideshow-image" src="../images/art/artwork/A Trip to Space !.webp" style="width:100%">
             <div class="gallery-text">A trip to Space !</div>
