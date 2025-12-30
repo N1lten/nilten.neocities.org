@@ -77,6 +77,7 @@ const headerText = [
     "\" It's all in the mind, y'know \"",
     "DON'T LOOK UP TRACK 18 OF THE WE LOVE KATAMARI SOUNDTRACK WORST MISTAKE OF MY LIFE",
     "\" Two of us riding nowhere~ ♪ Spending someones hard-earned pay~ ♪ You and me Sunday driving~ ♪ Not arriving~ ♪ On our way back home~ ♪ We're on our way home~ ♪ We're on our way home~ ♪ We're going home~ ♪ You and i have memories~ ♪ Longer than the road that stretches out ahead~ ♪ \"",
+    "\" I'M AT COMIC CON ! \"",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
