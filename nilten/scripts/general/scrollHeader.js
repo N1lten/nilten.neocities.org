@@ -79,7 +79,8 @@ const headerText = [
     "\" Two of us riding nowhere~ ♪ Spending someones hard-earned pay~ ♪ You and me Sunday driving~ ♪ Not arriving~ ♪ On our way back home~ ♪ We're on our way home~ ♪ We're on our way home~ ♪ We're going home~ ♪ You and i have memories~ ♪ Longer than the road that stretches out ahead~ ♪ \"",
     "\" I'M AT COMIC CON ! \"",
     "\" I'm Squidward~ ! I'm Squidward~ ! Squidward, Squidward, Squidward~ ! \"",
-"Bazinga !"
+    "Bazinga !",
+    "I made a boo-booooo~ yyYYEAAAÆÆÆÆÆ-",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
