@@ -76,11 +76,12 @@ const headerText = [
     "\" I've got a hole in me pocket ! \"",
     "\" It's all in the mind, y'know \"",
     "DON'T LOOK UP TRACK 18 OF THE WE LOVE KATAMARI SOUNDTRACK WORST MISTAKE OF MY LIFE",
-    "\" Two of us riding nowhere~ ♪ Spending someones hard-earned pay~ ♪ You and me Sunday driving~ ♪ Not arriving~ ♪ On our way back home~ ♪ We're on our way home~ ♪ We're on our way home~ ♪ We're going home~ ♪ You and i have memories~ ♪ Longer than the road that stretches out ahead~ ♪ \"",
+    "\" ♪ Two of us riding nowhere~ ♪ Spending someones hard-earned pay~ ♪ You and me Sunday driving~ ♪ Not arriving~ ♪ On our way back home~ ♪ We're on our way home~ ♪ We're on our way home~ ♪ We're going home~ ♪ You and i have memories~ ♪ Longer than the road that stretches out ahead~ ♪ \"",
     "\" I'M AT COMIC CON ! \"",
     "\" I'm Squidward~ ! I'm Squidward~ ! Squidward, Squidward, Squidward~ ! \"",
     "Bazinga !",
     "I made a boo-booooo~ yyYYEAAAÆÆÆÆÆ-",
+    "\" ♪ If you'd like to make a call~, please hang up and try again~ ♪ If you need help, hang up and then dial your ooooooperator~ ♪ If you'd like to make a call~, please hang up and try again~ ♪ If you need help, hang up and then dial your ooooooperator~ ♪ \"",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
