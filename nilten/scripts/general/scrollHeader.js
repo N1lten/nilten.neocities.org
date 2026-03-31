@@ -84,6 +84,10 @@ const headerText = [
     "\" ♪ If you'd like to make a call~, please hang up and try again~ ♪ If you need help, hang up and then dial your ooooooperator~ ♪ If you'd like to make a call~, please hang up and try again~ ♪ If you need help, hang up and then dial your ooooooperator~ ♪ \"",
     "\" ♪ You used to think it was so easy~ ♪ You used to say that it was so easy~ ♪ But you're trying~ you're trying now~ ♪ ♪ ♪ Another year and then you'll be happy~ ♪ Just one more year and then you'll be happy~ But you're crying~ you're crying now~ ♪ \"",
     "\" ♪ Little by little the night turns around~ ♪ Counting the leaves which tremble at dawn~ ♪ Lotuses lean on each other in yearning~ ♪ Under the eaves the swallow is resting~ ♪ ♪ ♪ Set the controls for the heart of the sun~ ♪ \"", 
+    "lay down all thoughts, surrender to the void.",
+    "ever notice how most of these slides just seem to be lyrics from a bunch of songs? i have no clear explanation for that, other than the fact, that i have absolutely no idea what to put here !",
+    "Have you played Atari today~?",
+    "contact me: contact.nilten@gmail.com !",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
