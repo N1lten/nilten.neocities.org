@@ -384,12 +384,20 @@ of the container */
     background-image: url("../images/icons/nav_list/nav_home_tag_02.webp");
 }
 
+#nav-home-tag:active {
+    background-image: url("../images/icons/nav_list/nav_home_tag_03.webp");
+}
+
 #nav-about-tag {
     background-image: url("../images/icons/nav_list/nav_about_tag_01.webp");
 }
 
 #nav-about-tag:hover {
     background-image: url("../images/icons/nav_list/nav_about_tag_02.webp");
+}
+
+#nav-about-tag:active {
+    background-image: url("../images/icons/nav_list/nav_about_tag_03.webp");
 }
 
 #nav-art-tag {
@@ -400,12 +408,32 @@ of the container */
     background-image: url("../images/icons/nav_list/nav_art_tag_02.webp");
 }
 
+#nav-art-tag:active {
+    background-image: url("../images/icons/nav_list/nav_art_tag_03.webp");
+}
+
+#nav-comics-tag {
+    background-image: url("../images/icons/nav_list/nav_comics_tag_01.webp");
+}
+
+#nav-comics-tag:hover {
+    background-image: url("../images/icons/nav_list/nav_comics_tag_02.webp");
+}
+
+#nav-comics-tag:active {
+    background-image: url("../images/icons/nav_list/nav_comics_tag_03.webp");
+}
+
 #nav-portfolio-tag {
     background-image: url("../images/icons/nav_list/nav_portfolio_tag_01.webp");
 }
 
 #nav-portfolio-tag:hover {
     background-image: url("../images/icons/nav_list/nav_portfolio_tag_02.webp");
+}
+
+#nav-portfolio-tag:active {
+    background-image: url("../images/icons/nav_list/nav_portfolio_tag_03.webp");
 }
 
 #nav-blog-tag {
@@ -416,6 +444,10 @@ of the container */
     background-image: url("../images/icons/nav_list/nav_blogs_tag_02.webp");
 }
 
+#nav-blog-tag:active {
+    background-image: url("../images/icons/nav_list/nav_blogs_tag_03.webp");
+}
+
 #nav-link-tag {
     background-image: url("../images/icons/nav_list/nav_links_tag_01.webp");
 }
@@ -424,12 +456,20 @@ of the container */
     background-image: url("../images/icons/nav_list/nav_links_tag_02.webp");
 }
 
+#nav-link-tag:active {
+    background-image: url("../images/icons/nav_list/nav_links_tag_03.webp");
+}
+
 #nav-room-tag {
     background-image: url("../images/icons/nav_list/nav_room_tag_01.webp");
 }
 
 #nav-room-tag:hover {
     background-image: url("../images/icons/nav_list/nav_room_tag_02.webp");
+}
+
+#nav-room-tag:active {
+    background-image: url("../images/icons/nav_list/nav_room_tag_03.webp");
 }
 
 #nav-button-back-01 {
