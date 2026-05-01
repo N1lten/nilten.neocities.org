@@ -87,6 +87,10 @@ const headerText = [
     "lay down all thoughts, surrender to the void.",
     "ever notice how most of these slides just seem to be lyrics from a bunch of songs? i have no clear explanation for that, other than the fact, that i have absolutely no idea what to put here !",
     "Have you played Atari today~?",
+    "\" Jesse ! You're a blowfish, Jesse ! A BLOWFISH ! \"",
+    "There's a man trying to break into this place ! Lock him in so he'll starve ! ...this is the most logical course of action !",
+    "\" I've been through the desert on a horse with no name~ ♪ It felt good to be out of the rain~ ♪ \"",
+    "bush hid the facts",
     "contact me: contact.nilten@gmail.com !",
 ];
 
