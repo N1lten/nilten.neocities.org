@@ -11,6 +11,7 @@
 // update as of 12.10.2025: FUCK (oh wait nvm it was a css error hehe whopsies)
 
 var galleries = document.getElementsByClassName("slideshow-container");
+var gallerySelectors = document.getElementsByClassName("slideshow-selector")
 
 var slideIndex = [];
 var slides = [] // Sorted in array corresponding to each gallery instance on one site
@@ -20,7 +21,17 @@ var fullscreenView = document.getElementById("slideshow-fullscreen");
 var currentID = 0;
 var skipAmount = 0;
 
-getGalleryAmount(); // init. get all slides and their corresponding groups sorted into arrays 
+// initializing. get all slides and their corresponding groups sorted into arrays 
+
+for(var i = 0; i < galleries.length; i++) {
+//  console.log("Amount of Gallerys on site: " + galleries.length);
+//  console.log(galleries[i]);
+    slideIndex[i] = 1;
+    slides[i] = galleries[i].getElementsByClassName("mySlides");
+//  console.log(slides[i]);
+}
+
+console.log(slides);
 
 // inintialize slide counters
 for(var i = 0; i < slideCounters.length; i++)
@@ -28,6 +39,8 @@ for(var i = 0; i < slideCounters.length; i++)
    slideCounters[i].innerHTML = '<p>' + slideIndex[i] + ' / ' + slides[i].length + '</p>';  // update slide counter text
 }
 
+// n = amount of slides skiped
+// id = identification of gallery instance (only really used when there are multiple gallery instances on one page)
 function plusSlides(n, id) {
   //console.log("ButtonID: " + id)
   showSlides(slideIndex[id] += n, id);
@@ -37,17 +50,10 @@ function plusSlidesFull(n)
 {
   showSlides(slideIndex[currentID] +=n, currentID);
 }
+// wait why are there two functions which do basically the same thing ???
 
-function getGalleryAmount()
-{
-  for(var i = 0; i < galleries.length; i++)
-  {
-//  console.log("Amount of Gallerys on site: " + galleries.length);
-//  console.log(galleries[i]);
-    slideIndex[i] = 1;
-    slides[i] = galleries[i].getElementsByClassName("mySlides");
-//  console.log(slides[i]);
-  }
+function goToSlide(n, id) {
+  showSlides(slideIndex[id] = n, id);
 }
 
 function showSlides(n, id) {
@@ -80,6 +86,11 @@ function init_fullscreen_img() {
 //console.log(skipAmount);
   full_img.src = slide_img[skipAmount+slideIndex[currentID]-1].src;
 //console.log(full_img.src);
+}
+
+function init_fullscreen_img_singular(img_url) {
+  var full_img = document.getElementById("slideshow-fs-image")
+  full_img.src = img_url;
 }
 
 function showFullscreen() {
