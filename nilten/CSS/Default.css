@@ -239,7 +239,7 @@ of the container */
 }
 
 #navDiv {
-    height: 450px;
+    height: fit-content;
     min-width: fit-content;
     background-image: url("../images/generic/div_bg_01.webp");
     background-clip: padding-box;
@@ -252,7 +252,7 @@ of the container */
 }
 
 #navBar {
-    height: 450px;
+    height: fit-content;
     list-style-type: square;
     padding: 2%;
     font-size: 20px;
@@ -318,6 +318,19 @@ of the container */
     left: 0;
     transform: translateY(-50%);
     background-image: url('../images/icons/nav_list/nav_art.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+#navBar .nav_comics::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url('../images/icons/nav_list/nav_comics.png');
     width: 50px;
     height: 50px;
     background-size: cover;
@@ -694,6 +707,8 @@ main {
     transform: scale(0.9);
 }
 
+/* Art page selection divs */
+
 .divSelect.art-selection {
     background-size: 325px;
     background-position: center;
@@ -708,6 +723,37 @@ main {
     font-size: 25px;
 }
 
+/* Comic selection divs */
+.divSelect.comic-selection {
+    background-size: contain;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+}
+
+.divSelect.comic-selection.invertTextColor p {
+    color: #000000;
+}
+
+.divSelect.comic-selection #comicTitle{
+    margin-top: 70%;
+    margin-bottom: 0;
+    margin-left: 5%;
+    font-size: 23px;
+}
+
+.divSelect.comic-selection #comicDate{
+    margin-top: 5px;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+/* Art scroll bar selection */
+.divSelect.artScrollBar-selection {
+    border: 8px solid transparent;
+}
+
+/* Comic page selection divs */
 .divSelect.blog-selection {
     background-image: url("../images/generic/div_bg_01.webp");
     width: 600px;
