@@ -76,7 +76,8 @@
 }
 
 #slideshow-mainFrame {
-    max-width: 720px;
+    max-width: 85%;
+    max-height: 100%;
     margin: auto;
 }
 
@@ -90,6 +91,8 @@
 .mySlides img {
     max-width: 100%;
     max-height: 100%;
+    display: block;
+    margin: auto;
 }
 
 .prev,
@@ -117,6 +120,18 @@
     left: 0;
 }
 
+.next img,
+.prev img {
+    content:url("../images/generic/nav_arrow_01.webp");
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* mirroring the next sprite, because we don't need a whole new iamge for this ! */
+.next img {
+    transform: scaleX(-1);
+}
+
 .prev:hover,
 .next:hover {
     background-color: rgba(33, 33, 33, 0.8);
@@ -142,6 +157,7 @@
     padding: 3px;
     background-clip: padding-box;
     border: 6px solid transparent;
+    z-index: 1;
 }
 
 .fullscreen-button img {
