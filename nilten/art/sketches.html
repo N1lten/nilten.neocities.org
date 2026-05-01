@@ -15,112 +15,115 @@
         <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">
     </head>
     <style>
-      html {
-        background-color: #000000;
-      }
+        html {
+            background-image: url("../images/making_of/making_of_bg.webp");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: bottom;
+            background-size: 175%;
+        }
+
+        p {
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        .sketchdesc {
+            font-size: 20px;
+        }
+
+        .dropShadow {
+            box-shadow: 10px 13px 20px black;
+        }
     </style>
-    <body onload="site_maintenanceMode()" id="site-bg-kitty-01" style="min-height: 100vh;">  
-        <div class="container">
-            <div id="header" style="text-align: center; display: flex; justify-content: center; align-items: center;">
-                <p style="margin: 0; font-size: 55px; font-weight: 600;">Sketches</p>
-            </div>
-        </div>
-            <br>
-<div class="container div-bgImg-two non-anim" style="padding: 10px;">
-<div class="slideshow-container">
+<body>
+    <p style="text-align: center; font-size: 65px; margin: 45px; color: #ffffff;">Sketches</p>
+    <img src="../images/generic/text_decoration_01.webp" style="display: block; margin: auto; transform: translateY(-30px);" draggable="false">
+    <div style="width: 50vw; height: 5vh;"></div>
     <div id="slideshow-fullscreen">
         <div id="slideshow-fs-image-frame"><img id="slideshow-fs-image"></div>
         <div id="slideshow-fs-close" onclick="hideFullscreen()"><img src="../images/icons/gallery_fullscreen_02.webp" draggable="false"></div>
-        <a class="prev" onclick="plusSlidesFull(-1), init_fullscreen_img()"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px;" draggable="false"></a>
-        <a class="next" onclick="plusSlidesFull(1), init_fullscreen_img()"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a> 
+    </div>
+    <div style="width: 85%; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+        <div style="text-align: center; transform: translate(10px, 35px) rotate(3deg);">
+            <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 200px; transform: translate(-170px, -90px) rotate(30deg);" draggable="false">
+            <img src="../images/art/sketches/angel_kitten.webp" style="width: 850px; height: auto; display: block;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/angel_kitten.webp')">
+            <p style="transform: rotate(-3deg);" class="sketchdesc">A kitten and an angel <small>(April 25th, 2026)</small></p>
+        </div>
+        <div style="text-align: center; transform: translate(-50px, -35px) rotate(-2deg);">
+            <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 200px; transform: translate(-80px, -80px) rotate(-15deg) scaleX(-1);;" draggable="false">
+            <img src="../images/art/sketches/finley_and_plant.webp" style="width: 500px; height: auto; display: block;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/finley_and_plant.webp')">
+            <p style="transform: rotate(2deg);" class="sketchdesc">Finley and a house plant ! <small>(April 18th, 2026)</small></p>
+        </div>
+    </div>
+    <br>
+    <div style="margin: auto; width: 90vw;">
+        <div style="display: flex; align-items: center; justify-content: space-between; width: inherit;">
+            <div style="margin: auto; transform: translate(-55px, -35px) rotate(3deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 150px; transform: translate(130px, -60px) rotate(10deg);" draggable="false">
+                <img src="../images/art/sketches/finley_tree.webp" style="width: 85%; height: auto; display: block; margin: auto;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/finley_tree.webp')">
+                <p style="text-align: center; transform: rotate(-3deg);" class="sketchdesc">Finley in a... tree costume? <small>(April 24th, 2026)</small></p>
+            </div>
+            <div style="transform: translate(-15px, -35px) rotate(-1deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 150px; transform: translate(60px, -50px) rotate(-10deg);" draggable="false">
+                <img src="../images/art/sketches/head_empty.webp" style="width: 85%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/head_empty.webp')">
+                <p style="text-align: center; transform: rotate(1deg);" class="sketchdesc">Head empty. Zero thoughts... sometimes. <br> <small>(April 18th, 2026)</small></p>
+            </div>
+            <div style="transform: translate(60px, -75px) rotate(1deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 150px; transform: translate(70px, -30px) rotate(15deg);" draggable="false">
+                <img src="../images/art/sketches/kittySketches01.webp" style="width: 85%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/kittySketches01.webp')">
+                <p style="text-align: center; transform: rotate(-1deg);" class="sketchdesc">A bunch of sketches stuck to my pc case <br> <small>(late 2024/mid 2025)</small></p>
+            </div>
+            <div style="transform: translate(60px, -75px) rotate(-2deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 150px; transform: translate(145px, -50px) rotate(5deg) scaleX(-1);" draggable="false">
+                <img src="../images/art/sketches/kittySketches02.webp" style="width: 85%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/kittySketches02.webp')">
+                <p style="text-align: center; transform: rotate(2deg);" class="sketchdesc">Kitty with a briefcase ! <small>(early september 2025)</small></p>
+            </div>
+            <div style="transform: translate(100px, 35px) rotate(3deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 150px; transform: translate(145px, -30px) rotate(30deg) scaleX(-1);" draggable="false">
+                <img src="../images/art/sketches/kittySketches03.webp" style="width: 85%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/kittySketches03.webp')">
+                <p style="text-align: center; transform: rotate(-3deg);" class="sketchdesc">Kitty with a pencil ! <small>(mid 2025)</small></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="width: 85%; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+        <div style="text-align: center; transform: translate(90px, 35px) rotate(-2deg);">
+            <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 250px; transform: translate(-150px, -100px) rotate(30deg);" draggable="false">
+            <img src="../images/art/sketches/tower_sketch.webp" style="width: 750px; height: auto; display: block;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/tower_sketch.webp')">
+            <p style="text-align: center; transform: rotate(2deg);" class="sketchdesc">A sketch of an Observation Tower <small>(mid(?) 2024)</small></p>
+        </div>
+        <div style="text-align: center; transform: translate(60px, -75px) rotate(1deg);">
+            <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 250px; transform: translate(-80px, -120px) rotate(-20deg) scaleX(-1);" draggable="false">
+            <img src="../images/art/sketches/wall_sketch.webp" style="width: 700px; height: auto; margin: auto; display: block;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/wall_sketch.webp')">
+            <p style="text-align: center; transform: rotate(-1deg);" class="sketchdesc">Sketch of a wall with a wanted poster, mocking Ragna's wanted poster seen in BlazBlue's Story Mode. <br> Made for the old About Page. <small>(late 2024)</small></p>
+        </div>
     </div>
 
-    <div id="slideshow-mainFrame">
-        <div class="mySlides" style="display: block;">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/kittySketches01.jpg" style="width:100%">
-            <div class="gallery-text">A bunch of sketches stuck to my pc case</div>
+    <div style="width: 50vw; height: 15vh;"></div>
+    
+    <div style="margin: auto;">
+        <div style="display: flex; width: 80vw; margin: auto; align-items: center; justify-content: space-between;">
+            <div style="width: 30%; transform: translate(-100px, -45px) rotate(2deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 230px; transform: translate(190px, -60px) rotate(10deg);" draggable="false">
+                <img src="../images/art/sketches/On Prowl Sketch.webp" style="width: 100%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/On Prowl Sketch.webp')">
+                <p style="text-align: center; transform: rotate(-2deg);" class="sketchdesc">Initial sketch of On Prowl <small>(June 2025)</small></p>
+            </div>
+            <div style="width: 30%; transform: translate(60px, -75px) rotate(-2deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 185px; transform: translate(180px, -80px) rotate(30deg);" draggable="false">
+                <img src="../images/art/sketches/Hard Rockin' Amigo Sketch.webp" style="width: 100%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/Hard Rockin\' Amigo Sketch.webp')">
+                <p style="text-align: center; transform: rotate(2deg);" class="sketchdesc">Initial sketch of Hard Rockin' Amigo <small>(May 2025)</small></p>
+            </div>
+            <div style="width: 30%; transform: translate(160px, -35px) rotate(-3deg);">
+                <img src="../images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 250px; transform: translate(260px, -60px) rotate(-5deg) scaleX(-1);" draggable="false">
+                <img src="../images/art/sketches/A Trip to Space Sketch.webp" style="width: 100%; height: auto; display: block; margin: 5px;" class="slideshow-image dropShadow slideshow-selector divSelect artScrollBar-selection" onclick="showFullscreen(), init_fullscreen_img_singular('../images/art/sketches/A Trip to Space Sketch.webp')">
+                <p style="text-align: center; transform: rotate(3deg);" class="sketchdesc">Initial sketch of A Trip to Space <small>(June 2025)</small></p>
+            </div>
         </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/kittySketches02.jpg" style="width:100%">
-            <div class="gallery-text">Kitty with briefcase !</div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/kittySketches03.jpg" style="width:100%">
-            <div class="gallery-text">And let's not forget kitty with pencil !</div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/A Trip to Space Sketch.webp" style="width:100%">
-            <div class="gallery-text">Initial sketch of A Trip to Space</div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/Hard Rockin' Amigo Sketch.webp" style="width:100%">
-            <div class="gallery-text">Initial sketch of Hard Rockin' Amigo</div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/On Prowl Sketch.webp" style="width:100%">
-            <div class="gallery-text">Initial sketch of on Prowl</div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/wall_sketch.jpg" style="width:100%">
-            <div class="gallery-text">Sketch of a wall with a wanted poster, mocking Ragna's wanted poster seen in BlazBlue's Story Mode. Made for the old <span style="font-weight: 600;"><a href="newAbout.html">About Page.</a></span></div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/making_of/about_miles_wall_sketch.webp" style="width:100%">
-            <div class="gallery-text">Sketch of Miles backing against a wall. Made for the <span style="font-weight: 600;"><a href="newAbout.html">About Page.</a></span></div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/making_of/portfolio_miles_artwork_sketch.webp" style="width:100%">
-            <div class="gallery-text">Sketch of Miles holding up a giant pencil. Made for the <span style="font-weight: 600;"><a href="newPortfolio.html">Portfolio Page.</a></span></div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/making_of/room_under_construction_sketch.webp" style="width:100%">
-            <div class="gallery-text">Sketch of a Kitten with a construction hat and a sledge hammer. Made for the <span style="font-weight: 600;"><a href="newRoom.html">W.I.P Room Page.</a></span></div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/making_of/about_miles_desc_model_sketch.webp" style="width:100%">
-            <div class="gallery-text">Sketch of Miles. Made for the <span style="font-weight: 600;"><a href="newAbout.html">About Page.</a></span></div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/making_of/welcome_miles_laptop_sketch.webp" style="width:100%">
-            <div class="gallery-text">Sketch of Miles with a laptop. Made for the <span style="font-weight: 600;"><a href="welcome.html">Welcome Page.</a></span></div>
-        </div>
-
-        <div class="mySlides">
-            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
-            <img class="slideshow-image" src="../images/art/sketches/tower_sketch.jpg" style="width:100%">
-            <div class="gallery-text">A sketch of an Observation Tower</div>
-        </div>
-
-        <div class="gallery-numbertext"></div>
-        <a class="prev" onclick="plusSlides(-1, 0)"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px;" draggable="false"></a>
-        <a class="next" onclick="plusSlides(1, 0)"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a> 
     </div>
-</div>
-    </div>
-<div id="nav-button-back-01" onclick="history.back()"></div>
-    </body>
+
+    <div style="width: 50vw; height: 60px;"></div>
+    <div id="nav-button-back-01" onclick="history.back()" style="display: block; position: fixed; bottom: 0; left: 0; width: 12vw; height: 12vh; z-index: 2;"></div>
+</body>
 <script src="../scripts/portfolio/gallery.js"></script>
 </html>

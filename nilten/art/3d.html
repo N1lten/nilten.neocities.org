@@ -5,7 +5,7 @@
         <meta name="author" content='Nils "Miles" Aaron'>
         <meta name="robots" content="noindex, nofollow">
         <meta property="og:title" content="Nilten">
-        <meta property="og:image" content="../images/generic/header_open_graph_protocol.webp">
+        <meta property="og:image" content="images/generic/header_open_graph_protocol.webp">
         <meta property="og:description" content="The neocities page of Miles Nilten!">
         <meta property="og:site_name" content="nilten.neocites.org">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +18,42 @@
       html {
         background-color: #000000;
       }
+
+      .mySlides {
+        max-height: 53vh;
+      }
+
+      .mySlides img {
+        max-height: inherit;
+      }
     </style>
     <body onload="site_maintenanceMode()" id="site-bg-kitty-01" style="min-height: 100vh;">  
-        <div class="container">
+        <div class="container" style="max-width: 60%; min-height: 10vh;">
             <div id="header" style="text-align: center; display: flex; justify-content: center; align-items: center;">
-                <p style="margin: 0; font-size: 55px; font-weight: 600;">3D Stuff</p>
+                <p style="margin: 0; font-size: 55px; font-weight: 600;">3D Artworks</p>
             </div>
         </div>
             <br>
-<div class="container div-bgImg-two non-anim" style="padding: 10px;">
-<div class="slideshow-container">
+<!--Silly little note for silly little miles of the future: Never try to mix min/max-width/height with their regular counterparts ever again. You will die a slow and painful death or something i suppose.-->
+<div class="container div-bgImg-two non-anim" style="padding: 10px; min-width: 90vw; min-height: 70vh">
+    <div style="float: left; min-width: 25vw; max-width: 25vw; min-height: 60vh; max-height: 60vh;">
+    <div style="overflow: hidden; overflow-y: scroll; max-height: inherit;" class="container div-bgImg-one borderTypeOne">
+        <h2>2025</h2>
+        <div>
+            <img src="../images/art/3D/Get Ready to Party!.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(1,0)">
+            <img src="../images/art/3D/Cat_with_Foodbowl_Render_800x600.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(2,0)">
+        </div>
+        <h2>2024</h2>
+            <img src="../images/art/3D/town_at_night1.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(3,0)">
+            <img src="../images/art/3D/town_at_night2.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(4,0)">
+            <img src="../images/art/3D/miles3d.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(5,0)">
+        <h2>2023</h2>
+            <img src="../images/art/3D/meowcintosh_classic.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(6,0)">
+        <h2>2022 (?)</h2>
+            <img src="../images/art/3D/really_just_ok_pool.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(0,0)">
+        </div>
+    </div>
+<div class="slideshow-container" style="float: right; min-width: 70%; max-width: 70%; min-height: 60vh; max-height: 60vh;">
     <div id="slideshow-fullscreen">
         <div id="slideshow-fs-image-frame"><img id="slideshow-fs-image"></div>
         <div id="slideshow-fs-close" onclick="hideFullscreen()"><img src="../images/icons/gallery_fullscreen_02.webp" draggable="false"></div>
@@ -35,11 +61,11 @@
         <a class="next" onclick="plusSlidesFull(1), init_fullscreen_img()"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a> 
     </div>
 
-    <div id="slideshow-mainFrame">
+    <div id="slideshow-mainFrame" style="max-height: inherit;">
         <div class="mySlides" style="display: block;">
             <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
             <img class="slideshow-image" src="../images/art/3D/Get Ready to Party!.webp" style="width:100%">
-            <div class="gallery-text"><p style="margin: 0;">A little tribute to Mario Party 2 !</p> <p style="margin: 0;">Made for Newgrounds' first annual Low Poly Day in 2025.</p></div>
+            <div class="gallery-text"><p style="margin: 0;">Get Ready to Party ! A tribute to Mario Party 2 !</p> <p style="margin: 0;">Made for Newgrounds' first annual Low Poly Day in 2025.</p></div>
         </div>
 
         <div class="mySlides">
@@ -53,17 +79,17 @@
             <img class="slideshow-image" src="../images/art/3D/town_at_night1.webp" style="width:100%">
             <div class="gallery-text">Town at Night. A silhouette of a small rural town at night.</div>
         </div>
-
+        
         <div class="mySlides">
             <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
             <img class="slideshow-image" src="../images/art/3D/town_at_night2.webp" style="width:100%">
             <div class="gallery-text">Town at Night. A silhouette of a small rural town at night.</div>
         </div>
-
+        
         <div class="mySlides">
             <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
             <img class="slideshow-image" src="../images/art/3D/miles3d.webp" style="width:100%">
-            <div class="gallery-text">Miles Nilten in three dimensions !!</div>
+            <div class="gallery-text">Miles Nilten in three dimensions !!1</div>
         </div>
 
         <div class="mySlides">
@@ -75,12 +101,12 @@
         <div class="mySlides">
             <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
             <img class="slideshow-image" src="../images/art/3D/really_just_ok_pool.webp" style="width:100%">
-            <div class="gallery-text">A pool. Not much else to say i guess. I found the blender files for this on an old usb drive of mine. I actually don't remember making this lmao</div>
+            <div class="gallery-text">A pool. Not much else to say i guess. I found the blender files for this on an old usb drive of mine. I actually don't remember making this lmao??</div>
         </div>
 
         <div class="gallery-numbertext"></div>
-        <a class="prev" onclick="plusSlides(-1, 0)"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px;" draggable="false"></a>
-        <a class="next" onclick="plusSlides(1, 0)"><img src="../images/generic/nav_arrow_01.gif" style="max-width: 50px; max-height: 50px; transform: rotateY(180deg);" draggable="false"></a> 
+        <a class="prev" onclick="plusSlides(-1, 0)"><img src="../images/generic/nav_arrow_01.gif" draggable="false"></a>
+        <a class="next" onclick="plusSlides(1, 0)"><img src="../images/generic/nav_arrow_01.gif" draggable="false"></a> 
     </div>
 </div>
     </div>
