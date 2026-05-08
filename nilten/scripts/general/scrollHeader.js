@@ -91,6 +91,7 @@ const headerText = [
     "There's a man trying to break into this place ! Lock him in so he'll starve ! ...this is the most logical course of action !",
     "\" I've been through the desert on a horse with no name~ ♪ It felt good to be out of the rain~ ♪ \"",
     "bush hid the facts",
+    "I'm a teapot.",
     "contact me: contact.nilten@gmail.com !",
 ];
 
