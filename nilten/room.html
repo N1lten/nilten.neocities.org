@@ -19,6 +19,38 @@
             <a href="home.html"><img src="images/generic/nilten_header_logo.webp" style="max-height: 100%;"></a>
         </div>
     </div>
+    <br>
+    <div class="container">
+            <div class="scrollingHeader">
+                <!--INSERT SOURCE ENGINE OBSOLETE GUY HERE-->
+                <marquee scrollamount="10"><p id="marqueeText" style="margin: 0; padding: 0;">Missingno.</p></marquee>
+                <!--MY SILLY ASS SURE LOVES OUTDATED BULLSHIT!-->
+            </div>
+    </div>
+    <div class="container" style="padding: 8px;">
+        <div id="flex">
+            <aside id="leftSidebar">
+                <div id="navDiv">
+                    <ul id="navBar">
+                        <li class="nav_home"><a href="home.html"><div id="nav-home-tag"></div></a></li>
+                        <li class="nav_miles"><a href="about.html"><div id="nav-about-tag"></div></a></li>
+                        <li class="nav_art"><a href="art.html"><div id="nav-art-tag"></div></a></li>
+                        <li class="nav_portfolio"><a href="portfolio.html"><div id="nav-portfolio-tag"></div></a></li>
+                        <li class="nav_blog"><a href="blogs.html"><div id="nav-blog-tag"></div></a></li>
+                        <li class="nav_social_media"><a href="links.html"><div id="nav-link-tag"></div></a></li>
+                        <li class="nav_room"><a href="room.html"><div id="nav-room-tag"></div></a></li>
+                      </ul>    
+                </div>
+            </aside>
+            <main>
+                <div class="pageHeaderImage" style="background-image: url('images/art/Header.webp'); background-position-y: center;">
+                    <div>
+                        <p style="font-size: 45px; font-weight: 600; margin-top: 325px; margin-bottom: 50%; text-decoration: underline;">I'm a teapot.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
     
     <h2>Miles' Room</h2>
     <div style="height: 20vh; width: auto;"></div>
@@ -37,8 +69,31 @@
     </div>
 
     <div id="nav-button-back-01" onclick="history.back()"></div>
-    <footer>
-        <script src="scripts/general/maintenanceKillSwitch.js"></script>
-    </footer>
+    <br>
+    <div class="container">
+        <footer id="footer">
+            <div id="footerContainer">
+                <img src="images/generic/nilten_header_logo.webp" style="width: 128px; height: auto;"><h5>2026</h5><p><i>Contact:</i> <span style="text-decoration: underline;">contact.nilten@gmail.com</span></p>
+            </div>
+            <div id="footerButtons"></div>
+            <div class="social_media_footer">
+                <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube" title="Youtube"></a>
+                <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky" title="Bluesky"></a>
+                <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds" title="Newgrounds"></a>
+                <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub" title="GitHub"></a>
+                <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam" title="Steam"></a>
+                <a href="https://neocities.org/site/nilten" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/neocities_social_media_icon.webp" style="width: 75px; height: auto;" alt="Neocities" title="Neocities"></a>
+            </div>
+            <div style="display: flex; flex-direction: column; max-height: fit-content; margin: 8px;">
+                <div style="width: fit-content; margin: auto;">
+                    <div class="link_border" style="width: fit-content; height: fit-content;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
+                </div>
+                <img src="images/icons/favicon.png" alt="favicon" draggable="false" style="position: relative; object-fit: contain; width: 32px; height: 32px; margin: 5px auto;">
+            </div>
+            <script src="scripts/general/scrollHeader.js"></script>
+            <script src="scripts/general/scrollButtons.js"></script>
+            <script src="scripts/general/maintenanceKillSwitch.js"></script>
+        </footer>
+    </div>
 </body>
 </html>
