@@ -13,7 +13,7 @@
         <link href="CSS/Default.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
     </head>
-<body id="site-bg-kitty-01">
+<body onload="site_maintenanceMode()" id="site-bg-kitty-01">
     <div class="container">
         <div id="header" style="text-align: center;">
             <a href="home.html"><img src="images/generic/nilten_header_logo.webp" style="max-height: 100%;"></a>
@@ -37,5 +37,8 @@
     </div>
 
     <div id="nav-button-back-01" onclick="history.back()"></div>
+    <footer>
+        <script src="scripts/general/maintenanceKillSwitch.js"></script>
+    </footer>
 </body>
 </html>
