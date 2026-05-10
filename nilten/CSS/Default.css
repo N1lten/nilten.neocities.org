@@ -215,6 +215,14 @@ of the container */
     cursor: pointer;
 }
 
+.linkTypeTwo:hover {
+    font-size: larger;
+}
+
+.linkTypeTwo:active {
+    font-size: x-small;
+}
+
 #header {
     background-image: url("../images/generic/div_bg_01.webp");
     height: 100px;
@@ -697,6 +705,12 @@ main {
 
 .divSelect.noBorder {
     border: 0;
+}
+
+.divSelect.pageBlocked:hover {
+    border-image: url(../images/generic/div_border_03.webp);
+    transform: scale(1);
+    animation: none;
 }
 
 .divSelect.hoverScale:hover {
