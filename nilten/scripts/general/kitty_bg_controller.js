@@ -64,7 +64,7 @@ addEventListener("keyup", (eventUp) => {
     {
         return;
     } else{
-        console.log(keysPressed);
+        //console.log(keysPressed);
         keysPressed[eventUp.which] = false;
     }
 });

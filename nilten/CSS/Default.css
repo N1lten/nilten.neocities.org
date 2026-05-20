@@ -85,8 +85,8 @@ html, body, a:hover{
 
 #site-bg-kitty-01 {
     background-image: url("../images/generic/site_bg_01.webp");
-    animation: kitty_smrpg_background 3.5s linear infinite;
-    -webkit-animation: kitty_smrpg_background 3.5s linear infinite;
+    animation: kitty_smrpg_background_down_left 3.5s linear infinite; /* default value: down left */
+    -webkit-animation: kitty_smrpg_background_down_left 3.5s linear infinite;
 }
 
 @keyframes layer1Scroll {
@@ -132,11 +132,55 @@ html, body, a:hover{
     }
 }
 
-@keyframes kitty_smrpg_background {
+/* keyframes for the scrolling kitty bg. down left is the default value. */
+/* ^= || =^*/
+@keyframes kitty_smrpg_background_down_left {
     0% {background-position: 0px 0px;}
 
     100% {background-position: -256px 256px;}
 }
+
+@keyframes kitty_smrpg_background_down {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: 0px 256px;}
+}
+
+@keyframes kitty_smrpg_background_down_right {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: 256px 256px;}
+}
+
+@keyframes kitty_smrpg_background_right {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: 256px 0px;}
+}
+@keyframes kitty_smrpg_background_up_right {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: 256px 256px;}
+}
+
+@keyframes kitty_smrpg_background_up {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: 0px -256px;}
+}
+
+@keyframes kitty_smrpg_background_up_left {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: -256px -256px;}
+}
+
+@keyframes kitty_smrpg_background_left {
+    0% {background-position: 0px 0px;}
+
+    100% {background-position: -256px 0px;}
+}
+
 
 @keyframes div_border_anim_01 {
     0% {
@@ -178,8 +222,8 @@ of the container */
     margin: 0 auto;
 
     /*Super Mario RPG style background and border animation*/
-    animation: kitty_smrpg_background 3.5s linear infinite, div_border_anim_01 2.5s steps(2, jump-none) infinite;
-    -webkit-animation: kitty_smrpg_background 3.5s linear infinite, div_border_anim_01 2.5s steps(2, jump-none) infinite;
+    animation: kitty_smrpg_background_down_left 3.5s linear infinite, div_border_anim_01 2.5s steps(2, jump-none) infinite;
+    -webkit-animation: kitty_smrpg_background_down_left 3.5s linear infinite, div_border_anim_01 2.5s steps(2, jump-none) infinite;
 }
 
 .div-bgImg-one
