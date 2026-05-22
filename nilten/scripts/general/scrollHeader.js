@@ -30,11 +30,11 @@ const headerText = [
     "\"♪ Da Coconut Nut is a giant nut, if you eat too much, you'll get very fat. (very fat ~) Now, da Coconut Nut is a big, big nut, but this delicious nut is not a nut ! It's a coco fruit. (it's a coco fruit ~) Of the coco tree. (of the coco tree ~) From the coco palm family ! ♪\"",
     "\"♪ Super Mario RPG ♪ Sonic the Hedgehog, Donkey Kong 3 ♪ Adventures of Lolo 1 and 2 ♪ King's Knight, Dig Dug, Chew Man Fu ♪ Harvest Moooooon~ ♪ League Puzzle Pokemoooon~ ♪ ToeJam & Earl in Panic on Funkotroooon~ ♪ Castlevania, Fatal Fury, Ninja JaJaMaru-kun ♪ ActRaiser, Blazing Lazers, Bases Loaded, Mega Turrican ♪ Cybernator, Rolling Thunder, Dynastic Hero ♪ Bubble Bobble, Double Dribble, Double Dragon, F-Zero ♪ F-Zero X ~ ♪ and Donkey Kong Jr. Maaaath ~ ! ♪ Ninja Gaiden 1 ♪ Ninja Gaiden 2 ♪ Ninja Gaiden 3 ♪ Crusin' USA ♪\"",
     "\"♪ Super Mario - oohh R-P-G! ♪ It is the only one just for me ♪ When i play the game, i get lost in a phase ♪ Then i find out I'm stuck in Geno's Maze ♪ There are many secrets in this game ♪ Many of which drive some peeps insane ♪ Why we try to cheat in a really good game? ♪ Just sounds like crap and it makes you look lame! ♪ Exiting the forest is super simple! ♪ All you do is follow these path tuuuurns~ ♪ For the reeessstt of yoouur gaming liiife~ ♪\"",
-    "\"♪ I wanna flyyy skyyy hiiiigh~ ♪ Let's goooo together~ ♪ We are going this waaayyy~ ♪ At maximum speed on a wiiing~ ♪ We're flying ♪    ♪ ♪ ♪    ♪ I wanna flyyy skyy hiiiigh~ ♪ Let's goooo together~ ♪ You can even see the horizooon~ ♪ We driiiift together~ ♪ Forever ♪ Oooover the bridge~ ♪ Cut through the traffic ♪ Flyyyying hiiigh~ Feeeeliing goood~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪\"",
+    "\"♪ I wanna flyyy skyyy hiiiigh~ ♪ Let's goooo together~ ♪ We are going this waaayyy~ ♪ At maximum speed on a wiiing~ ♪ We're flying ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ I wanna flyyy skyy hiiiigh~ ♪ Let's goooo together~ ♪ You can even see the horizooon~ ♪ We driiiift together~ ♪ Forever ♪ Oooover the bridge~ ♪ Cut through the traffic ♪ Flyyyying hiiigh~ Feeeeliing goood~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪ Blue, blue skiiesss ♪ Blue, blue skiiesss I see~ ♪\"",
     "\"♪ ROOOLLING STAAAAAAART! ♪ ROOOLLING STAAAAAAART! ♪\"",
     "\"♪ DAYTONAAAAAAA~ ♪ DAYTONAAAAAAA~ ♪ LET'S GO AWAY ♪ DAYTONAAAAAAA~ ♪\"",
     "\"It is gud day to be not dead !\"",
-    "KRUSTY KRAAAYEAAEEEYEAAAEYEAAAABB PIZZA IS THE PIZZA YEEAAEEAAA FOR YOU AND...      MEEEEEEEEEEEHEEEEEEEEEEHEEEEEHEEEEEE!!",
+    "KRUSTY KRAAAYEAAEEEYEAAAEYEAAAABB PIZZA IS THE PIZZA YEEAAEEAAA FOR YOU AND... &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MEEEEEEEEEEEHEEEEEEEEEEHEEEEEHEEEEEE!!",
     "i main ness btw.",
     "i main taokaka btw.",
     "i main heavy and medic btw.",
@@ -43,7 +43,7 @@ const headerText = [
     "\" ♪ Ashes to Ashes~ ♪ Funk to funky~ ♪ We know Major Tom's a junkie~ ♪ Strung out in heaven's high~ ♪ Hitting an all-time low~ ♪ \"",
     "\" ♪ For here~ ♪ Am i sitting in a tin can~ ♪ Far~ above the world~ ♪ Planet earth is blue and there's nothing i can do~ ♪ \"",
     "Fetch me a fire extinguisher. A good one. With the foam.",
-    "\"♪ Give it all you've got~ ♪ Can't stop now, keep moving~ ♪ Give it all you've got~ ♪    ♪ ♪ ♪    ♪ Give it all you've got~ ♪ Dance, dance, dance, get on it~ ♪ Take it to the top~ ♪ \"",
+    "\"♪ Give it all you've got~ ♪ Can't stop now, keep moving~ ♪ Give it all you've got~ ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ Give it all you've got~ ♪ Dance, dance, dance, get on it~ ♪ Take it to the top~ ♪ \"",
     "Get crazy with the Cheese Whiz !",
     "\" ♪ Reese's Puffs, Reese's Puffs, ♪ Peanut butter chocolate flavour~ ♪ Reese's Puffs, Reese's Puffs, ♪ In the A.M. it's the flavour i savour~ ♪ Peanut butter and chocolate too~ ♪ You know how i do, that's what i wake up to~ ♪ My Reese's Puffs inspired this rhyme~ ♪ That peanut butter and chocolate combination's on time~ ♪ Reese's Puffs, Reese's Puffs (Eat em up, Eat em up) ♪ Reese's Puffs, Reese's Puffs (Eat em up, Eat em up) ♪ Reese's Puffs, Reese's Puffs (Eat em up, Eat em up) ♪ Reese's Puffs, Reese's Puffs (Eat em up, Eat em up) ♪ \"",
     "\" ♪ And if the dam breaks open many years too soon~ ♪ And if there is no room upon the hill~ ♪ And if your head explodes with dark forebodings too~ ♪ I'll see you on the dark side of the moon~ ♪ \"",
@@ -92,8 +92,12 @@ const headerText = [
     "\" I've been through the desert on a horse with no name~ ♪ It felt good to be out of the rain~ ♪ \"",
     "bush hid the facts",
     "I'm a teapot.",
+    "I've got blisters on my fingers~ !!",
+    "♪ Whisper words of wisdom, Let it be~ ♪",
+    "♪ There will be an awnser, Let it be~ ♪",
+    "\" ♪ I know that you saw me~ ♪ 'cause I looked up to see~ ♪ your face~ ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ 'Cause I know where you've been~ ♪ and I saw you walk in~ ♪ <span style='font-family: Georgia, \"Times New Roman\", Times, serif;'>your face~</span> ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ 'Cause you walked hand in hand~ ♪ With another man~ ♪ <span style='font-family: \"Comic Sans MS\", \"Comic Sans\", cursive;'><i>your face~</i></span> ♪ \"",
     "contact me: contact.nilten@gmail.com !",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
-document.getElementById('marqueeText').innerText = headerText[indexID];
+document.getElementById('marqueeText').innerHTML = headerText[indexID];
