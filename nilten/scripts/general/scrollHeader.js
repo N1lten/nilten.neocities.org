@@ -96,6 +96,9 @@ const headerText = [
     "♪ Whisper words of wisdom, Let it be~ ♪",
     "♪ There will be an awnser, Let it be~ ♪",
     "\" ♪ I know that you saw me~ ♪ 'cause I looked up to see~ ♪ your face~ ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ 'Cause I know where you've been~ ♪ and I saw you walk in~ ♪ <span style='font-family: Georgia, \"Times New Roman\", Times, serif;'>your face~</span> ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ 'Cause you walked hand in hand~ ♪ With another man~ ♪ <span style='font-family: \"Comic Sans MS\", \"Comic Sans\", cursive;'><i><b>your face~</b></i></span> ♪ &nbsp; &nbsp; &nbsp; ♪ ♪ ♪ &nbsp; &nbsp; &nbsp; ♪ They said it wasn't you~ ! ♪ But i saw you peep through~ ♪ <span style='font-family: \"Impact\", fantasy;'><i>your face~</i></span> ♪ \"",
+    "Simba.",
+    "\" ♪ We gotta install microwave ovens~ ♪ Custom kitchen deliveries~ ♪ We gotta move these refridgerators~ ♪ We gotta move these colour TVs~ ♪ \"",
+    "Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness....",
     "contact me: contact.nilten@gmail.com !",
 ];
 
