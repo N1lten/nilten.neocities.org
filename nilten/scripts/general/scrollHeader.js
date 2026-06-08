@@ -99,6 +99,9 @@ const headerText = [
     "Simba.",
     "\" ♪ We gotta install microwave ovens~ ♪ Custom kitchen deliveries~ ♪ We gotta move these refridgerators~ ♪ We gotta move these colour TVs~ ♪ \"",
     "Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness....",
+    "Come down today and try some corn ~ ♪ Or we will sacrifice your newborn ~ ♪",
+    "Dojo Casino~ It's all in the mind~ You have nothing to lose...~",
+    "<b style=\"text-decoration: underline;\">WANTED:</b> Somebody to go back in time with me. This is not a joke. P.O. Box 42069 Oakview, CA 93022. You'll get paid after we get back. Must bring your own weapons. <span style=\"text-decoration: underline;\">Safety not guaranteed.</span> I have only done this once before.",
     "contact me: contact.nilten@gmail.com !",
 ];
 
