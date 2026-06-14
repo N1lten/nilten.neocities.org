@@ -585,6 +585,11 @@ of the container */
     background-position: center; /* Zentriert das Bild */
 }
 
+.home_youtube_embed {
+    width: 570px;
+    margin: 10px auto;
+}
+
 /* this is the color of the main content area,
 between the sidebars! */
 main {
