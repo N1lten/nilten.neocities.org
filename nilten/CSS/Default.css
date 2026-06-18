@@ -46,24 +46,57 @@ html, body, a:hover{
     z-index: -4;
 }
 
-#background03 {
-    background-image: url("../images/home/home_bg_sky.webp");
+#background03, #background03A, #background03B {
+    /* background-image: url("../images/home/home_bg_sky.webp"); */
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: -10;
-    /*animation: background03Animation 80s ease infinite;*/
+    /* z-index: -10; */
 }
 
-/*@keyframes background03Animation {
+#background03 {
+    background-image: url("../images/home/home_bg_sky_layer_01.webp");
+    transform: rotate(15deg) translateX(-100vw);
+    width: 200vw;
+    height: 200vh;
+    margin: auto;
+    background-size: 100vw;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -11;
+    animation: background03Animation01 90s ease infinite;
+}
+
+#background03A {
+    background-image: url("../images/home/home_bg_sky_layer_02.webp");
+    width: 150vw;
+    height: 150vh;
+    animation: background03Animation02 60s ease infinite;
+    z-index: -11;
+}
+
+#background03B {
+    background-image: url("../images/home/home_bg_sky_layer_03.webp");
+    z-index: -12;
+}
+
+@keyframes background03Animation01 {
+    0% {transform: translate(-360px, -120px) rotate(15deg);}
+    25% {transform: translate(-660px, -400px) rotate(14deg);;}
+    50% {transform: translate(-235px, -750px) rotate(15deg);;}
+    75% {transform: translate(-550px, -300px) rotate(16deg);;}
+    100% {transform: translate(-360px, -120px) rotate(15deg);;}
+}
+
+@keyframes background03Animation02 {
     0% {transform: translate(-110px, -120px);}
-    25% {transform: translate(-231px, -131px);}
-    50% {transform: translate(-115px, -170px);}
-    75% {transform: translate(-210px, -150px);}
+    25% {transform: translate(-450px, -310px);}
+    50% {transform: translate(-155px, -160px);}
+    75% {transform: translate(-340px, -450px);}
     100% {transform: translate(-110px, -120px);}
-}*/
+}
 
 #background04 {
     background-image: url("../images/home/home_bg_trees_layerOne.webp");
@@ -74,7 +107,7 @@ html, body, a:hover{
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    
+
 }
 
 #background_moon {
@@ -115,19 +148,19 @@ html, body, a:hover{
 }*/
 
 @keyframes cursorAnim{
-    0% { 
+    0% {
         cursor: url("../images/cursor/c1.png"), auto;
     }
-    25% { 
+    25% {
         cursor: url("../images/cursor/c2.png"), auto;
     }
-    50% { 
+    50% {
         cursor: url("../images/cursor/c3.png"), auto;
     }
-    75% { 
+    75% {
         cursor: url("../images/cursor/c4.png"), auto;
     }
-    100% { 
+    100% {
         cursor: url("../images/cursor/c5.png"), auto;
     }
 }
@@ -199,7 +232,7 @@ html, body, a:hover{
 
     100% {
             border-image: url("../images/generic/div_border_04.webp") 33 round;
-    }    
+    }
 }
 
 * {
@@ -1055,7 +1088,7 @@ h2,
 h3 {
     color: #ffffff;
 }
- 
+
 h1 {
     font-size: 25px;
 }
@@ -1087,10 +1120,10 @@ strong {
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
-/* so you wanna change the width of your page? 
+/* so you wanna change the width of your page?
 by default, the container width is 900px.
 in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
+and then subtrack it by 100. use this new number as the
 "max-width" value below
 */
 
