@@ -53,15 +53,16 @@ html, body, a:hover{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    /* z-index: -10; */
+    z-index: -10;
 }
 
-#background03 {
+#background03Home {
     background-image: url("../images/home/home_bg_sky_layer_01.webp");
     transform: rotate(15deg) translateX(-100vw);
     width: 200vw;
     height: 200vh;
     margin: auto;
+    position: fixed;
     background-size: 100vw;
     background-repeat: repeat;
     opacity: 0.3;
@@ -1015,6 +1016,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 
 #leftSidebar {
     order: 1;
+    z-index: 1;
     width: 20%;
     padding-right: 20px;
     font-size: smaller;
@@ -1022,6 +1024,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 
 #rightSidebar {
     order: 3;
+    z-index: 1;
     width: 20%;
     padding-left: 20px;
     padding-bottom: 20px;
