@@ -200,11 +200,12 @@
             <br>
             <div class="borderTypeOne" style="width: 80%; margin: auto; padding: 15px; background-image: url('images/generic/div_bg_01.webp');">
                 <p class="headerTextOne" style="margin: 0;">Current progress</p>
-                <p class="portfolioSubText">as of 23.08.2025:</p>
+                <p class="portfolioSubText">as of 06.21.2026</p>
                 <p><span style="text-decoration: underline; font-weight: 600;">Textures:</span> Mostly complete ! Some textures still need some touch ups, however ! </p>
                 <p>For example, the quotes seen when starting the game are suposed to have a transparent background instead of a black one. Also some construction signs at EXPO 96 have some weird offset problem on either the left or the right side of the texture.</p>
-                <p><span style="text-decoration: underline; font-weight: 600;">EXPO 96 Brodcasts and "More Than Giant" Movies:</span> Not that much progress here yet. All i
-                    know so far is that the files for the brodcasts seen at EXPO 96 are stored in the HVQM2 1.0 format.</p>
+                <br>
+                <p><span style="text-decoration: underline; font-weight: 600;">EXPO 96 Brodcasts and "More Than Giant" Movies:</span> Progress is <i>somewhat</i> being made ?!</p>
+                    <p>The video files containing the brodcasts seen at EXPO 96 are stored in the HVQM2 1.0 format.</p>
                     <p>HVQ and HVQM are both media formats developed by Hudson Soft for the N64. HVQ files were used for image compression, while HVQM files could be used to compress .AVI files to be played back on the N64. The file header for both formats can be found in the official N64 SDK.</p>
                     <p>Both HVQ and HVQM are compressed using Vector quantization, which is also used by video codecs such as Bink Video developed by Epic Games. The game's rom features a total of 165 instances of the HVQM2 header, which is... a lot. Especially with the 64DD's 64MB limit taken into consideration. </p>
                     <p>Although i'm not yet quite sure how many of those files are actually used, unused or even empty dummy files.</p>
@@ -218,12 +219,17 @@
                             <li><p>1 x Brodcast begin</p></li>
                             <li><a href="https://www.youtube.com/watch?v=CZFEqn-Qw_w&t=8" target="_blank" rel="noopener noreferrer" title="Video by Teary_Eyes_Anderson"><p style="display: inline-block; margin: 0; margin-bottom: 16px;" class="linkTypeOne">1 x Ending cutscene</p></a></li>
                             <li><a href="https://www.youtube.com/watch?v=CZFEqn-Qw_w&t=139" target="_blank" rel="noopener noreferrer" title="Video by Teary_Eyes_Anderson"><p style="display: inline-block; margin: 0;" class="linkTypeOne">1 x Credits</p></a></li>
-                            <li><p>63(?) x Regular SM Diamond brodcasts</p></li>
+                            <li><p>63(?) x Regular Sima brodcasts</p></li>
                             <li><p>? x Unused or dummy files (if any)</p></li>
                             <p>Total amount of video files in ROM: <span style="text-decoration: underline;">165</span></p>
                         </ul>
                     </div>
-                <p><span style="text-decoration: underline; font-weight: 600;">Character dialoges:</span> Not much progress here either, which is a real bummer, because this is the part of the game, which is in need of a translation the most ! My brain just can't really comprehend... things... and hex editors.</p>
+                    <p>I'm currently working on a CLI tool to extract the <strong>.hvqm</strong> files from the ROM. You can check out the program's source code on <a href="https://github.com/N1lten/hvq_extractor" target="_blank" rel="noopener noreferrer"><span style="display: inline-block; margin: 0; margin-bottom: 16px; text-decoration: underline;" class="linkTypeOne">Github</span></a> !</p>
+                    <p>This however will only be a rather small part of this much larger puzzle ^^' How will i be able to read the extracted .hvqm files? No idea ! Should i try writing another program to convert the .hvqm files back to .avi files? Maybe !</p>
+                    <p>But then how will i re-insert the modified .hvqm files back into the ROM? No idea ! What will happen if the file size of the modified .hvqm file doesn't match up with the original file? Will the game just crash? Honestly, yea it probably will ! Heck, the game may not even start up !</p>
+                    <p>I think the best way to see how things may progress with this project is just to fuck around and find out ! Don't expect this translation to be done anytime soon ^^'</p>
+                <br>
+                <p><span style="text-decoration: underline; font-weight: 600;">Queen companion dialoges:</span> Not much progress here either, which is a real bummer, because this is the part of the game, which is in need of a translation the most ! My brain just can't really comprehend... things... and hex editors.</p>
             </div>
         </div>
         <div id="mainContainerTwo" style="margin: 15px auto; border-width: 15px; width: 85%;">
