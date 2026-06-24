@@ -104,6 +104,7 @@ const headerText = [
     "Would you smile for a joke?",
     "<b style=\"text-decoration: underline;\">WANTED:</b> Somebody to go back in time with me. This is not a joke. P.O. Box 42069 Oakview, CA 93022. You'll get paid after we get back. Must bring your own weapons. <span style=\"text-decoration: underline;\">Safety not guaranteed.</span> I have only done this once before.",
     "Have you mooed today?",
+    "\" ♪ Big man, Pig man~  ♪  Haha~ charade, you are !~ ♪ \"",
     "contact me: contact.nilten@gmail.com !",
 ];
 
