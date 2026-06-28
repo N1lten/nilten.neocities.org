@@ -15,6 +15,14 @@
         <link rel="me" href="https://mastodon.social/@nilten"> <!--Mastodon Verification-->
         <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
     </head>
+
+    <script>
+        // redirect the neocities screenshot bot to the thumbnail page
+        if (navigator.userAgent === "Screenjesus") {
+            location.replace("/thumbnail.html");
+        }
+    </script>
+
 <body id="site-bg-kitty-01" onload="site_maintenanceMode()">
 <img src="images/generic/nilten_header_logo.webp" alt="Nilten" style="width: 250px; height: auto; margin: 25px auto; position: absolute; left: 0; right: 0; top: 0; bottom: 0;">
 
