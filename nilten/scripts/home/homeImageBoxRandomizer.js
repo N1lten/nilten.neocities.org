@@ -13,7 +13,7 @@ var validURLs = [
 
 URLID = Math.floor(Math.random() * validURLs.length)
 randClass.src = validURLs[URLID];
-console.log(URLID)
+// console.log(URLID)
 function advanceImgBox()
 {
     if(URLID != validURLs.length-1)
