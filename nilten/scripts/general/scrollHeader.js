@@ -56,6 +56,7 @@ const headerText = [
     "\" there's no dark side of the moon, really. matter of fact, it's all dark. \"",
     "it's a unix system... i know this...",
     "Remember, kids ! Don't copy that floppy !",
+    "Actually, you know what? Just copy that floppy. The gaming industry is soo cooked atm. Unless it's from an indie dev. Pirating indie games is just pure evil.",
     "i can't be the only one who misses the comedic mario sports intros from the gamecube and wii era, especially the ones with wario and waluigi trying to ruin the fun for everyone. i mean for crying out loud the mario power tennis intro could have aired standalone on tv as a mario short or something like that ! they were that good ! no joke !",
     "You know what they say: All toasters toast toast !",
     "\" ♪ Matte na yo~ Pichi-Hime~ ♪ Tasuke ni~ ♪ Umi koe yama koe~ ♪ Tani koe oka koete~ ♪ Bokura Super! ♪ Dakedo I don't know~ ♪ Bokura Super! ♪ Dakedo what to do~ ♪ With my love~ ♪ \"",
