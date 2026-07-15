@@ -90,6 +90,8 @@ const headerText = [
     "Have you played Atari today~?",
     "\" Jesse ! You're a blowfish, Jesse ! A BLOWFISH ! \"",
     "There's a man trying to break into this place ! Lock him in so he'll starve ! ...this is the most logical course of action !",
+    "I miss my wife, Tails. I miss her a lot.",
+    "I'd like to be in the friend zone ! :D I like friends ! :D",
     "\" I've been through the desert on a horse with no name~ ♪ It felt good to be out of the rain~ ♪ \"",
     "bush hid the facts",
     "I'm a teapot.",
@@ -106,6 +108,10 @@ const headerText = [
     "<b style=\"text-decoration: underline;\">WANTED:</b> Somebody to go back in time with me. This is not a joke. P.O. Box 42069 Oakview, CA 93022. You'll get paid after we get back. Must bring your own weapons. <span style=\"text-decoration: underline;\">Safety not guaranteed.</span> I have only done this once before.",
     "Have you mooed today?",
     "\" ♪ Big man, Pig man~  ♪  Haha~ charade, you are !~ ♪ \"",
+    "I love refrigerators !",
+    "Finally at the wrapping station, metalic film is wrapped around the cookie tray, letting customers finally purchase a freshly made box of- n-NEWMAN-O'S ? WHAT THE FUCK ?!",
+    "FINLAND !",
+    "I have done nothing but teleport bread for three days",
     "contact me: contact.nilten@gmail.com !",
 ];
 
