@@ -301,6 +301,12 @@ of the container */
     font-size: x-small;
 }
 
+.linkNoCol {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 #header {
     background-image: url("../images/generic/div_bg_01.webp");
     height: 100px;
@@ -769,6 +775,12 @@ main {
 
     animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
     -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+
+.divSelect a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .divSelect:hover {
