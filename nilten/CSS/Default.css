@@ -642,6 +642,21 @@ of the container */
 .room_bg_gradient_button p {
     color: #000000;
 }
+.room_collection_entry_01 {
+    width: 7vw;
+}
+.room_collection_entry_01.divSelect {
+    border-image: url(../images/generic/div_border_03.webp);
+    border: 7px solid transparent;
+    background-clip: padding-box;
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+}
+.room_collection_row_01 {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
 
 /* this is the color of the main content area,
 between the sidebars! */
@@ -818,7 +833,9 @@ main {
 .divSelect.pageBlocked:hover {
     border-image: url(../images/generic/div_border_03.webp);
     transform: scale(1);
-    animation: none;
+
+    animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
+    -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
 }
 
 .divSelect.hoverScale:hover {
