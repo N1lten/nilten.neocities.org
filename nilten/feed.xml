@@ -4,26 +4,47 @@
   <title>Nilten</title>
   <description>Miles Nilten's Super Fun RSS Feed for Very Handsome People !</description>
   <link>https://nilten.neocities.org</link>
+  <image>
+    <url>image/site_thumbnail_01.jpg</url>
+    <title>Nilten</title>
+    <link>https://nilten.neocities.org</link>
+  </image>
+
   <lastBuildDate>
-    Wed, 24 Jun 2026 22:10 +0200
+    Wed, 24 Jun 2026 22:38 +0200
   </lastBuildDate>
   <ttl>20000</ttl>
-  
+
   <item>
-  <title>An RSS feed ?! At this hour !? How convenient !</title>
-  <description>
-    Breaking news, everyone ! I have an RSS feed now !
-    This breakthrough in modern intenet technology allows me to send you funny little kitty cats right to the inbox of your favourite RSS reader of choice !
-    Just like this:
+    <title>Oh Hi Mark</title>
+    <description>
+      &lt;p&gt;The Room page is finally live ! There is still a lot of work to be done, though !&lt;/p&gt;
+      &lt;p&gt;First of, only the game and vinyl collection pages are available at the moment. Also, almost all games and vinyls listed in the collection are still missing their seperate entries.&lt;/p&gt;
+      &lt;p&gt;And there are also still a bunch of games missing from the collection in general ^^'&lt;/p&gt;
+      &lt;p&gt;Planing on adding these periodically ! &lt;/p&gt;
+      &lt;p&gt;Thank you for the patience ! This took way too long ^^' - Miles ^= || =^&lt;/p&gt;
+    </description>
+    <link>https://nilten.neocities.org/room</link>
+    <pubDate>
+      Wed, 29 Jul 2026 22:38 +0200
+    </pubDate>
+  </item>
 
-    ^= || =^
+  <item>
+    <title>An RSS feed ?! At this hour !? How convenient !</title>
+    <description>
+      Breaking news, everyone ! I have an RSS feed now !
+      This breakthrough in modern intenet technology allows me to send you funny little kitty cats right to the inbox of your favourite RSS reader of choice !
+      Just like this:
 
-    - Miles
-  </description>
-  <link>https://nilten.neocities.org/</link>
-  <pubDate>
-    Wed, 24 Jun 2026 22:10 +0200
-  </pubDate>
+      ^= || =^
+
+      - Miles
+    </description>
+    <link>https://nilten.neocities.org/</link>
+    <pubDate>
+      Wed, 29 Jul 2026 22:23 +0200
+    </pubDate>
  </item>
 </channel>
 </rss>
