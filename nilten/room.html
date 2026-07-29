@@ -13,11 +13,82 @@
         <link href="CSS/Default.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
     </head>
-<body id="site-bg-kitty-01">
-    <div style="height: 20vh; width: auto;"></div>
-    <img src="images/room/room_under_construction.webp" style="width: 420px; height: auto; display: block; margin: auto;">
-    <p style="text-align: center; font-weight: 600; font-size: x-large;">Page under construction.</p>
-    <p style="text-align: center; font-weight: 600; font-size: x-large;">Sorry !</p>
-    <div id="nav-button-back-01" onclick="history.back()"></div>
-</body>
+    <style>
+        .room_nav_button {
+            width: 50%;
+            height: 18%;
+            margin: auto;
+            font-size: 1vw;
+        }
+    </style>
+    <body id="site-bg-kitty-01">
+        <div style="width: 100vw; height: 100vh; position: fixed; background-image: url('images/room/room_scanlines.webp'); z-index: -1; opacity: 0.9;"></div>
+
+        <div class="room_BG_gradient_02" style="border-bottom: 2px #ffffff solid;">
+            <div style="height: 2vh; width: auto;"></div>
+            <div style="width: 100vw; display: flex; align-items: center; justify-content: center;">        
+                <img src="images/generic/text_decoration_02.webp" style="width: 3vh;" draggable="false">
+                <p style="text-align: center; font-size: 3vh; font-weight: 600;">Miles' Room</p>
+                <img src="images/generic/text_decoration_03.webp" style="width: 3vh;" draggable="false">
+            </div>
+            <div style="width: 100vw; height: 1vh;"></div>
+        </div>
+
+        <div style="height: 10vh; width: auto;"></div>
+
+        <div style="display: flex; width: 100vw; align-items: center; text-align: center;">
+            <!-- Left Buttons -->
+            <div style="width: 30vw; height: 50vh;">
+                <div style="display: flex; width: 100%; text-align: center; justify-content: center;">
+                    <img src="images/generic/text_decoration_03.webp" style="width: 3vh; transform: rotate(-10deg) scale(-1, 1);" draggable="false">
+                    <p style="font-size: 3vh; font-weight: 600;">Collection</p>
+                    <img src="images/generic/text_decoration_02.webp" style="width: 3vh; transform: rotate(-10deg) scale(-1, 1);" draggable="false">
+                </div>
+
+                <div style="width: 100%; height: 2vh;"></div>
+
+                <a href="room/games.html" class="linkNoCol"><div class="divSelect room_bg_gradient_button room_nav_button"><p>Games</p></div></a>
+                <div style="width: 100%; height: 2vh;"></div>
+                <a href="room/vinyls.html" class="linkNoCol"><div class="divSelect room_bg_gradient_button room_nav_button"><p>Vinyls</p></div></a>
+                <div style="width: 100%; height: 2vh;"></div>
+                <a class="linkNoCol"><div class="divSelect room_BG_gradient_01 room_nav_button pageBlocked" title="Under Construction !"><p>CDs</p></div></a>
+                <div style="width: 100%; height: 2vh;"></div>
+                <a class="linkNoCol"><div class="divSelect room_BG_gradient_01 room_nav_button pageBlocked" title="Under Construction !"><p>DVDs and BluRays</p></div></a>
+            </div>
+            <!-- Center image with 3D view link on the bottom -->
+            <div style="width: 40vw;">
+                <!-- <img src="images/room/room_link_connection.webp" style="position: absolute; width: 300px; transform: translate(-135px, 100px) rotate(20deg); z-index: 3;"> -->
+
+                <img src="images/room/room_image_center.webp" style="width: 100%; height: auto;" draggable="false">
+
+            </div>
+            <!-- Right buttons -->
+            <div style="width: 30vw; height: 50vh;">
+                <div style="display: flex; width: 100%; text-align: center; justify-content: center;">
+                    <img src="images/generic/text_decoration_02.webp" style="width: 3vh; transform: rotate(-10deg) scale(1, -1);" draggable="false">
+                    <p style="font-size: 3vh; font-weight: 600;">Setup</p>
+                    <img src="images/generic/text_decoration_03.webp" style="width: 3vh; transform: rotate(-10deg) scale(1, -1);" draggable="false">
+                </div>
+                <div style="width: 100%; height: 2vh;"></div>
+                    <a class="linkNoCol"><div class="divSelect room_BG_gradient_01 room_nav_button pageBlocked" title="Under Construction !" style="width: 50%; margin: auto;"><p>PC</p></div></a>
+                <div style="width: 100%; height: 2vh;"></div>
+                    <a class="linkNoCol"><div class="divSelect room_BG_gradient_01 room_nav_button pageBlocked" title="Under Construction !" style="width: 50%; margin: auto;"><p>Retro Setup</p></div></a>
+            </div>
+        </div>
+
+        <div style="width: 100vw; height: 100px;"></div>
+
+        <div class="room_BG_gradient_01" style="width: 100vw; position: fixed; bottom: 0; border-top: #ffffff 2px solid;">
+            <div style="width: 100vw; height: 2vh;"></div>
+
+            <div style="display: flex;">
+                <div id="nav-button-back-01" onclick="history.back()" style="width: 20vw; height: 12vh; margin: 5px;"></div>
+                <div style="width: 20vw;"></div>
+                <p style="text-align: center;"><span style="font-weight: 600; text-decoration: underline;">Note !</span>: Still very much under construction ^^'</p>
+            </div>
+
+            <div style="width: 100vw; height: 1vh;"></div>
+
+        </div>
+    </body>
 </html>
