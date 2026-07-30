@@ -5,7 +5,7 @@
   <description>Miles Nilten's Super Fun RSS Feed for Very Handsome People !</description>
   <link>https://nilten.neocities.org</link>
   <image>
-    <url>image/site_thumbnail_01.jpg</url>
+    <url>images/site_thumbnail_01.jpg</url>
     <title>Nilten</title>
     <link>https://nilten.neocities.org</link>
   </image>
@@ -43,7 +43,7 @@
     </description>
     <link>https://nilten.neocities.org/</link>
     <pubDate>
-      Wed, 29 Jul 2026 22:23 +0200
+      Wed, 24 Jun 2026 22:10 +0200
     </pubDate>
  </item>
 </channel>
