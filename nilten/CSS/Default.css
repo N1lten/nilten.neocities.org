@@ -301,6 +301,18 @@ of the container */
     font-size: x-small;
 }
 
+.linkTypeThree {
+    font-weight: 600;
+}
+
+.linkTypeThree:hover {
+    text-decoration: underline;
+}
+
+.linkTypeThree:active {
+    text-decoration: none;
+}
+
 .linkNoCol {
     color: #ffffff;
     text-decoration: none;
