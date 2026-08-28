@@ -40,9 +40,10 @@
         <div style="overflow: hidden; overflow-y: scroll; max-height: inherit;" class="container div-bgImg-one borderTypeOne">
             <h2>2026</h2>
             <div>
-                <img src="../images/comics/comic_strips/Duck Weed.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(1,0)">
-                <img src="../images/comics/comic_strips/The Comments.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(2,0)">
-                <img src="../images/comics/comic_strips/Silent Audience.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(3,0)">
+                <img src="../images/comics/comic_strips/Classified Information.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(1,0)">
+                <img src="../images/comics/comic_strips/Duck Weed.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(2,0)">
+                <img src="../images/comics/comic_strips/The Comments.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(3,0)">
+                <img src="../images/comics/comic_strips/Silent Audience.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(4,0)">
                 <img src="../images/comics/comic_strips/Dragon's Birthday Cake.webp" style="max-width: 25%; max-height: 25%;" class="slideshow-selector divSelect artScrollBar-selection" onclick="goToSlide(0,0)">
             </div>
         </div>
@@ -57,6 +58,12 @@
 
     <div id="slideshow-mainFrame" style="max-height: inherit;">
         <div class="mySlides" style="display: block;">
+            <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
+            <img class="slideshow-image" src="../images/comics/comic_strips/Classified Information.webp" style="width:100%">
+            <div class="gallery-text">Classified Information</div>
+        </div>
+
+        <div class="mySlides">
             <div class="fullscreen-button"><img src="../images/icons/gallery_fullscreen_01.webp" draggable="false" onclick="fullscreen_init_setID(0), showFullscreen(), init_fullscreen_img()"></div>
             <img class="slideshow-image" src="../images/comics/comic_strips/Duck Weed.webp" style="width:100%">
             <div class="gallery-text">Duck Weed</div>
