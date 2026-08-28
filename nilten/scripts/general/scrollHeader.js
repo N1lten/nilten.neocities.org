@@ -111,6 +111,7 @@ const headerText = [
     "Have you mooed today?",
     "\" ♪ Big man, Pig man~  ♪  Haha~ charade, you are !~ ♪ \"",
     "\" ♪ Meet you all the way~ ♪ Meet you all the way~ ♪ Rosanna~ yeah~ ♪\"",
+    "\" ♪ Will you stand above me?~ ♪ Look my way~ Never love me~ ♪ Rain keeps falling~ Rain keeps falling down~ <span style=\"font-size: small;\">down~</span> <span style=\"font-size: x-small;\">down~</span> ♪ Will you recognize me?~ ♪ Call my name~ Or walk on by~ ♪ Rain keeps falling~ Rain keeps falling down~ <span style=\"font-size: small;\">down~</span> <span style=\"font-size: x-small;\">down~</span> ♪ \"",
     "I love refrigerators !",
     "Finally at the wrapping station, metalic film is wrapped around the cookie tray, letting customers finally purchase a freshly made box of- n-NEWMAN-O'S ? WHAT THE FUCK ?!",
     "FINLAND !",
