@@ -104,15 +104,19 @@ const headerText = [
     "Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness, Ness....",
     "♪ Come down today and try some corn ~ ♪ Or we will sacrifice your newborn ~ ♪",
     "Dojo Casino~ It's all in the mind~ You have nothing to lose...~",
+    "If i ever shouldn't post anything in over a month: Don't worry ! I'm not dead, probably !",
+    "^= || =^",
     "Would you smile for a joke?",
     "<b style=\"text-decoration: underline;\">WANTED:</b> Somebody to go back in time with me. This is not a joke. P.O. Box 42069 Oakview, CA 93022. You'll get paid after we get back. Must bring your own weapons. <span style=\"text-decoration: underline;\">Safety not guaranteed.</span> I have only done this once before.",
     "Have you mooed today?",
     "\" ♪ Big man, Pig man~  ♪  Haha~ charade, you are !~ ♪ \"",
+    "\" ♪ Meet you all the way~ ♪ Meet you all the way~ ♪ Rosanna~ yeah~ ♪\"",
     "I love refrigerators !",
     "Finally at the wrapping station, metalic film is wrapped around the cookie tray, letting customers finally purchase a freshly made box of- n-NEWMAN-O'S ? WHAT THE FUCK ?!",
     "FINLAND !",
     "I have done nothing but teleport bread for three days",
-    "contact me: contact.nilten@gmail.com !",
+    "♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our~ ♪",
+    "got questions? contact me at: contact.nilten@gmail.com !",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
