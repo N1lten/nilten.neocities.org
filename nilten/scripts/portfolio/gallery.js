@@ -11,10 +11,10 @@
 // update as of 12.10.2025: FUCK (oh wait nvm it was a css error hehe whopsies)
 
 var galleries = document.getElementsByClassName("slideshow-container");
-var gallerySelectors = document.getElementsByClassName("slideshow-selector")
+var gallerySelectors = document.getElementsByClassName("artScrollBar-selection");
 
 var slideIndex = [];
-var slides = [] // Sorted in array corresponding to each gallery instance on one site
+var slides = []; // Sorted in array corresponding to each gallery instance on one site
 var slideCounters = document.getElementsByClassName("gallery-numbertext");
 
 var fullscreenView = document.getElementById("slideshow-fullscreen");
@@ -23,7 +23,7 @@ var skipAmount = 0;
 
 // initializing. get all slides and their corresponding groups sorted into arrays 
 
-for(var i = 0; i < galleries.length; i++) {
+for (var i = 0; i < galleries.length; i++) {
 //  console.log("Amount of Gallerys on site: " + galleries.length);
 //  console.log(galleries[i]);
     slideIndex[i] = 1;
@@ -31,7 +31,7 @@ for(var i = 0; i < galleries.length; i++) {
 //  console.log(slides[i]);
 }
 
-console.log(slides);
+//console.log(slides);
 
 // inintialize slide counters
 for(var i = 0; i < slideCounters.length; i++)
@@ -53,17 +53,19 @@ function plusSlidesFull(n)
 // wait why are there two functions which do basically the same thing ???
 
 function goToSlide(n, id) {
+  // instead of typing the values in manualy we should get them automatically !
   showSlides(slideIndex[id] = n, id);
 }
 
 function showSlides(n, id) {
   if (n > slides[id].length) {slideIndex[id] = 1;} // loop back to slide one  
   if (n < 1) {slideIndex[id] = slides[id].length;} // jump to last slide
+
   for (var j = 0; j < slides[id].length; j++) {
     slides[id].item(j).style.display = "none"; // make all slides invisible
   }
-//  console.log(slideIndex + " / " + slides.length);
   slides[id].item(slideIndex[id]-1).style.display = "block"; // make current slide visible
+
   slideCounters[id].innerHTML = '<p>' + slideIndex[id] + ' / ' + slides[id].length + '</p>';  // update slide counter text
 }
 
@@ -78,7 +80,7 @@ function init_fullscreen_img() {
   var full_img = document.getElementById("slideshow-fs-image")
   // check current value of skipAmount
   // console.log(slide_img[slideIndex].src);
-  console.log(slide_img.length);
+  // console.log(slide_img.length);
   for(var i = 0; i < currentID; i++)
   {
     skipAmount = slides[i].length;
@@ -117,9 +119,10 @@ function hideFullscreen() {
   }
 }
 
+/*
 function debug_PrintSlideIndexArray() {
     console.log(slideIndex.length);  
 for(var i = 0; i < slideIndex.length; i++){
   console.log(slideIndex[i]);
   }
-}
+} */
