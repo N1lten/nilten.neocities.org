@@ -904,7 +904,6 @@ main {
     border: 8px solid transparent;
 }
 
-/* Comic page selection divs */
 .divSelect.blog-selection {
     background-image: url("../images/generic/div_bg_01.webp");
     width: 600px;
