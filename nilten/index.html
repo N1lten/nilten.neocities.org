@@ -23,63 +23,78 @@
         }
     </script>
 
-<body id="site-bg-kitty-01" onload="site_maintenanceMode()">
-<img src="images/generic/nilten_header_logo.webp" alt="Nilten" style="width: 250px; height: auto; margin: 25px auto; position: absolute; left: 0; right: 0; top: 0; bottom: 0;">
+<body id="site-bg-kitty-01" onload="site_maintenanceMode()">    
+    <!-- flex container housing the main dialog box and all the images and whatnot-->
+    <div style="display: flex; width: 100vw; height: 95vh; justify-content: center; align-items: center; align-self: center; align-content: center;">
+        <div style="width: 25vw; height: 325px; z-index: 1;">
+            <a href="making_of.html"><img src="images/welcome/welcome_miles_laptop.webp" style="width: 100%;"></a>
+        </div>
+        
+        <div style="width: 50vw; margin: auto; z-index: 3;">
+            <!-- header image -->
+            <div style="width: 50vw; margin: 10px auto;">
+                <img src="images/generic/nilten_header_logo.webp" alt="Nilten" style="width: 225px; height: auto; display: block; margin: auto;">
+            </div>
 
-<div style="width: 350px; height: 325px; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1;">
-    <a href="making_of.html"><div style="background-image: url('images/welcome/welcome_miles_laptop.webp'); width: 350px; height: 325px; background-size: cover; transform: translateX(45px) scale(1.4);"></div></a>
-</div>
+            <div class="welcome-Frame">
+                <img src="images/welcome/welcome_header.webp" alt="Welcome!" style="width: 250px; height: auto; margin: auto; left: 0; right: 0;">
+                <div>
+                    <h2 style="margin: 0; text-decoration: underline;">Please Note:</h2>
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <img src="images/welcome/welcome_no_mobile_note.webp" style="width: 128px; height: auto;" alt="No official mobile support.">
+                        <p style="width: 250px;">This site is not optimized to be viewed on a mobile device. For the best experience, use a 1080p monitor in landscape mode.</p>
+                        <p style="width: 250px;">This site also features flashing imagery and some <span style="font-family: Georgia, 'Times New Roman', Times, serif;">naughty words</span> here and there. Viewer discretion is advised.</p>
+                        <img src="images/welcome/welcome_warning_note.webp" style="width: 128px; height: auto;" alt="Welcome to the cuss word zone, fellas !">
+                    </div>
+                </div>
+                <div style="width: fit-content; margin: auto;">
+                    <a href="home.html"><div id="welcome-enter-link"></div></a>
+                </div>
+            </div>
 
-<div style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: fit-content; height: fit-content; margin: auto; z-index: 3;">
-    <div class="welcome-Frame">
-        <img src="images/welcome/welcome_header.webp" alt="Welcome!" style="width: 250px; height: auto; margin: auto; left: 0; right: 0;">
-    <div>
-        <h2 style="margin: 0; text-decoration: underline;">Notes:</h2>
-        <div style="display: flex; flex-direction: row; align-items: center;">
-            <img src="images/welcome/welcome_no_mobile_note.webp" style="width: 128px; height: auto;" alt="No official mobile support.">
-            <p style="width: 250px;">This site is not optimized to be viewed on a mobile device. For the best experience, use a 1080p monitor in landscape mode.</p>
-            <p style="width: 250px;">This site also features flashing imagery and some <span style="font-family: Georgia, 'Times New Roman', Times, serif;">naughty words</span> here and there. Viewer discretion is advised.</p>
-            <img src="images/welcome/welcome_warning_note.webp" style="width: 128px; height: auto;" alt="Welcome to the cuss word zone, fellas !">
+            <div id="footerButtons" style="max-width: 90%; width: 90%; margin: 10px auto;"></div>
+            <div class="social_media_footer" style="z-index: 3;">
+                <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube" title="Youtube"></a>
+                <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky" title="Bluesky"></a>
+                <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds" title="Newgrounds"></a>
+                <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub" title="GitHub"></a>
+                <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam" title="Steam"></a>
+                <a href="https://neocities.org/site/nilten" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/neocities_social_media_icon.webp" style="width: 75px; height: auto;" alt="Neocities" title="Neocities"></a>
+            </div>
+        
+        
+            <div style="margin: 10px auto;">
+                <div class="link_border" style="width: fit-content; height: fit-content; margin: auto;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
+                <p style="text-align: center; margin: 5px;">Contact: contact.nilten@gmail.com</p>
+                <p style="text-align: center; margin: 0;">The content on this site may <span style="font-weight: 600; text-decoration: underline;">not</span> be used to train AI.</p>
+            </div>
+
+        </div>
+        
+        <div style="width: 25vw;">
+            <div style="width: fit-content; transform: translate(25px, -100px);">
+                <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 90px; transform: translate(70px, -50px) rotate(20deg);" draggable="false">
+                <img src="images/icons/88x31/IPoAC.webp" style="width: 275px; height: auto; margin: auto; box-shadow: 10px 13px 20px black; transform: rotate(2deg);" class="borderTypeOne" title="nilten.neocities.org is made possible by your local carrier pigeon !">
+            </div>
+        
+            <div style="width: fit-content; transform: translate(30px, -10px);">
+                <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 110px; transform: translate(115px, -45px) rotate(15deg);" draggable="false">
+                <img src="images/welcome/feed_the_creature.webp" style="width: 350px; height: auto; box-shadow: 10px 13px 20px black; transform: translate(3px, 2px) rotate(-2deg);" class="borderTypeOne">
+                <p style="font-size: 15px; text-align: center;">Please remember to feed the creature it's mandated <br> dose of snacks and sweets <strong style="text-decoration: underline;">every hour on the hour !</strong></p>
+            </div>
+        
+            <div style="width: fit-content; height: auto; position: absolute; right: 0; bottom: 0;">
+                <div id="pennyNap"></div>
+            </div>
         </div>
     </div>
-        <div style="width: fit-content; height: auto; transform: translateY(-13px); margin: auto;">
-            <a href="home.html"><div id="welcome-enter-link"></div></a>
-        </div>
-    </div>
-    <div id="footerButtons"></div>
-    <div class="social_media_footer" style="transform: translateY(45px); z-index: 3;">
-        <a href="https://www.youtube.com/@nilten" target="_blank" rel="noopener noreferrer"><img id="smf_youtube" src="images/icons/social_media_bar/yt_social_media_icon.webp" style="width: 75px; height: auto;" alt="Youtube" title="Youtube"></a>
-        <a href="https://bsky.app/profile/nilten.neocities.org" target="_blank" rel="noopener noreferrer"><img id="smf_bluesky" src="images/icons/social_media_bar/bsky_social_media_icon.webp" style="width: 75px; height: auto;" alt="Bluesky" title="Bluesky"></a>
-        <a href="https://nilten.newgrounds.com" target="_blank" rel="noopener noreferrer"><img id="smf_newgrounds" src="images/icons/social_media_bar/ng_social_media_icon.webp" style="width: 75px; height: auto;" alt="Newgrounds" title="Newgrounds"></a>
-        <a href="https://github.com/N1lten" target="_blank" rel="noopener noreferrer"><img id="smf_github" src="images/icons/social_media_bar/git_social_media_icon.webp" style="width: 75px; height: auto;" alt="GitHub" title="GitHub"></a>
-        <a href="https://steamcommunity.com/id/N1lten/" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/steam_social_media_icon.webp" style="width: 75px; height: auto;" alt="Steam" title="Steam"></a>
-        <a href="https://neocities.org/site/nilten" target="_blank" rel="noopener noreferrer"><img id="smf_steam" src="images/icons/social_media_bar/neocities_social_media_icon.webp" style="width: 75px; height: auto;" alt="Neocities" title="Neocities"></a>
-    </div>
-</div>
 
-<div style="position: absolute; bottom: 0; left: 0; right: 0; margin: auto;">
-    <div class="link_border" style="width: fit-content; height: fit-content; margin: auto;"><a href="https://neocities.org" target="_blank" rel="noopener noreferrer"><img src="images/neocitiesbadge.svg" alt="Hosted by Neocities" style="width: 150px; height: auto; margin: auto;"></a></div>
-    <p style="text-align: center;">Contact: contact.nilten@gmail.com</p>
-    <p style="text-align: center;">The content on this site may <span style="font-weight: 600; text-decoration: underline;">not</span> be used to train AI.</p>
-</div>
 
-<div style="height: auto; position: absolute; right: 0; padding: 4%;">
-    <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 110px; transform: translate(70px, -62px) rotate(20deg);" draggable="false">
-    <img src="images/icons/88x31/IPoAC.webp" style="width: 300px; height: auto; box-shadow: 10px 13px 20px black; transform: rotate(2deg);" class="borderTypeOne" title="nilten.neocities.org is made possible by your local carrier pigeon !">
-</div>
 
-<div style="height: auto; position: absolute; right: 0; padding: 4%;">
-    <img src="images/generic/img_pin_01.webp" style="z-index: 1; position: absolute; width: 110px; transform: translate(195px, 195px) rotate(15deg);" draggable="false">
-    <img src="images/welcome/feed_the_creature.webp" style="width: 550px; height: auto; box-shadow: 10px 13px 20px black; transform: translate(3px, 250px) rotate(-2deg);" class="borderTypeOne">
-    <p style="transform: translateY(240px); font-size: 20px; text-align: center;">Please remember to feed the creature it's mandated <br> dose of snacks and sweets <strong style="text-decoration: underline;">every hour on the hour !</strong></p>
-</div>
-
-<div style="width: fit-content; height: auto; position: absolute; right: 0; bottom: 0;">
-    <div id="pennyNap"></div>
-</div>
-
+    <footer style="display: none;">
+        <script src="scripts/general/scrollButtons.js"></script>
+        <script src="scripts/general/kitty_bg_controller.js"></script>
+        <script src="scripts/general/maintenanceKillSwitch.js"></script>
+    </footer>
 </body>
-    <script src="scripts/general/scrollButtons.js"></script>
-    <script src="scripts/general/kitty_bg_controller.js"></script>
-    <script src="scripts/general/maintenanceKillSwitch.js"></script>
 </html>
