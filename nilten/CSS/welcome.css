@@ -1,10 +1,9 @@
 .welcome-Frame {
     background-image: url("../images/generic/div_bg_01.webp");
     background-clip: padding-box;
-    width: 750px;
-    height: 400px;
+    width: 100%;
     margin: auto;
-    border: 25px solid transparent;
+    border: 18px solid transparent;
     text-align: center;
     border-image: url(../images/generic/div_border_01.webp) 33 round;
 
@@ -15,9 +14,10 @@
 #welcome-enter-link {
     background-image: url("../images/welcome/welcome_enter_button.webp");
     background-size: contain;
+    background-repeat: no-repeat;
     margin: auto;
     width: 250px;
-    height: 135px;
+    height: 130px;
 }
 
 #welcome-enter-link:hover {
