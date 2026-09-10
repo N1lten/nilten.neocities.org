@@ -1026,10 +1026,16 @@ footer {
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap: 10px;
 }
 
-#footerContainer p {
+#footerContainer
+.footer_top_icons {
+    display: flex;
+    gap: 35px;
+}
+
+#footerContainer
+.footer_contact {
     margin-left: 64px;
 }
 
