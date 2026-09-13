@@ -122,4 +122,4 @@ const headerText = [
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
-document.getElementById('marqueeText').innerHTML = headerText[105];
+document.getElementById('marqueeText').innerHTML = headerText[indexID];
