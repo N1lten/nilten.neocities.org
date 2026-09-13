@@ -105,7 +105,7 @@ const headerText = [
     "♪ Come down today and try some corn ~ ♪ Or we will sacrifice your newborn ~ ♪",
     "Dojo Casino~ It's all in the mind~ You have nothing to lose...~",
     "If i ever shouldn't post anything in over a month: Don't worry ! I'm not dead, probably !",
-    "^= || =^",
+    "^= |&nbsp;| =^",
     "Would you smile for a joke?",
     "<b style=\"text-decoration: underline;\">WANTED:</b> Somebody to go back in time with me. This is not a joke. P.O. Box 42069 Oakview, CA 93022. You'll get paid after we get back. Must bring your own weapons. <span style=\"text-decoration: underline;\">Safety not guaranteed.</span> I have only done this once before.",
     "Have you mooed today?",
@@ -117,8 +117,9 @@ const headerText = [
     "FINLAND !",
     "I have done nothing but teleport bread for three days",
     "♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our~ ♪",
+    "Do i look like i know what a <i>JPEG</i> is? I just want a picture of a god dang hot dog !",
     "got questions? contact me at: contact.nilten@gmail.com !",
 ];
 
 const indexID = Math.floor(Math.random() * headerText.length);
-document.getElementById('marqueeText').innerHTML = headerText[indexID];
+document.getElementById('marqueeText').innerHTML = headerText[105];
