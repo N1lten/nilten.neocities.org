@@ -13,7 +13,7 @@
 var galleries = document.getElementsByClassName("slideshow-container");
 var gallerySelectors = document.getElementsByClassName("artScrollBar-selection");
 
-var slideIndex = [];
+var slideIndex = []; // holds the current slide id of one gallery instance
 var slides = []; // Sorted in array corresponding to each gallery instance on one site
 var slideCounters = document.getElementsByClassName("gallery-numbertext");
 
@@ -22,16 +22,10 @@ var currentID = 0;
 var skipAmount = 0;
 
 // initializing. get all slides and their corresponding groups sorted into arrays 
-
 for (var i = 0; i < galleries.length; i++) {
-//  console.log("Amount of Gallerys on site: " + galleries.length);
-//  console.log(galleries[i]);
     slideIndex[i] = 1;
     slides[i] = galleries[i].getElementsByClassName("mySlides");
-//  console.log(slides[i]);
 }
-
-//console.log(slides);
 
 // inintialize slide counters
 for(var i = 0; i < slideCounters.length; i++)
@@ -39,10 +33,10 @@ for(var i = 0; i < slideCounters.length; i++)
    slideCounters[i].innerHTML = '<p>' + slideIndex[i] + ' / ' + slides[i].length + '</p>';  // update slide counter text
 }
 
+
 // n = amount of slides skiped
 // id = identification of gallery instance (only really used when there are multiple gallery instances on one page)
 function plusSlides(n, id) {
-  //console.log("ButtonID: " + id)
   showSlides(slideIndex[id] += n, id);
 }
 
@@ -79,15 +73,11 @@ function init_fullscreen_img() {
   var slide_img = document.getElementsByClassName("slideshow-image")
   var full_img = document.getElementById("slideshow-fs-image")
   // check current value of skipAmount
-  // console.log(slide_img[slideIndex].src);
-  // console.log(slide_img.length);
   for(var i = 0; i < currentID; i++)
   {
     skipAmount = slides[i].length;
   }
-//console.log(skipAmount);
   full_img.src = slide_img[skipAmount+slideIndex[currentID]-1].src;
-//console.log(full_img.src);
 }
 
 function init_fullscreen_img_singular(img_url) {

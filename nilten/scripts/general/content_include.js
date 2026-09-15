@@ -20,7 +20,7 @@ fetch('../../includes/footer01.html')
     .then((text) => execScriptsInFooter(text))
     .catch((e) => console.error(e));
 
-// footer02 for pages outside of root, so that all the image paths arecrorgscectascfj2331lmaaothekeysarestuck
+// footer02 for pages outside of root
 fetch('../../includes/footer02.html')
     .then((res) => res.text())
     .then((text) => document.getElementById("footer_include_two").innerHTML = text)
