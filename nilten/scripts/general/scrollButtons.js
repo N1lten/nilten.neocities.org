@@ -96,7 +96,7 @@ for(let i = 0; i < buttonLinks.length; i++)
 // throw error message in console
 if(buttonAlts.length != buttonLinks.length)
 {
-    console.log("Error: Scroll button URL's and ALT's don't match up! Proceeding without ALT's.");        
+    console.log("Error: Scroll button URL's and ALT's don't match up! Proceeding without ALT's.");
 }
 
 //console.log(buttonDirs);
