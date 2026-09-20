@@ -118,6 +118,7 @@ const headerText = [
     "I have done nothing but teleport bread for three days",
     "♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our House~ ♪ Our House~ In the middle of our~ ♪",
     "Do i look like i know what a <i>JPEG</i> is? I just want a picture of a god dang hot dog !",
+    "You could stop at five or six stores... &nbsp; &nbsp; &nbsp; or just one !",
     "got questions? contact me at: contact.nilten@gmail.com !",
 ];
 
