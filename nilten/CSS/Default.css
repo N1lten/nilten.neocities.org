@@ -103,6 +103,21 @@ html, body, a:hover{
     100% {transform: translate(-110px, -120px);}
 }
 
+@keyframes text_warning_01 {
+    0%
+    {
+        color: #ffffff;
+    }
+    50%
+    {
+        color: #ffae00;
+    }
+    100%
+    {
+        color: #ffffff;
+    }
+}
+
 #background04 {
     background-image: url("../images/home/home_bg_trees_layerOne.webp");
     background-size: 100vw;

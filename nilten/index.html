@@ -52,6 +52,7 @@
                     </div>
                 </div>
                 <div style="width: 100%; margin: auto;">
+                    <p style="display: none; animation: text_warning_01 5s ease infinite;" id="edge_notification"><span style="font-weight: 600;">Microsoft Edge detected !</span><br>Please note, that there may be some visual issues with Edge !</p>
                     <div style="width: 28%; margin: auto;">
                         <a href="home.html"><div id="welcome-enter-link"></div></a>
                     </div>
@@ -105,5 +106,13 @@
         <script src="scripts/general/kitty_bg_controller.js"></script>
         <script src="scripts/general/maintenanceKillSwitch.js"></script>
     </footer>
+
+    <script>
+        var edge_notif = document.getElementById("edge_notification");
+
+        if(window.navigator.userAgent.indexOf("Edg/") !== -1) {
+            edge_notif.style.display = "block";
+        }
+    </script>
 </body>
 </html>
