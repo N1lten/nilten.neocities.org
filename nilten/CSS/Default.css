@@ -751,6 +751,7 @@ main {
 }
 
 .headerTextOne {
+    margin-bottom: 0px;
     font-size: xx-large;
     text-align: center;
     font-weight: 600;
