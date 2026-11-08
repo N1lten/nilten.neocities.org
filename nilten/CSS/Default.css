@@ -1,4 +1,14 @@
 @font-face {
+    font-family: "PaperCut-Regular";
+    src: url("../fonts/Paper Cut Regular.ttf");
+}
+
+@font-face {
+    font-family: "PaperCut-Bold";
+    src: url("../fonts/Paper Cut Bold.ttf");
+}
+
+@font-face {
     font-family: "Ubuntu-Medium";
     src: url("../fonts/Ubuntu-Medium.ttf");
 }
@@ -13,7 +23,8 @@
 }
 
 body {
-    font-family: 'Ubuntu-Medium';
+    font-family: 'PaperCut-Regular';
+    font-size: 19px;
     margin: 0;
     color: #ffffff;
 }
