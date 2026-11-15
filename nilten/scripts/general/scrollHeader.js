@@ -121,6 +121,8 @@ const headerText = [
     "You could stop at five or six stores... &nbsp; &nbsp; &nbsp; or just one !",
     "♪ Tropical the island breeze~ ♪ All of nature wild and free~ ♪ This is where i long to be~ ♪ La Isla Bonita~ &nbsp;&nbsp; ♪♪♪ &nbsp;&nbsp; And when the samba played~ ♪ The sun would set so high~ ♪ Ring through my ears and sting my eyes~ Your spanish lullaby~ ♪",
     "I warned you !~ I don't want spaghetti again!~",
+    "Domer",
+    "\" ♪ Open the door, get on the floor~ ♪ Everybody walk the dinosaur~ ♪ \"",
     "got questions? contact me at: contact.nilten@gmail.com !",
 ];
 
