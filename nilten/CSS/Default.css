@@ -1,3 +1,4 @@
+/* regular font */
 @font-face {
     font-family: "PaperCut-Regular";
     src: url("../fonts/Paper Cut Regular.ttf");
@@ -8,6 +9,7 @@
     src: url("../fonts/Paper Cut Bold.ttf");
 }
 
+/* accessability mode font */
 @font-face {
     font-family: "Ubuntu-Medium";
     src: url("../fonts/Ubuntu-Medium.ttf");
@@ -944,21 +946,24 @@ main {
     background-image: url("../images/generic/div_bg_02.webp");
     border:  5px solid transparent;
     border-image: url(../images/generic/div_border_01.webp) 33 round;
-    width: 550px;
-    height: 85px;
+    width: 575px;
+    height: 95px;
     margin: auto;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
     animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
     -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
-#smf_youtube:hover,
-#smf_bluesky:hover,
-#smf_newgrounds:hover,
-#smf_github:hover,
-#smf_steam:hover {
+.smf_button {
+    width: 75px;
+    height: auto;
+    filter: drop-shadow(9px 7px rgba(0, 0, 0, 0.6));
+}
+.smf_button:hover {
     border: 3px solid transparent;
     border-image: url("../images/generic/div_border_01.webp");
 
@@ -966,11 +971,7 @@ main {
     -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
 }
 
-#smf_youtube:active,
-#smf_bluesky:active,
-#smf_newgrounds:active,
-#smf_github:active,
-#smf_steam:active {
+.smf_button:active {
     padding: 3px;
 }
 
