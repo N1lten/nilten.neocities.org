@@ -349,17 +349,6 @@ html, body, a:hover{
     position: relative;
 }
 
-#siteTitle {
-    margin: auto;
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-
-.langSelect {
-    margin-left: 3%;
-}
-
 .scrollingHeader {
     width: 100%;
     padding: 6px;
@@ -548,6 +537,7 @@ html, body, a:hover{
 #nav-room-tag:active {
     background-image: url("../images/icons/nav_list/nav_room_tag_03.webp");
 }
+/* navbar text icons end */
 
 
 /* back button styles */
@@ -594,10 +584,10 @@ html, body, a:hover{
     left: 0;
     transform: translateY(-50%) translateX(-7px);
     background-image: url('../images/icons/affiliates/nav_affiliate_fjb.webp');
-    width: 72px; /* Breite des Bildes */
-    height: 72px; /* Höhe des Bildes */
-    background-size: cover; /* Passt das Bild an die Größe an */
-    background-position: center; /* Zentriert das Bild */
+    width: 72px;
+    height: 72px;
+    background-size: cover;
+    background-position: center;
 }
 
 .home_youtube_embed {
@@ -634,13 +624,11 @@ html, body, a:hover{
     justify-content: center;
     gap: 2vw;
 }
+/* room page styles end */
 
 
-/* this is the color of the main content area,
-between the sidebars! */
 main {
     flex: 1;
-    /*padding: 20px;*/
     width: 55%;
     order: 2;
     position: relative;
@@ -924,24 +912,6 @@ main {
     -webkit-animation: div_border_anim_02 2.5s steps(2, jump-none) infinite reverse;
 }
 
-.welcomeFrame {
-    width: 750px;
-    height: 450px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    text-align: center;
-    background-image: url("../images/generic/div_bg_01.webp");
-    background-clip: padding-box;
-    border: 7px solid transparent;
-    border-image: url(../images/generic/div_border_01.webp) 33 round;
-
-    animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
-    -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite reverse;
-}
-
 .social_media_footer {
     background-image: url("../images/generic/div_bg_02.webp");
     border:  5px solid transparent;
@@ -1087,8 +1057,7 @@ footer {
 }
 
 #footerButtons marquee {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2% 0;
 }
 
 #footerButtons img {

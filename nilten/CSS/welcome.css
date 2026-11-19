@@ -8,7 +8,7 @@
     text-align: center;
     border-image: url(../images/generic/div_border_01.webp) 33 round;
     overflow-y: auto;
-
+    align-content: center;
 
     animation: div_border_anim_01 2.5s steps(2, jump-none) infinite;
     -webkit-animation: div_border_anim_01 2.5s steps(2, jump-none) infinite;
