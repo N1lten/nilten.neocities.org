@@ -17,7 +17,7 @@ const headerText = [
     "Mori, who or what is an Azure ?",
     "melon.", // FACADE REFERENCE WOOOOOO
     "McDonalds and you~ McDonalds and you~ Fresh scrambled eggs, Sausage, Hotcakes~ Juice and Coffee too~ JUST LIKE SUNSHINE EVERY MOOOORNING~ MCDOOOONALDS AND YOUUUUUUUU~",
-    "\" ♪ So take me baaack in tiiiiiiiiimmme~ ♪ To another world~ ♪ When you caaaan beeee miiiiiiiiiine~ ♪ We don't have to worry~ ♪ When you're byyyyy myyy siiiiiiiiide~ ♪ Theres nothing i don't know~ ♪ Theres nothing tooooo deeeciiiiiiiide~ ♪ Apart from where we want to gooooooo~ ♪\"",
+    "\" ♪ So take me back in time~ ♪ To another world~ ♪ When you can be mine~ ♪ We don't have to worry~ ♪ When you're by my side~ ♪ Theres nothing i don't know~ ♪ Theres nothing to decide~ ♪ Apart from where we want to go~ ♪\"",
     "I have no idea what to draw aaaaaaaaaaaaa =[",
     "I know! I gotta believe!",
     "Fuck you, Baltimore!",

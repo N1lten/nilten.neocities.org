@@ -792,6 +792,10 @@ main {
     border: 0;
 }
 
+.divSelect.divSelect_smallBorder {
+    border: 7px solid transparent;
+}
+
 .divSelect.pageBlocked:hover {
     border-image: url(../images/generic/div_border_03.webp);
     transform: scale(1);
