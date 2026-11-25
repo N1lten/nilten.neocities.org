@@ -1,14 +1,10 @@
-# nilten.neocities.org
+# nilten.net
 
-I have set up this git repo for my Neocities site!
+Git repository for [nilten.net](https://nilten.net)
 
-Nothing special, really!
-
-<https://nilten.neocities.org>
+Hosted on [neocities.org](https://neocities.org)
 
 # To-Do:
 
-1. Fix spaghetti code !
-2. Make website more responsive on devices with a higher or lower resolution of 1920x1080
-3. Finish "My Room"
-4. Add multilingual support
+1. Rewrite parts of the unholy spaghetti code found in this repository
+2. Make website more responsive on devices with a vertical aspect ratio
